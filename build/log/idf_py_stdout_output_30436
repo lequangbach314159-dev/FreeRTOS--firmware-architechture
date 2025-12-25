@@ -1,0 +1,2295 @@
+Command: C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\tools/idf_monitor.py -p COM6 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\examples\get-started\RTOS_part2\build\RTOS_part2.elf C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\examples\get-started\RTOS_part2\build\bootloader\bootloader.elf --force-color -m 'C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\tools\idf.py' '-p' 'COM6'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Aug 18 2025 09:30:05[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09230h ( 37424) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00019258 vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (101) esp_image: segment 2: paddr=00019280 vaddr=3ffb0000 size=022a8h (  8872) load[0m
+[0;32mI (109) esp_image: segment 3: paddr=0001b530 vaddr=40080000 size=04ae8h ( 19176) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=1620ch ( 90636) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=00036234 vaddr=40084ae8 size=09578h ( 38264) load[0m
+[0;32mI (174) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (174) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (193) cpu_start: Pro cpu start user code[0m
+[0;32mI (193) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (193) app_init: Application information:[0m
+[0;32mI (193) app_init: Project name:     RTOS_part2[0m
+[0;32mI (197) app_init: App version:      v5.5-dirty[0m
+[0;32mI (201) app_init: Compile time:     Aug 18 2025 09:29:49[0m
+[0;32mI (206) app_init: ELF file SHA256:  d094538a8...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (215) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (218) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (222) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (227) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (233) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (238) heap_init: At 3FFB2B38 len 0002D4C8 (181 KiB): DRAM[0m
+[0;32mI (243) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (254) heap_init: At 4008E060 len 00011FA0 (71 KiB): IRAM[0m
+[0;33mW (260) spi_flash: boya detected but related driver is not linked, please check option `SPI_FLASH_SUPPORT_BOYA_CHIP`[0m
+[0;32mI (269) spi_flash: detected chip: generic[0m
+[0;32mI (273) spi_flash: flash io: dio[0m
+[0;33mW (276) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (289) main_task: Started on CPU0[0m
+[0;32mI (299) main_task: Calling app_main()[0m
+[0;32mI (299) UART: Task 1 sent: Task 1 of Bach (cnt = 1)[0m
+
+[0;32mI (299) main_task: Returned from app_main()[0m
+[0;32mI (309) UART: Task 2 sent: Task 2 of Bach (cnt = 1)[0m
+
+[0;32mI (429) UART: Received line 1: Task 2 of Bach (cnt = 6)[0m
+[0;32mI (429) UART: Received line 2: [0m
+
+[0;32mI (939) UART: Task 1 sent: Task 1 of Bach (cnt = 2)[0m
+
+[0;32mI (1099) UART: Task 2 sent: Task 2 of Bach (cnt = 2)[0m
+
+[0;32mI (1109) UART: Received line 1: Task 1 of Bach (cnt = 7)[0m
+[0;32mI (1109) UART: Received line 2: [0m
+
+[0;32mI (1819) UART: Task 1 sent: Task 1 of Bach (cnt = 3)[0m
+
+[0;32mI (1829) UART: Task 2 sent: Task 2 of Bach (cnt = 3)[0m
+
+[0;32mI (1839) UART: Received line 1: Task 2 of Bach (cnt = 7)[0m
+[0;32mI (1839) UART: Received line 2: [0m
+
+[0;32mI (2449) UART: Task 1 sent: Task 1 of Bach (cnt = 4)[0m
+
+[0;32mI (2669) UART: Task 2 sent: Task 2 of Bach (cnt = 4)[0m
+
+[0;32mI (2679) UART: Received line 1: 	[0m
+
+[0;32mI (2679) UART: Received line 2: Task 1 of Bach (cnt = 8)[0m
+[0;32mI (3209) UART: Task 1 sent: Task 1 of Bach (cnt = 5)[0m
+
+[0;32mI (3489) UART: Task 2 sent: Task 2 of Bach (cnt = 5)[0m
+
+[0;32mI (3499) UART: Received line 1: [0m
+
+[0;32mI (3499) UART: Received line 2: Task 2 of Bach (cnt = 8)[0m
+[0;32mI (3769) UART: Task 1 sent: Task 1 of Bach (cnt = 6)[0m
+
+[0;32mI (4019) UART: Task 2 sent: Task 2 of Bach (cnt = 6)[0m
+
+[0;32mI (4029) UART: Received line 1: [0m
+
+[0;32mI (4029) UART: Received line 2: Task 1 of Bach (cnt = 9)[0m
+[0;32mI (4649) UART: Task 1 sent: Task 1 of Bach (cnt = 7)[0m
+
+[0;32mI (4769) UART: Task 2 sent: Task 2 of Bach (cnt = 7)[0m
+
+[0;32mI (4779) UART: Received line 1: [0m
+
+[0;32mI (4779) UART: Received line 2: Task 2 of Bach (cnt = 9)[0m
+[0;32mI (5409) UART: Task 1 sent: Task 1 of Bach (cnt = 8)[0m
+
+[0;32mI (5419) UART: Task 2 sent: Task 2 of Bach (cnt = 8)[0m
+
+[0;32mI (5429) UART: Received line 1: [0m
+
+[0;32mI (5429) UART: Received line 2: �Task 1 of Bach (cnt = 10)[0m
+[0;32mI (6169) UART: Task 1 sent: Task 1 of Bach (cnt = 9)[0m
+
+[0;32mI (6319) UART: Task 2 sent: Task 2 of Bach (cnt = 9)[0m
+
+[0;32mI (6329) UART: Received line 1: [0m
+
+[0;32mI (6329) UART: Received line 2: Task 2 of Bach (cnt = 10)[0m
+[0;32mI (6889) UART: Task 1 sent: Task 1 of Bach (cnt = 10)[0m
+
+[0;32mI (7109) UART: Task 2 sent: Task 2 of Bach (cnt = 10)[0m
+
+[0;32mI (7119) UART: Received line 1: [0m
+
+[0;32mI (7119) UART: Received line 2: Task 1 of Bach (cnt = 11)[0m
+[0;32mI (7719) UART: Task 1 sent: Task 1 of Bach (cnt = 11)[0m
+
+[0;32mI (7729) UART: Task 2 sent: Task 2 of Bach (cnt = 11)[0m
+
+[0;32mI (7739) UART: Received line 1: [0m
+
+[0;32mI (7739) UART: Received line 2: Task 2 of Bach (cnt = 11)[0m
+[0;32mI (8469) UART: Task 1 sent: Task 1 of Bach (cnt = 12)[0m
+
+[0;32mI (8529) UART: Task 2 sent: Task 2 of Bach (cnt = 12)[0m
+
+[0;32mI (8539) UART: Received line 1: [0m
+
+[0;32mI (8539) UART: Received line 2: � = 5)[0m
+[0;32mI (9289) UART: Task 1 sent: Task 1 of Bach (cnt = 13)[0m
+
+[0;32mI (9299) UART: Task 2 sent: Task 2 of Bach (cnt = 13)[0m
+
+[0;32mI (9309) UART: Received line 1: Task 1 of Bach (cnt = 12)[0m
+[0;32mI (9309) UART: Received line 2: [0m
+
+[0;32mI (10159) UART: Task 1 sent: Task 1 of Bach (cnt = 14)[0m
+
+[0;32mI (10169) UART: Task 2 sent: Task 2 of Bach (cnt = 14)[0m
+
+[0;32mI (10179) UART: Received line 1: Task 2 of Bach (cnt = 12)[0m
+[0;32mI (10179) UART: Received line 2: [0m
+
+[0;32mI (10969) UART: Task 1 sent: Task 1 of Bach (cnt = 15)[0m
+
+[0;32mI (10979) UART: Task 2 sent: Task 2 of Bach (cnt = 15)[0m
+
+[0;32mI (10989) UART: Received line 1: [0m
+
+[0;32mI (10989) UART: Received line 2: Task 1 of Bach (cnt = 13)[0m
+[0;32mI (11849) UART: Task 1 sent: Task 1 of Bach (cnt = 16)[0m
+
+[0;32mI (11859) UART: Task 2 sent: Task 2 of Bach (cnt = 16)[0m
+
+[0;32mI (11869) UART: Received line 1: [0m
+
+[0;32mI (11869) UART: Received line 2: Task 2 of Bach (cnt = 13)[0m
+[0;32mI (12599) UART: Task 1 sent: Task 1 of Bach (cnt = 17)[0m
+
+[0;32mI (12609) UART: Task 2 sent: Task 2 of Bach (cnt = 17)[0m
+
+[0;32mI (12619) UART: Received line 1: [0m
+
+[0;32mI (12619) UART: Received line 2: t = 6)[0m
+[0;32mI (13189) UART: Task 1 sent: Task 1 of Bach (cnt = 18)[0m
+
+[0;32mI (13199) UART: Task 2 sent: Task 2 of Bach (cnt = 18)[0m
+
+[0;32mI (13209) UART: Received line 1: [0m
+
+[0;32mI (13209) UART: Received line 2: Task 1 of Bach (cnt = 14)[0m
+[0;32mI (13969) UART: Task 1 sent: Task 1 of Bach (cnt = 19)[0m
+
+[0;32mI (13979) UART: Task 2 sent: Task 2 of Bach (cnt = 19)[0m
+
+[0;32mI (13989) UART: Received line 1: [0m
+
+[0;32mI (13989) UART: Received line 2: Task 2 of Bach (cnt = 14)[0m
+[0;32mI (14719) UART: Task 1 sent: Task 1 of Bach (cnt = 20)[0m
+
+[0;32mI (14729) UART: Task 2 sent: Task 2 of Bach (cnt = 20)[0m
+
+[0;32mI (14739) UART: Received line 1: [0m
+
+[0;32mI (14739) UART: Received line 2: t = 1)[0m
+[0;32mI (15409) UART: Task 1 sent: Task 1 of Bach (cnt = 21)[0m
+
+[0;32mI (15419) UART: Task 2 sent: Task 2 of Bach (cnt = 21)[0m
+
+[0;32mI (15429) UART: Received line 1: Task 1 of Bach (cnt = 15)[0m
+[0;32mI (15429) UART: Received line 2: [0m
+
+[0;32mI (16269) UART: Task 1 sent: Task 1 of Bach (cnt = 22)[0m
+
+[0;32mI (16279) UART: Task 2 sent: Task 2 of Bach (cnt = 22)[0m
+
+[0;32mI (16289) UART: Received line 1: Task 2 of Bach (cnt = 15)[0m
+[0;32mI (16289) UART: Received line 2: [0m
+
+[0;32mI (16959) UART: Task 1 sent: Task 1 of Bach (cnt = 23)[0m
+
+[0;32mI (16969) UART: Task 2 sent: Task 2 of Bach (cnt = 23)[0m
+
+[0;32mI (16979) UART: Received line 1: [0m
+
+[0;32mI (16979) UART: Received line 2: Task 2 of Bach (cnt = 1)[0m
+[0;32mI (17759) UART: Task 1 sent: Task 1 of Bach (cnt = 24)[0m
+
+[0;32mI (17769) UART: Task 2 sent: Task 2 of Bach (cnt = 24)[0m
+
+[0;32mI (17779) UART: Received line 1: Task 1 of Bach (cnt = 16)[0m
+[0;32mI (17779) UART: Received line 2: [0m
+
+[0;32mI (18609) UART: Task 1 sent: Task 1 of Bach (cnt = 25)[0m
+
+[0;32mI (18619) UART: Task 2 sent: Task 2 of Bach (cnt = 25)[0m
+
+[0;32mI (18629) UART: Received line 1: Task 2 of Bach (cnt = 16)[0m
+[0;32mI (18629) UART: Received line 2: [0m
+
+[0;32mI (19139) UART: Task 1 sent: Task 1 of Bach (cnt = 26)[0m
+
+[0;32mI (19209) UART: Task 2 sent: Task 2 of Bach (cnt = 26)[0m
+
+[0;32mI (19219) UART: Received line 1: [0m
+
+[0;32mI (19219) UART: Received line 2: Task 2 of Bach (cnt = 6)[0m
+[0;32mI (20009) UART: Task 1 sent: Task 1 of Bach (cnt = 27)[0m
+
+[0;32mI (20019) UART: Task 2 sent: Task 2 of Bach (cnt = 27)[0m
+
+[0;32mI (20029) UART: Received line 1: Task 1 of Bach (cnt = 17)[0m
+[0;32mI (20029) UART: Received line 2: [0m
+
+[0;32mI (20809) UART: Task 1 sent: Task 1 of Bach (cnt = 28)[0m
+
+[0;32mI (20819) UART: Task 2 sent: Task 2 of Bach (cnt = 28)[0m
+
+[0;32mI (20829) UART: Received line 1: Task 2 of Bach (cnt = 17)[0m
+[0;32mI (20829) UART: Received line 2: [0m
+
+[0;32mI (21399) UART: Task 1 sent: Task 1 of Bach (cnt = 29)[0m
+
+[0;32mI (21409) UART: Task 2 sent: Task 2 of Bach (cnt = 29)[0m
+
+[0;32mI (21419) UART: Received line 1: [0m
+
+[0;32mI (21419) UART: Received line 2: Task 1 of Bach (cnt = 2)[0m
+[0;32mI (22069) UART: Task 1 sent: Task 1 of Bach (cnt = 30)[0m
+
+[0;32mI (22079) UART: Task 2 sent: Task 2 of Bach (cnt = 30)[0m
+
+[0;32mI (22089) UART: Received line 1: Task 1 of Bach (cnt = 18)[0m
+[0;32mI (22089) UART: Received line 2: [0m
+
+[0;32mI (22709) UART: Task 1 sent: Task 1 of Bach (cnt = 31)[0m
+
+[0;32mI (22719) UART: Task 2 sent: Task 2 of Bach (cnt = 31)[0m
+
+[0;32mI (22729) UART: Received line 1: Task 2 of Bach (cnt = 18)[0m
+[0;32mI (22729) UART: Received line 2: [0m
+
+[0;32mI (23279) UART: Task 1 sent: Task 1 of Bach (cnt = 32)[0m
+
+[0;32mI (23409) UART: Task 2 sent: Task 2 of Bach (cnt = 32)[0m
+
+[0;32mI (23419) UART: Received line 1: [0m
+
+[0;32mI (23419) UART: Received line 2: Task 2 of Bach (cnt = 2)[0m
+[0;32mI (23939) UART: Task 1 sent: Task 1 of Bach (cnt = 33)[0m
+
+[0;32mI (24189) UART: Task 2 sent: Task 2 of Bach (cnt = 33)[0m
+
+[0;32mI (24199) UART: Received line 1: Task 1 of Bach (cnt = 19)[0m
+[0;32mI (24199) UART: Received line 2: [0m
+
+[0;32mI (24839) UART: Task 1 sent: Task 1 of Bach (cnt = 34)[0m
+
+[0;32mI (24889) UART: Task 2 sent: Task 2 of Bach (cnt = 34)[0m
+
+[0;32mI (24899) UART: Received line 1: Task 2 of Bach (cnt = 19)[0m
+[0;32mI (24899) UART: Received line 2: [0m
+
+[0;32mI (25639) UART: Task 1 sent: Task 1 of Bach (cnt = 35)[0m
+
+[0;32mI (25739) UART: Task 2 sent: Task 2 of Bach (cnt = 35)[0m
+
+[0;32mI (25749) UART: Received line 1: [0m
+
+[0;32mI (25749) UART: Received line 2: Task 1 of Bach (cnt = 7)[0m
+[0;32mI (26149) UART: Task 1 sent: Task 1 of Bach (cnt = 36)[0m
+
+[0;32mI (26359) UART: Task 2 sent: Task 2 of Bach (cnt = 36)[0m
+
+[0;32mI (26369) UART: Received line 1: Task 1 of Bach (cnt = 20)[0m
+[0;32mI (26369) UART: Received line 2: [0m
+
+[0;32mI (27039) UART: Task 1 sent: Task 1 of Bach (cnt = 37)[0m
+
+[0;32mI (27159) UART: Task 2 sent: Task 2 of Bach (cnt = 37)[0m
+
+[0;32mI (27169) UART: Received line 1: Task 2 of Bach (cnt = 20)[0m
+[0;32mI (27169) UART: Received line 2: [0m
+
+[0;32mI (27649) UART: Task 1 sent: Task 1 of Bach (cnt = 38)[0m
+
+[0;32mI (27879) UART: Task 2 sent: Task 2 of Bach (cnt = 38)[0m
+
+[0;32mI (27889) UART: Received line 1: [0m
+
+[0;32mI (27889) UART: Received line 2: Task 1 of Bach (cnt = 3)[0m
+[0;32mI (28339) UART: Task 1 sent: Task 1 of Bach (cnt = 39)[0m
+
+[0;32mI (28559) UART: Task 2 sent: Task 2 of Bach (cnt = 39)[0m
+
+[0;32mI (28569) UART: Received line 1: Task 1 of Bach (cnt = 21)[0m
+[0;32mI (28569) UART: Received line 2: [0m
+
+[0;32mI (28879) UART: Task 1 sent: Task 1 of Bach (cnt = 40)[0m
+
+[0;32mI (29409) UART: Task 2 sent: Task 2 of Bach (cnt = 40)[0m
+
+[0;32mI (29419) UART: Received line 1: Task 2 of Bach (cnt = 21)[0m
+[0;32mI (29419) UART: Received line 2: [0m
+
+[0;32mI (29439) UART: Task 1 sent: Task 1 of Bach (cnt = 41)[0m
+
+[0;32mI (30279) UART: Task 2 sent: Task 2 of Bach (cnt = 41)[0m
+
+[0;32mI (30289) UART: Received line 1: [0m
+
+[0;32mI (30289) UART: Received line 2: Task 2 of Bach (cnt = 3)[0m
+[0;32mI (30289) UART: Task 1 sent: Task 1 of Bach (cnt = 42)[0m
+
+[0;32mI (31019) UART: Task 2 sent: Task 2 of Bach (cnt = 42)[0m
+
+[0;32mI (31029) UART: Received line 1: Task 1 of Bach (cnt = 22)[0m
+[0;32mI (31029) UART: Received line 2: [0m
+
+[0;32mI (31029) UART: Task 1 sent: Task 1 of Bach (cnt = 43)[0m
+
+[0;32mI (31599) UART: Task 2 sent: Task 2 of Bach (cnt = 43)[0m
+
+[0;32mI (31609) UART: Received line 1: Task 2 of Bach (cnt = 22)[0m
+[0;32mI (31609) UART: Received line 2: [0m
+
+[0;32mI (31809) UART: Task 1 sent: Task 1 of Bach (cnt = 44)[0m
+
+[0;32mI (32209) UART: Task 2 sent: Task 2 of Bach (cnt = 44)[0m
+
+[0;32mI (32219) UART: Received line 1: [0m
+
+[0;32mI (32219) UART: Received line 2: Task 2 of Bach (cnt = 7)[0m
+[0;32mI (32559) UART: Task 1 sent: Task 1 of Bach (cnt = 45)[0m
+
+[0;32mI (33099) UART: Task 2 sent: Task 2 of Bach (cnt = 45)[0m
+
+[0;32mI (33109) UART: Received line 1: Task 1 of Bach (cnt = 23)[0m
+[0;32mI (33109) UART: Received line 2: [0m
+
+[0;32mI (33439) UART: Task 1 sent: Task 1 of Bach (cnt = 46)[0m
+
+[0;32mI (33809) UART: Task 2 sent: Task 2 of Bach (cnt = 46)[0m
+
+[0;32mI (33819) UART: Received line 1: Task 2 of Bach (cnt = 23)[0m
+[0;32mI (33819) UART: Received line 2: [0m
+
+[0;32mI (34299) UART: Task 1 sent: Task 1 of Bach (cnt = 47)[0m
+
+[0;32mI (34499) UART: Task 2 sent: Task 2 of Bach (cnt = 47)[0m
+
+[0;32mI (34509) UART: Received line 1: [0m
+
+[0;32mI (34509) UART: Received line 2: Task 1 of Bach (cnt = 4)[0m
+[0;32mI (35059) UART: Task 1 sent: Task 1 of Bach (cnt = 48)[0m
+
+[0;32mI (35299) UART: Task 2 sent: Task 2 of Bach (cnt = 48)[0m
+
+[0;32mI (35309) UART: Received line 1: Task 1 of Bach (cnt = 24)[0m
+[0;32mI (35309) UART: Received line 2: [0m
+
+[0;32mI (35639) UART: Task 1 sent: Task 1 of Bach (cnt = 49)[0m
+
+[0;32mI (35869) UART: Task 2 sent: Task 2 of Bach (cnt = 49)[0m
+
+[0;32mI (35879) UART: Received line 1: Task 2 of Bach (cnt = 24)[0m
+[0;32mI (35879) UART: Received line 2: [0m
+
+[0;32mI (36259) UART: Task 1 sent: Task 1 of Bach (cnt = 50)[0m
+
+[0;32mI (36599) UART: Task 2 sent: Task 2 of Bach (cnt = 50)[0m
+
+[0;32mI (36609) UART: Received line 1: [0m
+
+[0;32mI (36609) UART: Received line 2: Task 2 of Bach (cnt = 4)[0m
+[0;32mI (36889) UART: Task 1 sent: Task 1 of Bach (cnt = 51)[0m
+
+[0;32mI (37309) UART: Task 2 sent: Task 2 of Bach (cnt = 51)[0m
+
+[0;32mI (37319) UART: Received line 1: Task 1 of Bach (cnt = 25)[0m
+[0;32mI (37319) UART: Received line 2: [0m
+
+[0;32mI (37579) UART: Task 1 sent: Task 1 of Bach (cnt = 52)[0m
+
+[0;32mI (38009) UART: Task 2 sent: Task 2 of Bach (cnt = 52)[0m
+
+[0;32mI (38019) UART: Received line 1: Task 2 of Bach (cnt = 25)[0m
+[0;32mI (38019) UART: Received line 2: [0m
+
+[0;32mI (38289) UART: Task 1 sent: Task 1 of Bach (cnt = 53)[0m
+
+[0;32mI (38839) UART: Task 2 sent: Task 2 of Bach (cnt = 53)[0m
+
+[0;32mI (38849) UART: Received line 1: [0m
+
+[0;32mI (38849) UART: Received line 2: 	[0m
+
+[0;32mI (39039) UART: Task 1 sent: Task 1 of Bach (cnt = 54)[0m
+
+[0;32mI (39459) UART: Task 2 sent: Task 2 of Bach (cnt = 54)[0m
+
+[0;32mI (39469) UART: Received line 1: Task 1 of Bach (cnt = 26)[0m
+[0;32mI (39469) UART: Received line 2: [0m
+
+[0;32mI (39579) UART: Task 1 sent: Task 1 of Bach (cnt = 55)[0m
+
+[0;32mI (40019) UART: Task 2 sent: Task 2 of Bach (cnt = 55)[0m
+
+[0;32mI (40029) UART: Received line 1: Task 2 of Bach (cnt = 26)[0m
+[0;32mI (40029) UART: Received line 2: [0m
+
+[0;32mI (40229) UART: Task 1 sent: Task 1 of Bach (cnt = 56)[0m
+
+[0;32mI (40669) UART: Task 2 sent: Task 2 of Bach (cnt = 56)[0m
+
+[0;32mI (40679) UART: Received line 1: Task 1 of Bach (cnt = 8)[0m
+[0;32mI (40679) UART: Received line 2: Task 1 of Bach (cnt = 5)[0m
+[0;32mI (40789) UART: Task 1 sent: Task 1 of Bach (cnt = 57)[0m
+
+[0;32mI (41509) UART: Task 2 sent: Task 2 of Bach (cnt = 57)[0m
+
+[0;32mI (41519) UART: Received line 1: Task 1 of Bach (cnt = 27)[0m
+[0;32mI (41519) UART: Received line 2: [0m
+
+[0;32mI (41629) UART: Task 1 sent: Task 1 of Bach (cnt = 58)[0m
+
+[0;32mI (42169) UART: Task 2 sent: Task 2 of Bach (cnt = 58)[0m
+
+[0;32mI (42179) UART: Received line 1: Task 2 of Bach (cnt = 27)[0m
+[0;32mI (42179) UART: Received line 2: [0m
+
+[0;32mI (42329) UART: Task 1 sent: Task 1 of Bach (cnt = 59)[0m
+
+[0;32mI (43019) UART: Task 2 sent: Task 2 of Bach (cnt = 59)[0m
+
+[0;32mI (43029) UART: Received line 1: [0m
+
+[0;32mI (43029) UART: Received line 2: Task 2 of Bach (cnt = 5)[0m
+[0;32mI (43039) UART: Task 1 sent: Task 1 of Bach (cnt = 60)[0m
+
+[0;32mI (43899) UART: Task 2 sent: Task 2 of Bach (cnt = 60)[0m
+
+[0;32mI (43909) UART: Received line 1: Task 1 of Bach (cnt = 28)[0m
+[0;32mI (43909) UART: Received line 2: [0m
+
+[0;32mI (43909) UART: Task 1 sent: Task 1 of Bach (cnt = 61)[0m
+
+[0;32mI (44529) UART: Task 2 sent: Task 2 of Bach (cnt = 61)[0m
+
+[0;32mI (44539) UART: Received line 1: Task 2 of Bach (cnt = 28)[0m
+[0;32mI (44539) UART: Received line 2: [0m
+
+[0;32mI (44539) UART: Task 1 sent: Task 1 of Bach (cnt = 62)[0m
+
+[0;32mI (45309) UART: Task 2 sent: Task 2 of Bach (cnt = 62)[0m
+
+[0;32mI (45319) UART: Received line 1: [0m
+
+[0;32mI (45319) UART: Received line 2: [0m
+
+[0;32mI (45359) UART: Task 1 sent: Task 1 of Bach (cnt = 63)[0m
+
+[0;32mI (45869) UART: Task 2 sent: Task 2 of Bach (cnt = 63)[0m
+
+[0;32mI (45879) UART: Received line 1: Task 1 of Bach (cnt = 29)[0m
+[0;32mI (45879) UART: Received line 2: [0m
+
+[0;32mI (46059) UART: Task 1 sent: Task 1 of Bach (cnt = 64)[0m
+
+[0;32mI (46639) UART: Task 2 sent: Task 2 of Bach (cnt = 64)[0m
+
+[0;32mI (46649) UART: Received line 1: Task 2 of Bach (cnt = 29)[0m
+[0;32mI (46649) UART: Received line 2: [0m
+
+[0;32mI (46889) UART: Task 1 sent: Task 1 of Bach (cnt = 65)[0m
+
+[0;32mI (47269) UART: Task 2 sent: Task 2 of Bach (cnt = 65)[0m
+
+[0;32mI (47279) UART: Received line 1: Task 2 of Bach (cnt = 8)[0m
+[0;32mI (47279) UART: Received line 2: Task 1 of Bach (cnt = 6)[0m
+[0;32mI (47649) UART: Task 1 sent: Task 1 of Bach (cnt = 66)[0m
+
+[0;32mI (47949) UART: Task 2 sent: Task 2 of Bach (cnt = 66)[0m
+
+[0;32mI (47959) UART: Received line 1: nt = 33)[0m
+[0;32mI (47959) UART: Received line 2: [0m
+
+[0;32mI (48229) UART: Task 1 sent: Task 1 of Bach (cnt = 67)[0m
+
+���������������������������������������������������������������� (48709) UART: Task 2 sent: Task 2 of Bach (cnt = 67)
+
+[0;32mI (48719) UART: Received line 1: Task 2 of Bach (cnt = 33)[0m
+[0;32mI (48719) UART: Received line 2: [0m
+
+[0;32mI (49069) UART: Task 1 sent: Task 1 of Bach (cnt = 68)[0m
+
+[0;32mI (49469) UART: Task 2 sent: Task 2 of Bach (cnt = 68)[0m
+
+[0;32mI (49479) UART: Received line 1: [0m
+
+[0;32mI (49479) UART: Received line 2: Task 2 of Bach (cnt = 7)[0m
+[0;32mI (49909) UART: Task 1 sent: Task 1 of Bach (cnt = 69)[0m
+
+[0;32mI (50279) UART: Task 2 sent: Task 2 of Bach (cnt = 69)[0m
+
+[0;32mI (50289) UART: Received line 1:  = 9)[0m
+[0;32mI (50289) UART: Received line 2: Task 1 of Bach (cnt = 8)[0m
+[0;32mI (50629) UART: Task 1 sent: Task 1 of Bach (cnt = 70)[0m
+
+[0;32mI (50969) UART: Task 2 sent: Task 2 of Bach (cnt = 70)[0m
+
+[0;32mI (50979) UART: Received line 1: 37)[0m
+[0;32mI (50979) UART: Received line 2: [0m
+
+[0;32mI (51309) UART: Task 1 sent: Task 1 of Bach (cnt = 71)[0m
+
+[0;32mI (51789) UART: Task 2 sent: Task 2 of Bach (cnt = 71)[0m
+
+[0;32mI (51799) UART: Received line 1: [0m
+
+[0;32mI (51799) UART: Received line 2: [0m
+
+[0;32mI (52049) UART: Task 1 sent: Task 1 of Bach (cnt = 72)[0m
+
+[0;32mI (52609) UART: Task 2 sent: Task 2 of Bach (cnt = 72)[0m
+
+[0;32mI (52619) UART: Received line 1: Task 1 of Bach (cnt = 38)[0m
+[0;32mI (52619) UART: Received line 2: [0m
+
+[0;32mI (52639) UART: Task 1 sent: Task 1 of Bach (cnt = 73)[0m
+
+[0;32mI (53129) UART: Task 2 sent: Task 2 of Bach (cnt = 73)[0m
+
+[0;32mI (53139) UART: Received line 1: Task 2 of Bach (cnt = 38)[0m
+[0;32mI (53139) UART: Received line 2: [0m
+
+[0;32mI (53329) UART: Task 1 sent: Task 1 of Bach (cnt = 74)[0m
+
+[0;32mI (53769) UART: Task 2 sent: Task 2 of Bach (cnt = 74)[0m
+
+[0;32mI (53779) UART: Received line 1: 9)[0m
+[0;32mI (53779) UART: Received line 2: Task 1 of Bach (cnt = 40)[0m
+[0;32mI (54209) UART: Task 1 sent: Task 1 of Bach (cnt = 75)[0m
+
+[0;32mI (54389) UART: Task 2 sent: Task 2 of Bach (cnt = 75)[0m
+
+[0;32mI (54399) UART: Received line 1: [0m
+
+[0;32mI (54399) UART: Received line 2: Task 2 of Bach (cnt = 40)[0m
+[0;32mI (54729) UART: Task 1 sent: Task 1 of Bach (cnt = 76)[0m
+
+[0;32mI (54999) UART: Task 2 sent: Task 2 of Bach (cnt = 76)[0m
+
+[0;32mI (55009) UART: Received line 1: [0m
+
+[0;32mI (55009) UART: Received line 2: [0m
+
+[0;32mI (55629) UART: Task 1 sent: Task 1 of Bach (cnt = 77)[0m
+
+[0;32mI (55709) UART: Task 2 sent: Task 2 of Bach (cnt = 77)[0m
+
+[0;32mI (55719) UART: Received line 1: [0m
+
+[0;32mI (55719) UART: Received line 2: Task 1 of Bach (cnt = 41)[0m
+[0;32mI (56219) UART: Task 1 sent: Task 1 of Bach (cnt = 78)[0m
+
+[0;32mI (56479) UART: Task 2 sent: Task 2 of Bach (cnt = 78)[0m
+
+[0;32mI (56489) UART: Received line 1: [0m
+
+[0;32mI (56489) UART: Received line 2: Task 2 of Bach (cnt = 41)[0m
+[0;32mI (56979) UART: Task 1 sent: Task 1 of Bach (cnt = 79)[0m
+
+[0;32mI (57229) UART: Task 2 sent: Task 2 of Bach (cnt = 79)[0m
+
+[0;32mI (57239) UART: Received line 1: [0m
+
+[0;32mI (57239) UART: Received line 2: Task 2 of Bach (cnt = 10)[0m
+[0;32mI (57779) UART: Task 1 sent: Task 1 of Bach (cnt = 80)[0m
+
+[0;32mI (57869) UART: Task 2 sent: Task 2 of Bach (cnt = 80)[0m
+
+[0;32mI (57879) UART: Received line 1: Task 1 of Bach (cnt = 10)[0m
+[0;32mI (57879) UART: Received line 2: (cnt = 45)[0m
+[0;32mI (58309) UART: Task 1 sent: Task 1 of Bach (cnt = 81)[0m
+
+[0;32mI (58749) UART: Task 2 sent: Task 2 of Bach (cnt = 81)[0m
+
+[0;32mI (58759) UART: Received line 1: [0m
+
+[0;32mI (58759) UART: Received line 2: Task 2 of Bach (cnt = 45)[0m
+[0;32mI (59139) UART: Task 1 sent: Task 1 of Bach (cnt = 82)[0m
+
+[0;32mI (59419) UART: Task 2 sent: Task 2 of Bach (cnt = 82)[0m
+
+[0;32mI (59429) UART: Received line 1: [0m
+
+[0;32mI (59429) UART: Received line 2: [0m
+
+[0;32mI (59769) UART: Task 1 sent: Task 1 of Bach (cnt = 83)[0m
+
+[0;32mI (59939) UART: Task 2 sent: Task 2 of Bach (cnt = 83)[0m
+
+[0;32mI (59949) UART: Received line 1: Task 2 of Bach (cnt = 11)[0m
+[0;32mI (59949) UART: Received line 2:  = 11)[0m
+[0;32mI (60549) UART: Task 1 sent: Task 1 of Bach (cnt = 84)[0m
+
+[0;32mI (60659) UART: Task 2 sent: Task 2 of Bach (cnt = 84)[0m
+
+[0;32mI (60669) UART: Received line 1: Task 1 of Bach (cnt = 12)[0m
+[0;32mI (60669) UART: Received line 2: Task 1 of Bach (cnt = 48)[0m
+[0;32mI (61079) UART: Task 1 sent: Task 1 of Bach (cnt = 85)[0m
+
+[0;32mI (61459) UART: Task 2 sent: Task 2 of Bach (cnt = 85)[0m
+
+[0;32mI (61469) UART: Received line 1: [0m
+
+[0;32mI (61469) UART: Received line 2: Task 2 of Bach (cnt = 48)[0m
+[0;32mI (61769) UART: Task 1 sent: Task 1 of Bach (cnt = 86)[0m
+
+[0;32mI (62199) UART: Task 2 sent: Task 2 of Bach (cnt = 86)[0m
+
+[0;32mI (62209) UART: Received line 1: [0m
+
+[0;32mI (62209) UART: Received line 2: [0m
+
+[0;32mI (62499) UART: Task 1 sent: Task 1 of Bach (cnt = 87)[0m
+
+[0;32mI (63029) UART: Task 2 sent: Task 2 of Bach (cnt = 87)[0m
+
+[0;32mI (63039) UART: Received line 1: Task 2 of Bach (cnt = 12)[0m
+[0;32mI (63039) UART: Received line 2: of Bach (cnt = 52)[0m
+[0;32mI (63089) UART: Task 1 sent: Task 1 of Bach (cnt = 88)[0m
+
+[0;32mI (63639) UART: Task 2 sent: Task 2 of Bach (cnt = 88)[0m
+
+[0;32mI (63649) UART: Received line 1: [0m
+
+[0;32mI (63649) UART: Received line 2: [0m
+
+[0;32mI (63729) UART: Task 1 sent: Task 1 of Bach (cnt = 89)[0m
+
+[0;32mI (64389) UART: Task 2 sent: Task 2 of Bach (cnt = 89)[0m
+
+[0;32mI (64399) UART: Received line 1: Task 1 of Bach (cnt = 12)[0m
+[0;32mI (64399) UART: Received line 2:  54)[0m
+[0;32mI (64399) UART: Task 1 sent: Task 1 of Bach (cnt = 90)[0m
+
+[0;32mI (65129) UART: Task 2 sent: Task 2 of Bach (cnt = 90)[0m
+
+[0;32mI (65139) UART: Received line 1: [0m
+
+[0;32mI (65139) UART: Received line 2: [0m
+
+[0;32mI (65139) UART: Task 1 sent: Task 1 of Bach (cnt = 91)[0m
+
+[0;32mI (65869) UART: Task 2 sent: Task 2 of Bach (cnt = 91)[0m
+
+[0;32mI (65879) UART: Received line 1: Task 2 of Bach (cnt = 14)[0m
+[0;32mI (65879) UART: Received line 2: Task 1 of Bach (cnt = 55)[0m
+[0;32mI (65879) UART: Task 1 sent: Task 1 of Bach (cnt = 92)[0m
+
+[0;32mI (66719) UART: Task 2 sent: Task 2 of Bach (cnt = 92)[0m
+
+[0;32mI (66729) UART: Received line 1: [0m
+
+[0;32mI (66729) UART: Received line 2: = 15)[0m
+[0;32mI (66729) UART: Task 1 sent: Task 1 of Bach (cnt = 93)[0m
+
+[0;32mI (67529) UART: Task 2 sent: Task 2 of Bach (cnt = 93)[0m
+
+[0;32mI (67539) UART: Received line 1: Task 1 of Bach (cnt = 57)[0m
+[0;32mI (67539) UART: Received line 2: [0m
+
+[0;32mI (67539) UART: Task 1 sent: Task 1 of Bach (cnt = 94)[0m
+
+[0;32mI (68359) UART: Task 2 sent: Task 2 of Bach (cnt = 94)[0m
+
+[0;32mI (68369) UART: Received line 1: Task 2 of Bach (cnt = 57)[0m
+[0;32mI (68369) UART: Received line 2: [0m
+
+[0;32mI (68369) UART: Task 1 sent: Task 1 of Bach (cnt = 95)[0m
+
+[0;32mI (68949) UART: Task 2 sent: Task 2 of Bach (cnt = 95)[0m
+
+[0;32mI (68959) UART: Received line 1: [0m
+
+[0;32mI (68959) UART: Received line 2: Task 2 of Bach (cnt = 15)[0m
+[0;32mI (69119) UART: Task 1 sent: Task 1 of Bach (cnt = 96)[0m
+
+[0;32mI (69729) UART: Task 2 sent: Task 2 of Bach (cnt = 96)[0m
+
+[0;32mI (69739) UART: Received line 1:  = 13)[0m
+[0;32mI (69739) UART: Received line 2: Task 1 of Bach (cnt = 16)[0m
+[0;32mI (69739) UART: Task 1 sent: Task 1 of Bach (cnt = 97)[0m
+
+[0;32mI (70339) UART: Task 2 sent: Task 2 of Bach (cnt = 97)[0m
+
+[0;32mI (70349) UART: Received line 1: Task 1 of Bach (cnt = 60)[0m
+[0;32mI (70349) UART: Received line 2: [0m
+
+[0;32mI (70499) UART: Task 1 sent: Task 1 of Bach (cnt = 98)[0m
+
+[0;32mI (70879) UART: Task 2 sent: Task 2 of Bach (cnt = 98)[0m
+
+[0;32mI (70889) UART: Received line 1:  = 62)[0m
+[0;32mI (70889) UART: Received line 2: [0m
+
+[0;32mI (71199) UART: Task 1 sent: Task 1 of Bach (cnt = 99)[0m
+
+[0;32mI (71759) UART: Task 2 sent: Task 2 of Bach (cnt = 99)[0m
+
+[0;32mI (71769) UART: Received line 1: Task 2 of Bach (cnt = 62)[0m
+[0;32mI (71769) UART: Received line 2: [0m
+
+[0;32mI (71789) UART: Task 1 sent: Task 1 of Bach (cnt = 100)[0m
+
+[0;32mI (72279) UART: Task 2 sent: Task 2 of Bach (cnt = 100)[0m
+
+[0;32mI (72289) UART: Received line 1: 17)[0m
+[0;32mI (72289) UART: Received line 2: Task 1 of Bach (cnt = 64)[0m
+[0;32mI (72489) UART: Task 1 sent: Task 1 of Bach (cnt = 101)[0m
+
+[0;32mI (73079) UART: Task 2 sent: Task 2 of Bach (cnt = 101)[0m
+
+[0;32mI (73089) UART: Received line 1: [0m
+
+[0;32mI (73089) UART: Received line 2: Task 2 of Bach (cnt = 64)[0m
+[0;32mI (73309) UART: Task 1 sent: Task 1 of Bach (cnt = 102)[0m
+
+[0;32mI (73689) UART: Task 2 sent: Task 2 of Bach (cnt = 102)[0m
+
+[0;32mI (73699) UART: Received line 1: [0m
+
+[0;32mI (73699) UART: Received line 2: [0m
+
+[0;32mI (74029) UART: Task 1 sent: Task 1 of Bach (cnt = 103)[0m
+
+[0;32mI (74579) UART: Task 2 sent: Task 2 of Bach (cnt = 103)[0m
+
+[0;32mI (74589) UART: Received line 1: [0m
+
+[0;32mI (74589) UART: Received line 2: Task 1 of Bach (cnt = 65)[0m
+[0;32mI (74779) UART: Task 1 sent: Task 1 of Bach (cnt = 104)[0m
+
+[0;32mI (75439) UART: Task 2 sent: Task 2 of Bach (cnt = 104)[0m
+
+[0;32mI (75449) UART: Received line 1: [0m
+
+[0;32mI (75449) UART: Received line 2: Task 2 of Bach (cnt = 65)[0m
+[0;32mI (75519) UART: Task 1 sent: Task 1 of Bach (cnt = 105)[0m
+
+[0;32mI (76059) UART: Task 2 sent: Task 2 of Bach (cnt = 105)[0m
+
+[0;32mI (76069) UART: Received line 1: [0m
+
+[0;32mI (76069) UART: Received line 2: t = 6)[0m
+[0;32mI (76129) UART: Task 1 sent: Task 1 of Bach (cnt = 106)[0m
+
+[0;32mI (76639) UART: Task 2 sent: Task 2 of Bach (cnt = 106)[0m
+
+[0;32mI (76649) UART: Received line 1:  19)[0m
+[0;32mI (76649) UART: Received line 2:  = 14)[0m
+[0;32mI (76839) UART: Task 1 sent: Task 1 of Bach (cnt = 107)[0m
+
+[0;32mI (77189) UART: Task 2 sent: Task 2 of Bach (cnt = 107)[0m
+
+[0;32mI (77199) UART: Received line 1: Task 1 of Bach (cnt = 20)[0m
+[0;32mI (77199) UART: Received line 2: Task 1 of Bach (cnt = 68)[0m
+[0;32mI (77549) UART: Task 1 sent: Task 1 of Bach (cnt = 108)[0m
+
+[0;32mI (78079) UART: Task 2 sent: Task 2 of Bach (cnt = 108)[0m
+
+[0;32mI (78089) UART: Received line 1: [0m
+
+[0;32mI (78089) UART: Received line 2:  = 70)[0m
+[0;32mI (78119) UART: Task 1 sent: Task 1 of Bach (cnt = 109)[0m
+
+[0;32mI (78679) UART: Task 2 sent: Task 2 of Bach (cnt = 109)[0m
+
+[0;32mI (78689) UART: Received line 1: [0m
+
+[0;32mI (78689) UART: Received line 2: Task 2 of Bach (cnt = 70)[0m
+[0;32mI (78839) UART: Task 1 sent: Task 1 of Bach (cnt = 110)[0m
+
+[0;32mI (79269) UART: Task 2 sent: Task 2 of Bach (cnt = 110)[0m
+
+[0;32mI (79279) UART: Received line 1: [0m
+
+[0;32mI (79279) UART: Received line 2: t = 1)[0m
+[0;32mI (79689) UART: Task 1 sent: Task 1 of Bach (cnt = 111)[0m
+
+[0;32mI (79909) UART: Task 2 sent: Task 2 of Bach (cnt = 111)[0m
+
+[0;32mI (79919) UART: Received line 1:  22)[0m
+[0;32mI (79919) UART: Received line 2: Task 1 of Bach (cnt = 71)[0m
+[0;32mI (80239) UART: Task 1 sent: Task 1 of Bach (cnt = 112)[0m
+
+[0;32mI (80529) UART: Task 2 sent: Task 2 of Bach (cnt = 112)[0m
+
+[0;32mI (80539) UART: Received line 1: [0m
+
+[0;32mI (80539) UART: Received line 2: = 23)[0m
+[0;32mI (80959) UART: Task 1 sent: Task 1 of Bach (cnt = 113)[0m
+
+[0;32mI (81109) UART: Task 2 sent: Task 2 of Bach (cnt = 113)[0m
+
+[0;32mI (81119) UART: Received line 1: Task 1 of Bach (cnt = 73)[0m
+[0;32mI (81119) UART: Received line 2: [0m
+
+[0;32mI (81739) UART: Task 1 sent: Task 1 of Bach (cnt = 114)[0m
+
+[0;32mI (81889) UART: Task 2 sent: Task 2 of Bach (cnt = 114)[0m
+
+[0;32mI (81899) UART: Received line 1: Task 2 of Bach (cnt = 73)[0m
+[0;32mI (81899) UART: Received line 2: [0m
+
+[0;32mI (82559) UART: Task 1 sent: Task 1 of Bach (cnt = 115)[0m
+
+[0;32mI (82569) UART: Task 2 sent: Task 2 of Bach (cnt = 115)[0m
+
+[0;32mI (82579) UART: Received line 1: [0m
+
+[0;32mI (82579) UART: Received line 2: Task 2 of Bach (cnt = 23)[0m
+[0;32mI (83329) UART: Task 1 sent: Task 1 of Bach (cnt = 116)[0m
+
+[0;32mI (83339) UART: Task 2 sent: Task 2 of Bach (cnt = 116)[0m
+
+[0;32mI (83349) UART: Received line 1: Task 1 of Bach (cnt = 74)[0m
+[0;32mI (83349) UART: Received line 2: [0m
+
+[0;32mI (84029) UART: Task 1 sent: Task 1 of Bach (cnt = 117)[0m
+
+[0;32mI (84149) UART: Task 2 sent: Task 2 of Bach (cnt = 117)[0m
+
+[0;32mI (84159) UART: Received line 1: Task 2 of Bach (cnt = 74)[0m
+[0;32mI (84159) UART: Received line 2: [0m
+
+[0;32mI (84779) UART: Task 1 sent: Task 1 of Bach (cnt = 118)[0m
+
+[0;32mI (84979) UART: Task 2 sent: Task 2 of Bach (cnt = 118)[0m
+
+[0;32mI (84989) UART: Received line 1: [0m
+
+[0;32mI (84989) UART: Received line 2: [0m
+
+[0;32mI (85519) UART: Task 1 sent: Task 1 of Bach (cnt = 119)[0m
+
+[0;32mI (85529) UART: Task 2 sent: Task 2 of Bach (cnt = 119)[0m
+
+[0;32mI (85539) UART: Received line 1:  1 of Bach (cnt = 80)[0m
+[0;32mI (85539) UART: Received line 2: [0m
+
+[0;32mI (86249) UART: Task 1 sent: Task 1 of Bach (cnt = 120)[0m
+
+[0;32mI (86389) UART: Task 2 sent: Task 2 of Bach (cnt = 120)[0m
+
+[0;32mI (86399) UART: Received line 1: Task 2 of Bach (cnt = 80)[0m
+[0;32mI (86399) UART: Received line 2: [0m
+
+[0;32mI (86759) UART: Task 1 sent: Task 1 of Bach (cnt = 121)[0m
+
+[0;32mI (87249) UART: Task 2 sent: Task 2 of Bach (cnt = 121)[0m
+
+[0;32mI (87259) UART: Received line 1: Task 2 of Bach (cnt = 6)[0m
+[0;32mI (87259) UART: Received line 2: Bach (cnt = 18)[0m
+[0;32mI (87319) UART: Task 1 sent: Task 1 of Bach (cnt = 122)[0m
+
+[0;32mI (87839) UART: Task 2 sent: Task 2 of Bach (cnt = 122)[0m
+
+[0;32mI (87849) UART: Received line 1: h (cnt = 84)[0m
+[0;32mI (87849) UART: Received line 2: [0m
+
+[0;32mI (88049) UART: Task 1 sent: Task 1 of Bach (cnt = 123)[0m
+
+[0;32mI (88369) UART: Task 2 sent: Task 2 of Bach (cnt = 123)[0m
+
+[0;32mI (88379) UART: Received line 1: Task 2 of Bach (cnt = 2)[0m
+[0;32mI (88379) UART: Received line 2:  34)[0m
+[0;32mI (88569) UART: Task 1 sent: Task 1 of Bach (cnt = 124)[0m
+
+[0;32mI (89179) UART: Task 2 sent: Task 2 of Bach (cnt = 124)[0m
+
+[0;32mI (89189) UART: Received line 1: Task 1 of Bach (cnt = 85)[0m
+[0;32mI (89189) UART: Received line 2: [0m
+
+[0;32mI (89189) UART: Task 1 sent: Task 1 of Bach (cnt = 125)[0m
+
+[0;32mI (89799) UART: Task 2 sent: Task 2 of Bach (cnt = 125)[0m
+
+[0;32mI (89809) UART: Received line 1: = 35)[0m
+[0;32mI (89809) UART: Received line 2: Task 1 of Bach (cnt = 87)[0m
+[0;32mI (89809) UART: Task 1 sent: Task 1 of Bach (cnt = 126)[0m
+
+[0;32mI (90589) UART: Task 2 sent: Task 2 of Bach (cnt = 126)[0m
+
+[0;32mI (90599) UART: Received line 1: [0m
+
+[0;32mI (90599) UART: Received line 2: f Bach (cnt = 89)[0m
+[0;32mI (90619) UART: Task 1 sent: Task 1 of Bach (cnt = 127)[0m
+
+[0;32mI (91319) UART: Task 2 sent: Task 2 of Bach (cnt = 127)[0m
+
+[0;32mI (91329) UART: Received line 1: [0m
+
+[0;32mI (91329) UART: Received line 2: Task 1 of Bach (cnt = 3)[0m
+[0;32mI (91329) UART: Task 1 sent: Task 1 of Bach (cnt = 128)[0m
+
+[0;32mI (92179) UART: Task 2 sent: Task 2 of Bach (cnt = 128)[0m
+
+[0;32mI (92189) UART: Received line 1: Task 1 of Bach (cnt = 39)[0m
+[0;32mI (92189) UART: Received line 2: Task 1 of Bach (cnt = 90)[0m
+[0;32mI (92219) UART: Task 1 sent: Task 1 of Bach (cnt = 129)[0m
+
+[0;32mI (93039) UART: Task 2 sent: Task 2 of Bach (cnt = 129)[0m
+
+[0;32mI (93049) UART: Received line 1: [0m
+
+[0;32mI (93049) UART: Received line 2: Task 2 of Bach (cnt = 90)[0m
+[0;32mI (93049) UART: Task 1 sent: Task 1 of Bach (cnt = 130)[0m
+
+[0;32mI (93609) UART: Task 2 sent: Task 2 of Bach (cnt = 130)[0m
+
+[0;32mI (93619) UART: Received line 1: [0m
+
+[0;32mI (93619) UART: Received line 2: [0m
+
+[0;32mI (93789) UART: Task 1 sent: Task 1 of Bach (cnt = 131)[0m
+
+[0;32mI (94159) UART: Task 2 sent: Task 2 of Bach (cnt = 131)[0m
+
+[0;32mI (94169) UART: Received line 1: Task 2 of Bach (cnt = 39)[0m
+[0;32mI (94169) UART: Received line 2: Task 1 of Bach (cnt = 91)[0m
+[0;32mI (94299) UART: Task 1 sent: Task 1 of Bach (cnt = 132)[0m
+
+[0;32mI (94979) UART: Task 2 sent: Task 2 of Bach (cnt = 132)[0m
+
+[0;32mI (94989) UART: Received line 1: [0m
+
+[0;32mI (94989) UART: Received line 2: Task 2 of Bach (cnt = 91)[0m
+[0;32mI (95109) UART: Task 1 sent: Task 1 of Bach (cnt = 133)[0m
+
+[0;32mI (95649) UART: Task 2 sent: Task 2 of Bach (cnt = 133)[0m
+
+[0;32mI (95659) UART: Received line 1: [0m
+
+[0;32mI (95659) UART: Received line 2: [0m
+
+[0;32mI (95829) UART: Task 1 sent: Task 1 of Bach (cnt = 134)[0m
+
+[0;32mI (96359) UART: Task 2 sent: Task 2 of Bach (cnt = 134)[0m
+
+[0;32mI (96369) UART: Received line 1:  41)[0m
+[0;32mI (96369) UART: Received line 2:  1 of Bach (cnt = 97)[0m
+[0;32mI (96409) UART: Task 1 sent: Task 1 of Bach (cnt = 135)[0m
+
+[0;32mI (97129) UART: Task 2 sent: Task 2 of Bach (cnt = 135)[0m
+
+[0;32mI (97139) UART: Received line 1: [0m
+
+[0;32mI (97139) UART: Received line 2: Task 2 of Bach (cnt = 97)[0m
+[0;32mI (97179) UART: Task 1 sent: Task 1 of Bach (cnt = 136)[0m
+
+[0;32mI (97789) UART: Task 2 sent: Task 2 of Bach (cnt = 136)[0m
+
+[0;32mI (97799) UART: Received line 1: [0m
+
+[0;32mI (97799) UART: Received line 2: [0m
+
+[0;32mI (97899) UART: Task 1 sent: Task 1 of Bach (cnt = 137)[0m
+
+[0;32mI (98619) UART: Task 2 sent: Task 2 of Bach (cnt = 137)[0m
+
+[0;32mI (98629) UART: Received line 1: Task 2 of Bach (cnt = 44)[0m
+[0;32mI (98629) UART: Received line 2: Task 1 of Bach (cnt = 98)[0m
+[0;32mI (98629) UART: Task 1 sent: Task 1 of Bach (cnt = 138)[0m
+
+[0;32mI (99489) UART: Task 2 sent: Task 2 of Bach (cnt = 138)[0m
+
+[0;32mI (99499) UART: Received line 1: [0m
+
+[0;32mI (99499) UART: Received line 2: 1 of Bach (cnt = 47)[0m
+[0;32mI (99499) UART: Task 1 sent: Task 1 of Bach (cnt = 139)[0m
+
+[0;32mI (100089) UART: Task 2 sent: Task 2 of Bach (cnt = 139)[0m
+
+[0;32mI (100099) UART: Received line 1: Task 1 of Bach (cnt = 102)[0m
+[0;32mI (100099) UART: Received line 2: [0m
+
+[0;32mI (100099) UART: Task 1 sent: Task 1 of Bach (cnt = 140)[0m
+
+[0;32mI (100859) UART: Task 2 sent: Task 2 of Bach (cnt = 140)[0m
+
+[0;32mI (100869) UART: Received line 1: Task 2 of Bach (cnt = 102)[0m
+[0;32mI (100869) UART: Received line 2: [0m
+
+[0;32mI (100869) UART: Task 1 sent: Task 1 of Bach (cnt = 141)[0m
+
+[0;32mI (101629) UART: Task 2 sent: Task 2 of Bach (cnt = 141)[0m
+
+[0;32mI (101639) UART: Received line 1: [0m
+
+[0;32mI (101639) UART: Received line 2: Task 2 of Bach (cnt = 47)[0m
+[0;32mI (101639) UART: Task 1 sent: Task 1 of Bach (cnt = 142)[0m
+
+[0;32mI (102219) UART: Task 2 sent: Task 2 of Bach (cnt = 142)[0m
+
+[0;32mI (102229) UART: Received line 1: [0m
+[0;32mI (102229) UART: Received line 2: [0m
+
+[0;32mI (102279) UART: Task 1 sent: Task 1 of Bach (cnt = 143)[0m
+
+[0;32mI (102749) UART: Task 2 sent: Task 2 of Bach (cnt = 143)[0m
+
+[0;32mI (102759) UART: Received line 1: Task 2 of Bach (cnt = 106)[0m
+[0;32mI (102759) UART: Received line 2: [0m
+
+[0;32mI (103099) UART: Task 1 sent: Task 1 of Bach (cnt = 144)[0m
+
+[0;32mI (103629) UART: Task 2 sent: Task 2 of Bach (cnt = 144)[0m
+
+[0;32mI (103639) UART: Received line 1: [0m
+
+[0;32mI (103639) UART: Received line 2: Task 1 of Bach (cnt = 25)[0m
+[0;32mI (103949) UART: Task 1 sent: Task 1 of Bach (cnt = 145)[0m
+
+[0;32mI (104389) UART: Task 2 sent: Task 2 of Bach (cnt = 145)[0m
+
+[0;32mI (104399) UART: Received line 1: t = 108)[0m
+[0;32mI (104399) UART: Received line 2: [0m
+
+[0;32mI (104649) UART: Task 1 sent: Task 1 of Bach (cnt = 146)[0m
+
+[0;32mI (105099) UART: Task 2 sent: Task 2 of Bach (cnt = 146)[0m
+
+[0;32mI (105109) UART: Received line 1: [0m
+
+[0;32mI (105109) UART: Received line 2: Bach (cnt = 57)[0m
+[0;32mI (105219) UART: Task 1 sent: Task 1 of Bach (cnt = 147)[0m
+
+[0;32mI (105959) UART: Task 2 sent: Task 2 of Bach (cnt = 147)[0m
+
+[0;32mI (105969) UART: Received line 1: t = 110)[0m
+[0;32mI (105969) UART: Received line 2: [0m
+
+[0;32mI (105969) UART: Task 1 sent: Task 1 of Bach (cnt = 148)[0m
+
+[0;32mI (106529) UART: Task 2 sent: Task 2 of Bach (cnt = 148)[0m
+
+[0;32mI (106539) UART: Received line 1: [0m
+
+[0;32mI (106539) UART: Received line 2: Task 1 of Bach (cnt = 27)[0m
+[0;32mI (106669) UART: Task 1 sent: Task 1 of Bach (cnt = 149)[0m
+
+[0;32mI (107099) UART: Task 2 sent: Task 2 of Bach (cnt = 149)[0m
+
+[0;32mI (107109) UART: Received line 1: t = 112)[0m
+[0;32mI (107109) UART: Received line 2: [0m
+
+[0;32mI (107339) UART: Task 1 sent: Task 1 of Bach (cnt = 150)[0m
+
+[0;32mI (107779) UART: Task 2 sent: Task 2 of Bach (cnt = 150)[0m
+
+[0;32mI (107789) UART: Received line 1: [0m
+
+[0;32mI (107789) UART: Received line 2: Task 2 of Bach (cnt = 58)[0m
+[0;32mI (107999) UART: Task 1 sent: Task 1 of Bach (cnt = 151)[0m
+
+[0;32mI (108409) UART: Task 2 sent: Task 2 of Bach (cnt = 151)[0m
+
+[0;32mI (108419) UART: Received line 1: Task 1 of Bach (cnt = 113)[0m
+[0;32mI (108419) UART: Received line 2: [0m
+
+[0;32mI (108589) UART: Task 1 sent: Task 1 of Bach (cnt = 152)[0m
+
+[0;32mI (109139) UART: Task 2 sent: Task 2 of Bach (cnt = 152)[0m
+
+[0;32mI (109149) UART: Received line 1: Task 2 of Bach (cnt = 113)[0m
+[0;32mI (109149) UART: Received line 2: [0m
+
+[0;32mI (109359) UART: Task 1 sent: Task 1 of Bach (cnt = 153)[0m
+
+[0;32mI (109849) UART: Task 2 sent: Task 2 of Bach (cnt = 153)[0m
+
+[0;32mI (109859) UART: Received line 1: [0m
+
+[0;32mI (109859) UART: Received line 2: Task 2 of Bach (cnt = 27)[0m
+[0;32mI (110189) UART: Task 1 sent: Task 1 of Bach (cnt = 154)[0m
+
+[0;32mI (110549) UART: Task 2 sent: Task 2 of Bach (cnt = 154)[0m
+
+[0;32mI (110559) UART: Received line 1:  (cnt = 117)[0m
+[0;32mI (110559) UART: Received line 2: [0m
+
+[0;32mI (110939) UART: Task 1 sent: Task 1 of Bach (cnt = 155)[0m
+
+[0;32mI (111449) UART: Task 2 sent: Task 2 of Bach (cnt = 155)[0m
+
+[0;32mI (111459) UART: Received line 1: Task 2 of Bach (cnt = 117)[0m
+[0;32mI (111459) UART: Received line 2: [0m
+
+[0;32mI (111509) UART: Task 1 sent: Task 1 of Bach (cnt = 156)[0m
+
+[0;32mI (112049) UART: Task 2 sent: Task 2 of Bach (cnt = 156)[0m
+
+[0;32mI (112059) UART: Received line 1: Task 2 of Bach (cnt = 66)[0m
+[0;32mI (112059) UART: Received line 2: [0m
+
+[0;32mI (112169) UART: Task 1 sent: Task 1 of Bach (cnt = 157)[0m
+
+[0;32mI (112909) UART: Task 2 sent: Task 2 of Bach (cnt = 157)[0m
+
+[0;32mI (112919) UART: Received line 1: of Bach (cnt = 67)[0m
+[0;32mI (112919) UART: Received line 2: [0m
+
+[0;32mI (112919) UART: Task 1 sent: Task 1 of Bach (cnt = 158)[0m
+
+[0;32mI (113569) UART: Task 2 sent: Task 2 of Bach (cnt = 158)[0m
+
+[0;32mI (113579) UART: Received line 1: Task 1 of Bach (cnt = 120)[0m
+[0;32mI (113579) UART: Received line 2: [0m
+
+[0;32mI (113579) UART: Task 1 sent: Task 1 of Bach (cnt = 159)[0m
+
+[0;32mI (114239) UART: Task 2 sent: Task 2 of Bach (cnt = 159)[0m
+
+[0;32mI (114249) UART: Received line 1: Task 2 of Bach (cnt = 120)[0m
+[0;32mI (114249) UART: Received line 2: [0m
+
+[0;32mI (114249) UART: Task 1 sent: Task 1 of Bach (cnt = 160)[0m
+
+[0;32mI (114919) UART: Task 2 sent: Task 2 of Bach (cnt = 160)[0m
+
+[0;32mI (114929) UART: Received line 1: = 7)[0m
+[0;32mI (114929) UART: Received line 2: Task 1 of Bach (cnt = 69)[0m
+[0;32mI (115149) UART: Task 1 sent: Task 1 of Bach (cnt = 161)[0m
+
+[0;32mI (115639) UART: Task 2 sent: Task 2 of Bach (cnt = 161)[0m
+
+[0;32mI (115649) UART: Received line 1: k 1 of Bach (cnt = 125)[0m
+[0;32mI (115649) UART: Received line 2: [0m
+
+[0;32mI (115769) UART: Task 1 sent: Task 1 of Bach (cnt = 162)[0m
+
+[0;32mI (116159) UART: Task 2 sent: Task 2 of Bach (cnt = 162)[0m
+
+[0;32mI (116169) UART: Received line 1: Task 2 of Bach (cnt = 125)[0m
+[0;32mI (116169) UART: Received line 2: [0m
+
+[0;32mI (116339) UART: Task 1 sent: Task 1 of Bach (cnt = 163)[0m
+
+[0;32mI (117049) UART: Task 2 sent: Task 2 of Bach (cnt = 163)[0m
+
+[0;32mI (117059) UART: Received line 1: ¿�����>=A Task 1 of Bach (cnt = 126)[0m
+[0;32mI (117059) UART: Received line 2: [0m
+
+[0;32mI (117059) UART: Task 1 sent: Task 1 of Bach (cnt = 164)[0m
+
+[0;32mI (117609) UART: Task 2 sent: Task 2 of Bach (cnt = 164)[0m
+
+[0;32mI (117619) UART: Received line 1: Task 2 of Bach (cnt = 126)[0m
+[0;32mI (117619) UART: Received line 2: [0m
+
+[0;32mI (117619) UART: Task 1 sent: Task 1 of Bach (cnt = 165)[0m
+
+[0;32mI (118199) UART: Task 2 sent: Task 2 of Bach (cnt = 165)[0m
+
+[0;32mI (118209) UART: Received line 1: Bach (cnt = 78)[0m
+[0;32mI (118209) UART: Received line 2: [0m
+
+[0;32mI (118479) UART: Task 1 sent: Task 1 of Bach (cnt = 166)[0m
+
+[0;32mI (118889) UART: Task 2 sent: Task 2 of Bach (cnt = 166)[0m
+
+[0;32mI (118899) UART: Received line 1:  (cnt = 130)[0m
+[0;32mI (118899) UART: Received line 2: [0m
+
+[0;32mI (119079) UART: Task 1 sent: Task 1 of Bach (cnt = 167)[0m
+
+[0;32mI (119459) UART: Task 2 sent: Task 2 of Bach (cnt = 167)[0m
+
+[0;32mI (119469) UART: Received line 1: Task 2 of Bach (cnt = 130)[0m
+[0;32mI (119469) UART: Received line 2: [0m
+
+[0;32mI (119699) UART: Task 1 sent: Task 1 of Bach (cnt = 168)[0m
+
+[0;32mI (120039) UART: Task 2 sent: Task 2 of Bach (cnt = 168)[0m
+
+[0;32mI (120049) UART: Received line 1: � of Bach (cnt =of Bach (cnt = 52)[0m
+[0;32mI (120049) UART: Received line 2: t = 132)[0m
+[0;32mI (120549) UART: Task 1 sent: Task 1 of Bach (cnt = 169)[0m
+
+[0;32mI (120889) UART: Task 2 sent: Task 2 of Bach (cnt = 169)[0m
+
+[0;32mI (120899) UART: Received line 1: [0m
+
+[0;32mI (120899) UART: Received line 2: (cnt = 90)[0m
+[0;32mI (121229) UART: Task 1 sent: Task 1 of Bach (cnt = 170)[0m
+
+[0;32mI (121599) UART: Task 2 sent: Task 2 of Bach (cnt = 170)[0m
+
+[0;32mI (121609) UART: Received line 1: [0m
+
+[0;32mI (121609) UART: Received line 2: Task 1 of Bach (cnt = 133)[0m
+[0;32mI (122059) UART: Task 1 sent: Task 1 of Bach (cnt = 171)[0m
+
+[0;32mI (122349) UART: Task 2 sent: Task 2 of Bach (cnt = 171)[0m
+
+[0;32mI (122359) UART: Received line 1: [0m
+
+[0;32mI (122359) UART: Received line 2: Task 2 of Bach (cnt = 133)[0m
+[0;32mI (122809) UART: Task 1 sent: Task 1 of Bach (cnt = 172)[0m
+
+[0;32mI (122909) UART: Task 2 sent: Task 2 of Bach (cnt = 172)[0m
+
+[0;32mI (122919) UART: Received line 1: [0m
+
+[0;32mI (122919) UART: Received line 2: Task 2 of Bach (cnt = 90)[0m
+[0;32mI (123419) UART: Task 1 sent: Task 1 of Bach (cnt = 173)[0m
+
+[0;32mI (123429) UART: Task 2 sent: Task 2 of Bach (cnt = 173)[0m
+
+[0;32mI (123439) UART: Received line 1: [0m
+
+[0;32mI (123439) UART: Received line 2: ach (cnt = 92)[0m
+[0;32mI (124199) UART: Task 1 sent: Task 1 of Bach (cnt = 174)[0m
+
+[0;32mI (124309) UART: Task 2 sent: Task 2 of Bach (cnt = 174)[0m
+
+[0;32mI (124319) UART: Received line 1: [0m
+
+[0;32mI (124319) UART: Received line 2: Task 1 of Bach (cnt = 136)[0m
+[0;32mI (124839) UART: Task 1 sent: Task 1 of Bach (cnt = 175)[0m
+
+[0;32mI (124979) UART: Task 2 sent: Task 2 of Bach (cnt = 175)[0m
+
+[0;32mI (124989) UART: Received line 1: [0m
+
+[0;32mI (124989) UART: Received line 2: Task 2 of Bach (cnt = 136)[0m
+[0;32mI (125509) UART: Task 1 sent: Task 1 of Bach (cnt = 176)[0m
+
+[0;32mI (125619) UART: Task 2 sent: Task 2 of Bach (cnt = 176)[0m
+
+[0;32mI (125629) UART: Received line 1: [0m
+
+[0;32mI (125629) UART: Received line 2: [0m
+
+[0;32mI (126109) UART: Task 1 sent: Task 1 of Bach (cnt = 177)[0m
+
+[0;32mI (126409) UART: Task 2 sent: Task 2 of Bach (cnt = 177)[0m
+
+[0;32mI (126419) UART: Received line 1: = 15)[0m
+[0;32mI (126419) UART: Received line 2: Task 1 of Bach (cnt = 137)[0m
+[0;32mI (126919) UART: Task 1 sent: Task 1 of Bach (cnt = 178)[0m
+
+[0;32mI (126969) UART: Task 2 sent: Task 2 of Bach (cnt = 178)[0m
+
+[0;32mI (126979) UART: Received line 1: [0m
+
+[0;32mI (126979) UART: Received line 2:  Bach (cnt = 140)[0m
+[0;32mI (127449) UART: Task 1 sent: Task 1 of Bach (cnt = 179)[0m
+
+[0;32mI (127499) UART: Task 2 sent: Task 2 of Bach (cnt = 179)[0m
+
+[0;32mI (127509) UART: Received line 1: [0m
+
+[0;32mI (127509) UART: Received line 2: Task 1 of Bach (cnt = 94)[0m
+[0;32mI (128209) UART: Task 1 sent: Task 1 of Bach (cnt = 180)[0m
+
+[0;32mI (128219) UART: Task 2 sent: Task 2 of Bach (cnt = 180)[0m
+
+[0;32mI (128229) UART: Received line 1: [0m
+
+[0;32mI (128229) UART: Received line 2: Task 1 of Bach (cnt = 141)[0m
+[0;32mI (128769) UART: Task 1 sent: Task 1 of Bach (cnt = 181)[0m
+
+[0;32mI (129069) UART: Task 2 sent: Task 2 of Bach (cnt = 181)[0m
+
+[0;32mI (129079) UART: Received line 1: [0m
+
+[0;32mI (129079) UART: Received line 2: Task 2 of Bach (cnt = 141)[0m
+[0;32mI (129579) UART: Task 1 sent: Task 1 of Bach (cnt = 182)[0m
+
+[0;32mI (129789) UART: Task 2 sent: Task 2 of Bach (cnt = 182)[0m
+
+[0;32mI (129799) UART: Received line 1: [0m
+
+[0;32mI (129799) UART: Received line 2: [0m
+
+[0;32mI (130089) UART: Task 1 sent: Task 1 of Bach (cnt = 183)[0m
+
+[0;32mI (130429) UART: Task 2 sent: Task 2 of Bach (cnt = 183)[0m
+
+[0;32mI (130439) UART: Received line 1: f Bach (cnt = 145)[0m
+[0;32mI (130439) UART: Received line 2: [0m
+
+[0;32mI (130709) UART: Task 1 sent: Task 1 of Bach (cnt = 184)[0m
+
+[0;32mI (131299) UART: Task 2 sent: Task 2 of Bach (cnt = 184)[0m
+
+[0;32mI (131309) UART: Received line 1: Task 2 of Bach (cnt = 145)[0m
+[0;32mI (131309) UART: Received line 2: [0m
+
+[0;32mI (131399) UART: Task 1 sent: Task 1 of Bach (cnt = 185)[0m
+
+[0;32mI (132119) UART: Task 2 sent: Task 2 of Bach (cnt = 185)[0m
+
+[0;32mI (132129) UART: Received line 1: sk 1 of Bach (cnt = 65)[0m
+[0;32mI (132129) UART: Received line 2: Task 1 of Bach (cnt = 104)[0m
+[0;32mI (132129) UART: Task 1 sent: Task 1 of Bach (cnt = 186)[0m
+
+[0;32mI (132869) UART: Task 2 sent: Task 2 of Bach (cnt = 186)[0m
+
+[0;32mI (132879) UART: Received line 1: [0m
+
+[0;32mI (132879) UART: Received line 2: [0m
+
+[0;32mI (132899) UART: Task 1 sent: Task 1 of Bach (cnt = 187)[0m
+
+[0;32mI (133409) UART: Task 2 sent: Task 2 of Bach (cnt = 187)[0m
+
+[0;32mI (133419) UART: Received line 1: Task 2 of Bach (cnt = 106)[0m
+[0;32mI (133419) UART: Received line 2: Task 1 of Bach (cnt = 148)[0m
+[0;32mI (133789) UART: Task 1 sent: Task 1 of Bach (cnt = 188)[0m
+
+[0;32mI (134279) UART: Task 2 sent: Task 2 of Bach (cnt = 188)[0m
+
+[0;32mI (134289) UART: Received line 1: [0m
+
+[0;32mI (134289) UART: Received line 2: Task 2 of Bach (cnt = 148)[0m
+[0;32mI (134669) UART: Task 1 sent: Task 1 of Bach (cnt = 189)[0m
+
+[0;32mI (134939) UART: Task 2 sent: Task 2 of Bach (cnt = 189)[0m
+
+[0;32mI (134949) UART: Received line 1: [0m
+
+[0;32mI (134949) UART: Received line 2: [0m
+
+[0;32mI (135389) UART: Task 1 sent: Task 1 of Bach (cnt = 190)[0m
+
+[0;32mI (135549) UART: Task 2 sent: Task 2 of Bach (cnt = 190)[0m
+
+[0;32mI (135559) UART: Received line 1:  19)[0m
+[0;32mI (135559) UART: Received line 2: Task 1 of Bach (cnt = 149)[0m
+[0;32mI (136039) UART: Task 1 sent: Task 1 of Bach (cnt = 191)[0m
+
+[0;32mI (136129) UART: Task 2 sent: Task 2 of Bach (cnt = 191)[0m
+
+[0;32mI (136139) UART: Received line 1: [0m
+
+[0;32mI (136139) UART: Received line 2: Bach (cnt = 111)[0m
+[0;32mI (136709) UART: Task 1 sent: Task 1 of Bach (cnt = 192)[0m
+
+[0;32mI (136719) UART: Task 2 sent: Task 2 of Bach (cnt = 192)[0m
+
+[0;32mI (136729) UART: Received line 1: Task 1 of Bach (cnt = 155)[0m
+[0;32mI (136729) UART: Received line 2: [0m
+
+[0;32mI (137469) UART: Task 1 sent: Task 1 of Bach (cnt = 193)[0m
+
+[0;32mI (137479) UART: Task 2 sent: Task 2 of Bach (cnt = 193)[0m
+
+[0;32mI (137489) UART: Received line 1: Task 2 of Bach (cnt = 155)[0m
+[0;32mI (137489) UART: Received line 2: [0m
+
+[0;32mI (137989) UART: Task 1 sent: Task 1 of Bach (cnt = 194)[0m
+
+[0;32mI (138239) UART: Task 2 sent: Task 2 of Bach (cnt = 194)[0m
+
+[0;32mI (138249) UART: Received line 1: [0m
+
+[0;32mI (138249) UART: Received line 2: Task 2 of Bach (cnt = 111)[0m
+[0;32mI (138569) UART: Task 1 sent: Task 1 of Bach (cnt = 195)[0m
+
+[0;32mI (138809) UART: Task 2 sent: Task 2 of Bach (cnt = 195)[0m
+
+[0;32mI (138819) UART: Received line 1: k 1 of Bach (cnt = 159)[0m
+[0;32mI (138819) UART: Received line 2: [0m
+
+[0;32mI (139229) UART: Task 1 sent: Task 1 of Bach (cnt = 196)[0m
+
+[0;32mI (139509) UART: Task 2 sent: Task 2 of Bach (cnt = 196)[0m
+
+[0;32mI (139519) UART: Received line 1: Task 2 of Bach (cnt = 159)[0m
+[0;32mI (139519) UART: Received line 2: [0m
+
+[0;32mI (139829) UART: Task 1 sent: Task 1 of Bach (cnt = 197)[0m
+
+[0;32mI (140379) UART: Task 2 sent: Task 2 of Bach (cnt = 197)[0m
+
+[0;32mI (140389) UART: Received line 1: [0m
+
+[0;32mI (140389) UART: Received line 2: [0m
+
+[0;32mI (140599) UART: Task 1 sent: Task 1 of Bach (cnt = 198)[0m
+
+[0;32mI (141019) UART: Task 2 sent: Task 2 of Bach (cnt = 198)[0m
+
+[0;32mI (141029) UART: Received line 1: Task 1 of Bach (cnt = 160)[0m
+[0;32mI (141029) UART: Received line 2: [0m
+
+[0;32mI (141249) UART: Task 1 sent: Task 1 of Bach (cnt = 199)[0m
+
+[0;32mI (141789) UART: Task 2 sent: Task 2 of Bach (cnt = 199)[0m
+
+[0;32mI (141799) UART: Received line 1: ach (cnt = 162)[0m
+[0;32mI (141799) UART: Received line 2: [0m
+
+[0;32mI (142089) UART: Task 1 sent: Task 1 of Bach (cnt = 200)[0m
+
+[0;32mI (142459) UART: Task 2 sent: Task 2 of Bach (cnt = 200)[0m
+
+[0;32mI (142469) UART: Received line 1: Task 2 of Bach (cnt = 162)[0m
+[0;32mI (142469) UART: Received line 2: [0m
+
+[0;32mI (142829) UART: Task 1 sent: Task 1 of Bach (cnt = 201)[0m
+
+[0;32mI (142999) UART: Task 2 sent: Task 2 of Bach (cnt = 201)[0m
+
+[0;32mI (143009) UART: Received line 1: Task 1 of Bach (cnt = 118)[0m
+[0;32mI (143009) UART: Received line 2: [0m
+
+[0;32mI (143419) UART: Task 1 sent: Task 1 of Bach (cnt = 202)[0m
+
+[0;32mI (143569) UART: Task 2 sent: Task 2 of Bach (cnt = 202)[0m
+
+[0;32mI (143579) UART: Received line 1: Task 1 of Bach (cnt = 163)[0m
+[0;32mI (143579) UART: Received line 2: [0m
+
+[0;32mI (143999) UART: Task 1 sent: Task 1 of Bach (cnt = 203)[0m
+
+[0;32mI (144419) UART: Task 2 sent: Task 2 of Bach (cnt = 203)[0m
+
+[0;32mI (144429) UART: Received line 1:  2 of Bach (cnt = 119)[0m
+[0;32mI (144429) UART: Received line 2: [0m
+
+[0;32mI (144719) UART: Task 1 sent: Task 1 of Bach (cnt = 204)[0m
+
+[0;32mI (145279) UART: Task 2 sent: Task 2 of Bach (cnt = 204)[0m
+
+[0;32mI (145289) UART: Received line 1: Task 1 of Bach (cnt = 167)[0m
+[0;32mI (145289) UART: Received line 2: [0m
+
+[0;32mI (145599) UART: Task 1 sent: Task 1 of Bach (cnt = 205)[0m
+
+[0;32mI (145919) UART: Task 2 sent: Task 2 of Bach (cnt = 205)[0m
+
+[0;32mI (145929) UART: Received line 1: 120)[0m
+[0;32mI (145929) UART: Received line 2: [0m
+
+[0;32mI (146169) UART: Task 1 sent: Task 1 of Bach (cnt = 206)[0m
+
+[0;32mI (146529) UART: Task 2 sent: Task 2 of Bach (cnt = 206)[0m
+
+[0;32mI (146539) UART: Received line 1: Task 1 of Bach (cnt = 169)[0m
+[0;32mI (146539) UART: Received line 2: [0m
+
+[0;32mI (147059) UART: Task 1 sent: Task 1 of Bach (cnt = 207)[0m
+
+[0;32mI (147069) UART: Task 2 sent: Task 2 of Bach (cnt = 207)[0m
+
+[0;32mI (147079) UART: Received line 1: Task 2 of Bach (cnt = 169)[0m
+[0;32mI (147079) UART: Received line 2: [0m
+
+[0;32mI (147909) UART: Task 1 sent: Task 1 of Bach (cnt = 208)[0m
+
+[0;32mI (147939) UART: Task 2 sent: Task 2 of Bach (cnt = 208)[0m
+
+[0;32mI (147949) UART: Received line 1: Task 2 of Bach (cnt = 120)[0m
+[0;32mI (147949) UART: Received line 2: [0m
+
+[0;32mI (148559) UART: Task 1 sent: Task 1 of Bach (cnt = 209)[0m
+
+[0;32mI (148629) UART: Task 2 sent: Task 2 of Bach (cnt = 209)[0m
+
+[0;32mI (148639) UART: Received line 1: Task 1 of Bach (cnt = 170)[0m
+[0;32mI (148639) UART: Received line 2: [0m
+
+[0;32mI (149379) UART: Task 1 sent: Task 1 of Bach (cnt = 210)[0m
+
+[0;32mI (149419) UART: Task 2 sent: Task 2 of Bach (cnt = 210)[0m
+
+[0;32mI (149429) UART: Received line 1: t = 121)[0m
+[0;32mI (149429) UART: Received line 2: [0m
+
+[0;32mI (150209) UART: Task 1 sent: Task 1 of Bach (cnt = 211)[0m
+
+[0;32mI (150219) UART: Task 2 sent: Task 2 of Bach (cnt = 211)[0m
+
+[0;32mI (150229) UART: Received line 1: Task 1 of Bach (cnt = 172)[0m
+[0;32mI (150229) UART: Received line 2: [0m
+
+[0;32mI (150739) UART: Task 1 sent: Task 1 of Bach (cnt = 212)[0m
+
+[0;32mI (150999) UART: Task 2 sent: Task 2 of Bach (cnt = 212)[0m
+
+[0;32mI (151009) UART: Received line 1: Task 2 of Bach (cnt = 172)[0m
+[0;32mI (151009) UART: Received line 2: [0m
+
+[0;32mI (151289) UART: Task 1 sent: Task 1 of Bach (cnt = 213)[0m
+
+[0;32mI (151519) UART: Task 2 sent: Task 2 of Bach (cnt = 213)[0m
+
+[0;32mI (151529) UART: Received line 1: Task 2 of Bach (cnt = 121)[0m
+[0;32mI (151529) UART: Received line 2: [0m
+
+[0;32mI (151839) UART: Task 1 sent: Task 1 of Bach (cnt = 214)[0m
+
+[0;32mI (152089) UART: Task 2 sent: Task 2 of Bach (cnt = 214)[0m
+
+[0;32mI (152099) UART: Received line 1: ch (cnt = 176)[0m
+[0;32mI (152099) UART: Received line 2: [0m
+
+[0;32mI (152739) UART: Task 1 sent: Task 1 of Bach (cnt = 215)[0m
+
+[0;32mI (152749) UART: Task 2 sent: Task 2 of Bach (cnt = 215)[0m
+
+[0;32mI (152759) UART: Received line 1: Task 2 of Bach (cnt = 176)[0m
+[0;32mI (152759) UART: Received line 2: [0m
+
+[0;32mI (153379) UART: Task 1 sent: Task 1 of Bach (cnt = 216)[0m
+
+[0;32mI (153619) UART: Task 2 sent: Task 2 of Bach (cnt = 216)[0m
+
+[0;32mI (153629) UART: Received line 1: = 35)[0m
+[0;32mI (153629) UART: Received line 2: Task 1 of Bach (cnt = 87)[0m
+[0;32mI (154239) UART: Task 1 sent: Task 1 of Bach (cnt = 217)[0m
+
+[0;32mI (154249) UART: Task 2 sent: Task 2 of Bach (cnt = 217)[0m
+
+[0;32mI (154259) UART: Received line 1: nt = 178)[0m
+[0;32mI (154259) UART: Received line 2: [0m
+
+[0;32mI (155019) UART: Task 1 sent: Task 1 of Bach (cnt = 218)[0m
+
+[0;32mI (155029) UART: Task 2 sent: Task 2 of Bach (cnt = 218)[0m
+
+[0;32mI (155039) UART: Received line 1:  129)[0m
+[0;32mI (155039) UART: Received line 2: [0m
+
+[0;32mI (155699) UART: Task 1 sent: Task 1 of Bach (cnt = 219)[0m
+
+[0;32mI (155869) UART: Task 2 sent: Task 2 of Bach (cnt = 219)[0m
+
+[0;32mI (155879) UART: Received line 1: Task 1 of Bach (cnt = 179)[0m
+[0;32mI (155879) UART: Received line 2: [0m
+
+[0;32mI (156379) UART: Task 1 sent: Task 1 of Bach (cnt = 220)[0m
+
+[0;32mI (156599) UART: Task 2 sent: Task 2 of Bach (cnt = 220)[0m
+
+[0;32mI (156609) UART: Received line 1: cnt = 90)[0m
+[0;32mI (156609) UART: Received line 2: Task 1 of Bach (cnt = 181)[0m
+[0;32mI (157249) UART: Task 1 sent: Task 1 of Bach (cnt = 221)[0m
+
+[0;32mI (157379) UART: Task 2 sent: Task 2 of Bach (cnt = 221)[0m
+
+[0;32mI (157389) UART: Received line 1: [0m
+
+[0;32mI (157389) UART: Received line 2: Task 2 of Bach (cnt = 181)[0m
+[0;32mI (157959) UART: Task 1 sent: Task 1 of Bach (cnt = 222)[0m
+
+[0;32mI (157969) UART: Task 2 sent: Task 2 of Bach (cnt = 222)[0m
+
+[0;32mI (157979) UART: Received line 1: [0m
+
+[0;32mI (157979) UART: Received line 2: Task 1 of Bach (cnt = 130)[0m
+[0;32mI (158599) UART: Task 1 sent: Task 1 of Bach (cnt = 223)[0m
+
+[0;32mI (158609) UART: Task 2 sent: Task 2 of Bach (cnt = 223)[0m
+
+[0;32mI (158619) UART: Received line 1: [0m
+
+[0;32mI (158619) UART: Received line 2: Task 1 of Bach (cnt = 182)[0m
+[0;32mI (159219) UART: Task 1 sent: Task 1 of Bach (cnt = 224)[0m
+
+[0;32mI (159309) UART: Task 2 sent: Task 2 of Bach (cnt = 224)[0m
+
+[0;32mI (159319) UART: Received line 1: [0m
+
+[0;32mI (159319) UART: Received line 2: h (cnt = 134)[0m
+[0;32mI (159789) UART: Task 1 sent: Task 1 of Bach (cnt = 225)[0m
+
+[0;32mI (159939) UART: Task 2 sent: Task 2 of Bach (cnt = 225)[0m
+
+[0;32mI (159949) UART: Received line 1: [0m
+
+[0;32mI (159949) UART: Received line 2: t = 187)[0m
+[0;32mI (160329) UART: Task 1 sent: Task 1 of Bach (cnt = 226)[0m
+
+[0;32mI (160539) UART: Task 2 sent: Task 2 of Bach (cnt = 226)[0m
+
+[0;32mI (160549) UART: Received line 1: [0m
+
+[0;32mI (160549) UART: Received line 2: Task 1 of Bach (cnt = 135)[0m
+[0;32mI (161039) UART: Task 1 sent: Task 1 of Bach (cnt = 227)[0m
+
+[0;32mI (161369) UART: Task 2 sent: Task 2 of Bach (cnt = 227)[0m
+
+[0;32mI (161379) UART: Received line 1: [0m
+
+[0;32mI (161379) UART: Received line 2: Task 1 of Bach (cnt = 188)[0m
+[0;32mI (161619) UART: Task 1 sent: Task 1 of Bach (cnt = 228)[0m
+
+[0;32mI (161979) UART: Task 2 sent: Task 2 of Bach (cnt = 228)[0m
+
+[0;32mI (161989) UART: Received line 1: [0m
+
+[0;32mI (161989) UART: Received line 2: Task 2 of Bach (cnt = 188)[0m
+[0;32mI (162209) UART: Task 1 sent: Task 1 of Bach (cnt = 229)[0m
+
+[0;32mI (162629) UART: Task 2 sent: Task 2 of Bach (cnt = 229)[0m
+
+[0;32mI (162639) UART: Received line 1: [0m
+
+[0;32mI (162639) UART: Received line 2: cnt = 137)[0m
+[0;32mI (163029) UART: Task 1 sent: Task 1 of Bach (cnt = 230)[0m
+
+[0;32mI (163369) UART: Task 2 sent: Task 2 of Bach (cnt = 230)[0m
+
+[0;32mI (163379) UART: Received line 1: [0m
+
+[0;32mI (163379) UART: Received line 2: Bach (cnt = 138)[0m
+[0;32mI (163559) UART: Task 1 sent: Task 1 of Bach (cnt = 231)[0m
+
+[0;32mI (164199) UART: Task 2 sent: Task 2 of Bach (cnt = 231)[0m
+
+[0;32mI (164209) UART: Received line 1: [0m
+
+[0;32mI (164209) UART: Received line 2: Task 1 of Bach (cnt = 192)[0m
+[0;32mI (164449) UART: Task 1 sent: Task 1 of Bach (cnt = 232)[0m
+
+[0;32mI (165079) UART: Task 2 sent: Task 2 of Bach (cnt = 232)[0m
+
+[0;32mI (165089) UART: Received line 1: [0m
+
+[0;32mI (165089) UART: Received line 2: Task 2 of Bach (cnt = 192)[0m
+[0;32mI (165189) UART: Task 1 sent: Task 1 of Bach (cnt = 233)[0m
+
+[0;32mI (165919) UART: Task 2 sent: Task 2 of Bach (cnt = 233)[0m
+
+[0;32mI (165929) UART: Received line 1: [0m
+
+[0;32mI (165929) UART: Received line 2: 02)[0m
+[0;32mI (165929) UART: Task 1 sent: Task 1 of Bach (cnt = 234)[0m
+
+[0;32mI (166549) UART: Task 2 sent: Task 2 of Bach (cnt = 234)[0m
+
+[0;32mI (166559) UART: Received line 1: [0m
+
+[0;32mI (166559) UART: Received line 2: nt = 194)[0m
+[0;32mI (166599) UART: Task 1 sent: Task 1 of Bach (cnt = 235)[0m
+
+[0;32mI (167199) UART: Task 2 sent: Task 2 of Bach (cnt = 235)[0m
+
+[0;32mI (167209) UART: Received line 1: [0m
+
+[0;32mI (167209) UART: Received line 2: Task 2 of Bach (cnt = 140)[0m
+[0;32mI (167209) UART: Task 1 sent: Task 1 of Bach (cnt = 236)[0m
+
+[0;32mI (167829) UART: Task 2 sent: Task 2 of Bach (cnt = 236)[0m
+
+[0;32mI (167839) UART: Received line 1: [0m
+
+[0;32mI (167839) UART: Received line 2: Task 1 of Bach (cnt = 195)[0m
+[0;32mI (168059) UART: Task 1 sent: Task 1 of Bach (cnt = 237)[0m
+
+[0;32mI (168689) UART: Task 2 sent: Task 2 of Bach (cnt = 237)[0m
+
+[0;32mI (168699) UART: Received line 1: [0m
+
+[0;32mI (168699) UART: Received line 2: Task 2 of Bach (cnt = 195)[0m
+[0;32mI (168889) UART: Task 1 sent: Task 1 of Bach (cnt = 238)[0m
+
+[0;32mI (169559) UART: Task 2 sent: Task 2 of Bach (cnt = 238)[0m
+
+[0;32mI (169569) UART: Received line 1: [0m
+
+[0;32mI (169569) UART: Received line 2: Task 2 of Bach (cnt = 102)[0m
+[0;32mI (169669) UART: Task 1 sent: Task 1 of Bach (cnt = 239)[0m
+
+[0;32mI (170439) UART: Task 2 sent: Task 2 of Bach (cnt = 239)[0m
+
+[0;32mI (170449) UART: Received line 1: [0m
+
+[0;32mI (170449) UART: Received line 2: nt = 197)[0m
+[0;32mI (170449) UART: Task 1 sent: Task 1 of Bach (cnt = 240)[0m
+
+[0;32mI (171279) UART: Task 2 sent: Task 2 of Bach (cnt = 240)[0m
+
+[0;32mI (171289) UART: Received line 1: [0m
+
+[0;32mI (171289) UART: Received line 2: k 2 of Bach (cnt = 148)[0m
+[0;32mI (171289) UART: Task 1 sent: Task 1 of Bach (cnt = 241)[0m
+
+[0;32mI (171929) UART: Task 2 sent: Task 2 of Bach (cnt = 241)[0m
+
+[0;32mI (171939) UART: Received line 1: [0m
+
+[0;32mI (171939) UART: Received line 2: Task 1 of Bach (cnt = 198)[0m
+[0;32mI (171939) UART: Task 1 sent: Task 1 of Bach (cnt = 242)[0m
+
+[0;32mI (172469) UART: Task 2 sent: Task 2 of Bach (cnt = 242)[0m
+
+[0;32mI (172479) UART: Received line 1: [0m
+
+[0;32mI (172479) UART: Received line 2: (cnt = 200)[0m
+[0;32mI (172499) UART: Task 1 sent: Task 1 of Bach (cnt = 243)[0m
+
+[0;32mI (173039) UART: Task 2 sent: Task 2 of Bach (cnt = 243)[0m
+
+[0;32mI (173049) UART: Received line 1: [0m
+
+[0;32mI (173049) UART: Received line 2: Task 2 of Bach (cnt = 200)[0m
+[0;32mI (173299) UART: Task 1 sent: Task 1 of Bach (cnt = 244)[0m
+
+[0;32mI (173719) UART: Task 2 sent: Task 2 of Bach (cnt = 244)[0m
+
+[0;32mI (173729) UART: Received line 1: [0m
+
+[0;32mI (173729) UART: Received line 2: Task 2 of Bach (cnt = 152)[0m
+[0;32mI (174029) UART: Task 1 sent: Task 1 of Bach (cnt = 245)[0m
+
+[0;32mI (174519) UART: Task 2 sent: Task 2 of Bach (cnt = 245)[0m
+
+[0;32mI (174529) UART: Received line 1: [0m
+
+[0;32mI (174529) UART: Received line 2: Task 1 of Bach (cnt = 201)[0m
+[0;32mI (174689) UART: Task 1 sent: Task 1 of Bach (cnt = 246)[0m
+
+[0;32mI (175409) UART: Task 2 sent: Task 2 of Bach (cnt = 246)[0m
+
+[0;32mI (175419) UART: Received line 1: [0m
+
+[0;32mI (175419) UART: Received line 2: Bach (cnt = 204)[0m
+[0;32mI (175419) UART: Task 1 sent: Task 1 of Bach (cnt = 247)[0m
+
+[0;32mI (176059) UART: Task 2 sent: Task 2 of Bach (cnt = 247)[0m
+
+[0;32mI (176069) UART: Received line 1: [0m
+
+[0;32mI (176069) UART: Received line 2: Task 2 of Bach (cnt = 155)[0m
+[0;32mI (176309) UART: Task 1 sent: Task 1 of Bach (cnt = 248)[0m
+
+[0;32mI (176769) UART: Task 2 sent: Task 2 of Bach (cnt = 248)[0m
+
+[0;32mI (176779) UART: Received line 1: [0m
+
+[0;32mI (176779) UART: Received line 2: nt = 206)[0m
+[0;32mI (176949) UART: Task 1 sent: Task 1 of Bach (cnt = 249)[0m
+
+[0;32mI (177529) UART: Task 2 sent: Task 2 of Bach (cnt = 249)[0m
+
+[0;32mI (177539) UART: Received line 1: [0m
+
+[0;32mI (177539) UART: Received line 2: Task 1 of Bach (cnt = 156)[0m
+[0;32mI (177619) UART: Task 1 sent: Task 1 of Bach (cnt = 250)[0m
+
+[0;32mI (178429) UART: Task 2 sent: Task 2 of Bach (cnt = 250)[0m
+
+[0;32mI (178439) UART: Received line 1: [0m
+
+[0;32mI (178439) UART: Received line 2: t = 208)[0m
+[0;32mI (178439) UART: Task 1 sent: Task 1 of Bach (cnt = 251)[0m
+
+[0;32mI (178939) UART: Task 2 sent: Task 2 of Bach (cnt = 251)[0m
+
+[0;32mI (178949) UART: Received line 1: [0m
+
+[0;32mI (178949) UART: Received line 2: Task 2 of Bach (cnt = 161)[0m
+[0;32mI (179189) UART: Task 1 sent: Task 1 of Bach (cnt = 252)[0m
+
+[0;32mI (179659) UART: Task 2 sent: Task 2 of Bach (cnt = 252)[0m
+
+[0;32mI (179669) UART: Received line 1: [0m
+
+[0;32mI (179669) UART: Received line 2: Task 1 of Bach (cnt = 209)[0m
+[0;32mI (179789) UART: Task 1 sent: Task 1 of Bach (cnt = 253)[0m
+
+[0;32mI (180259) UART: Task 2 sent: Task 2 of Bach (cnt = 253)[0m
+
+[0;32mI (180269) UART: Received line 1: [0m
+
+[0;32mI (180269) UART: Received line 2: Task 2 of Bach (cnt = 209)[0m
+[0;32mI (180639) UART: Task 1 sent: Task 1 of Bach (cnt = 254)[0m
+
+[0;32mI (181029) UART: Task 2 sent: Task 2 of Bach (cnt = 254)[0m
+
+[0;32mI (181039) UART: Received line 1: [0m
+
+[0;32mI (181039) UART: Received line 2: k 1 of Bach (cnt = 125)[0m
+[0;32mI (181469) UART: Task 1 sent: Task 1 of Bach (cnt = 255)[0m
+
+[0;32mI (181729) UART: Task 2 sent: Task 2 of Bach (cnt = 255)[0m
+
+[0;32mI (181739) UART: Received line 1: [0m
+
+[0;32mI (181739) UART: Received line 2: ask 2 of Bach (cnt = 213)[0m
+[0;32mI (182069) UART: Task 1 sent: Task 1 of Bach (cnt = 256)[0m
+
+[0;32mI (182539) UART: Task 2 sent: Task 2 of Bach (cnt = 256)[0m
+
+[0;32mI (182549) UART: Received line 1: [0m
+
+[0;32mI (182549) UART: Received line 2: Bach (cnt = 78)[0m
+[0;32mI (182849) UART: Task 1 sent: Task 1 of Bach (cnt = 257)[0m
+
+[0;32mI (183309) UART: Task 2 sent: Task 2 of Bach (cnt = 257)[0m
+
+[0;32mI (183319) UART: Received line 1: [0m
+
+[0;32mI (183319) UART: Received line 2: Task 1 of Bach (cnt = 214)[0m
+[0;32mI (183719) UART: Task 1 sent: Task 1 of Bach (cnt = 258)[0m
+
+[0;32mI (184019) UART: Task 2 sent: Task 2 of Bach (cnt = 258)[0m
+
+[0;32mI (184029) UART: Received line 1: [0m
+
+[0;32mI (184029) UART: Received line 2:  Bach (cnt = 217)[0m
+[0;32mI (184569) UART: Task 1 sent: Task 1 of Bach (cnt = 259)[0m
+
+[0;32mI (184829) UART: Task 2 sent: Task 2 of Bach (cnt = 259)[0m
+
+[0;32mI (184839) UART: Received line 1: [0m
+
+[0;32mI (184839) UART: Received line 2: � of Bach (cnt =of Bach (cnt = 52)[0m
+[0;32mI (185389) UART: Task 1 sent: Task 1 of Bach (cnt = 260)[0m
+
+[0;32mI (185439) UART: Task 2 sent: Task 2 of Bach (cnt = 260)[0m
+
+[0;32mI (185449) UART: Received line 1: t = 132)[0m
+[0;32mI (185449) UART: Received line 2: 19)[0m
+[0;32mI (186209) UART: Task 1 sent: Task 1 of Bach (cnt = 261)[0m
+
+[0;32mI (186219) UART: Task 2 sent: Task 2 of Bach (cnt = 261)[0m
+
+[0;32mI (186229) UART: Received line 1: [0m
+
+[0;32mI (186229) UART: Received line 2: Task 2 of Bach (cnt = 219)[0m
+[0;32mI (186989) UART: Task 1 sent: Task 1 of Bach (cnt = 262)[0m
+
+[0;32mI (186999) UART: Task 2 sent: Task 2 of Bach (cnt = 262)[0m
+
+[0;32mI (187009) UART: Received line 1: [0m
+
+[0;32mI (187009) UART: Received line 2: [0m
+
+[0;32mI (187859) UART: Task 1 sent: Task 1 of Bach (cnt = 263)[0m
+
+[0;32mI (187869) UART: Task 2 sent: Task 2 of Bach (cnt = 263)[0m
+
+[0;32mI (187879) UART: Received line 1:  = 174)[0m
+[0;32mI (187879) UART: Received line 2: (cnt = 136)[0m
+[0;32mI (188679) UART: Task 1 sent: Task 1 of Bach (cnt = 264)[0m
+
+[0;32mI (188689) UART: Task 2 sent: Task 2 of Bach (cnt = 264)[0m
+
+[0;32mI (188699) UART: Received line 1: Task 1 of Bach (cnt = 175)[0m
+[0;32mI (188699) UART: Received line 2:  (cnt = 225)[0m
+[0;32mI (189489) UART: Task 1 sent: Task 1 of Bach (cnt = 265)[0m
+
+[0;32mI (189499) UART: Task 2 sent: Task 2 of Bach (cnt = 265)[0m
+
+[0;32mI (189509) UART: Received line 1: [0m
+
+[0;32mI (189509) UART: Received line 2: Task 2 of Bach (cnt = 225)[0m
+[0;32mI (190049) UART: Task 1 sent: Task 1 of Bach (cnt = 266)[0m
+
+[0;32mI (190369) UART: Task 2 sent: Task 2 of Bach (cnt = 266)[0m
+
+[0;32mI (190379) UART: Received line 1: [0m
+
+[0;32mI (190379) UART: Received line 2: [0m
+
+[0;32mI (190589) UART: Task 1 sent: Task 1 of Bach (cnt = 267)[0m
+
+[0;32mI (190919) UART: Task 2 sent: Task 2 of Bach (cnt = 267)[0m
+
+[0;32mI (190929) UART: Received line 1: [0m
+
+[0;32mI (190929) UART: Received line 2: Task 1 of Bach (cnt = 226)[0m
+[0;32mI (191129) UART: Task 1 sent: Task 1 of Bach (cnt = 268)[0m
+
+[0;32mI (191709) UART: Task 2 sent: Task 2 of Bach (cnt = 268)[0m
+
+[0;32mI (191719) UART: Received line 1: [0m
+
+[0;32mI (191719) UART: Received line 2: Task 2 of Bach (cnt = 226)[0m
+[0;32mI (191719) UART: Task 1 sent: Task 1 of Bach (cnt = 269)[0m
+
+[0;32mI (192489) UART: Task 2 sent: Task 2 of Bach (cnt = 269)[0m
+
+[0;32mI (192499) UART: Received line 1: [0m
+
+[0;32mI (192499) UART: Received line 2: Task 1 of Bach (cnt = 94)[0m
+[0;32mI (192509) UART: Task 1 sent: Task 1 of Bach (cnt = 270)[0m
+
+[0;32mI (193359) UART: Task 2 sent: Task 2 of Bach (cnt = 270)[0m
+
+[0;32mI (193369) UART: Received line 1: nt = 181)[0m
+[0;32mI (193369) UART: Received line 2: Task 1 of Bach (cnt = 227)[0m
+[0;32mI (193369) UART: Task 1 sent: Task 1 of Bach (cnt = 271)[0m
+
+[0;32mI (194199) UART: Task 2 sent: Task 2 of Bach (cnt = 271)[0m
+
+[0;32mI (194209) UART: Received line 1: [0m
+
+[0;32mI (194209) UART: Received line 2: [0m
+
+[0;32mI (194209) UART: Task 1 sent: Task 1 of Bach (cnt = 272)[0m
+
+[0;32mI (194719) UART: Task 2 sent: Task 2 of Bach (cnt = 272)[0m
+
+[0;32mI (194729) UART: Received line 1: Task 2 of Bach (cnt = 184)[0m
+[0;32mI (194729) UART: Received line 2: Task 1 of Bach (cnt = 231)[0m
+[0;32mI (195009) UART: Task 1 sent: Task 1 of Bach (cnt = 273)[0m
+
+[0;32mI (195619) UART: Task 2 sent: Task 2 of Bach (cnt = 273)[0m
+
+[0;32mI (195629) UART: Received line 1: [0m
+
+[0;32mI (195629) UART: Received line 2: Task 2 of Bach (cnt = 231)[0m
+[0;32mI (195819) UART: Task 1 sent: Task 1 of Bach (cnt = 274)[0m
+
+[0;32mI (196479) UART: Task 2 sent: Task 2 of Bach (cnt = 274)[0m
+
+[0;32mI (196489) UART: Received line 1: [0m
+
+[0;32mI (196489) UART: Received line 2: [0m
+
+[0;32mI (196489) UART: Task 1 sent: Task 1 of Bach (cnt = 275)[0m
+
+[0;32mI (197379) UART: Task 2 sent: Task 2 of Bach (cnt = 275)[0m
+
+[0;32mI (197389) UART: Received line 1: Task 2 of Bach (cnt = 145)[0m
+[0;32mI (197389) UART: Received line 2: nt = 233)[0m
+[0;32mI (197389) UART: Task 1 sent: Task 1 of Bach (cnt = 276)[0m
+
+[0;32mI (198079) UART: Task 2 sent: Task 2 of Bach (cnt = 276)[0m
+
+[0;32mI (198089) UART: Received line 1: [0m
+
+[0;32mI (198089) UART: Received line 2: [0m
+
+[0;32mI (198089) UART: Task 1 sent: Task 1 of Bach (cnt = 277)[0m
+
+[0;32mI (198709) UART: Task 2 sent: Task 2 of Bach (cnt = 277)[0m
+
+[0;32mI (198719) UART: Received line 1: 186)[0m
+[0;32mI (198719) UART: Received line 2: Task 1 of Bach (cnt = 234)[0m
+[0;32mI (198719) UART: Task 1 sent: Task 1 of Bach (cnt = 278)[0m
+
+[0;32mI (199249) UART: Task 2 sent: Task 2 of Bach (cnt = 278)[0m
+
+[0;32mI (199259) UART: Received line 1: [0m
+
+[0;32mI (199259) UART: Received line 2: Task 2 of Bach (cnt = 234)[0m
+[0;32mI (199379) UART: Task 1 sent: Task 1 of Bach (cnt = 279)[0m
+
+[0;32mI (199979) UART: Task 2 sent: Task 2 of Bach (cnt = 279)[0m
+
+[0;32mI (199989) UART: Received line 1: [0m
+
+[0;32mI (199989) UART: Received line 2: [0m
+
+[0;32mI (199989) UART: Task 1 sent: Task 1 of Bach (cnt = 280)[0m
+
+[0;32mI (200489) UART: Task 2 sent: Task 2 of Bach (cnt = 280)[0m
+
+[0;32mI (200499) UART: Received line 1: [0m
+
+[0;32mI (200499) UART: Received line 2: Task 1 of Bach (cnt = 235)[0m
+[0;32mI (200719) UART: Task 1 sent: Task 1 of Bach (cnt = 281)[0m
+
+[0;32mI (201169) UART: Task 2 sent: Task 2 of Bach (cnt = 281)[0m
+
+[0;32mI (201179) UART: Received line 1: [0m
+
+[0;32mI (201179) UART: Received line 2:  (cnt = 240)[0m
+[0;32mI (201549) UART: Task 1 sent: Task 1 of Bach (cnt = 282)[0m
+
+[0;32mI (201879) UART: Task 2 sent: Task 2 of Bach (cnt = 282)[0m
+
+[0;32mI (201889) UART: Received line 1: [0m
+
+[0;32mI (201889) UART: Received line 2: Task 2 of Bach (cnt = 240)[0m
+[0;32mI (202389) UART: Task 1 sent: Task 1 of Bach (cnt = 283)[0m
+
+[0;32mI (202499) UART: Task 2 sent: Task 2 of Bach (cnt = 283)[0m
+
+[0;32mI (202509) UART: Received line 1: [0m
+
+[0;32mI (202509) UART: Received line 2: [0m
+
+[0;32mI (203069) UART: Task 1 sent: Task 1 of Bach (cnt = 284)[0m
+
+[0;32mI (203359) UART: Task 2 sent: Task 2 of Bach (cnt = 284)[0m
+
+[0;32mI (203369) UART: Received line 1: [0m
+
+[0;32mI (203369) UART: Received line 2: Task 1 of Bach (cnt = 241)[0m
+[0;32mI (203699) UART: Task 1 sent: Task 1 of Bach (cnt = 285)[0m
+
+[0;32mI (204099) UART: Task 2 sent: Task 2 of Bach (cnt = 285)[0m
+
+[0;32mI (204109) UART: Received line 1: [0m
+
+[0;32mI (204109) UART: Received line 2: Task 2 of Bach (cnt = 241)[0m
+[0;32mI (204249) UART: Task 1 sent: Task 1 of Bach (cnt = 286)[0m
+
+[0;32mI (204659) UART: Task 2 sent: Task 2 of Bach (cnt = 286)[0m
+
+[0;32mI (204669) UART: Received line 1: [0m
+
+[0;32mI (204669) UART: Received line 2: [0m
+
+[0;32mI (204929) UART: Task 1 sent: Task 1 of Bach (cnt = 287)[0m
+
+[0;32mI (205229) UART: Task 2 sent: Task 2 of Bach (cnt = 287)[0m
+
+[0;32mI (205239) UART: Received line 1: Task 1 of Bach (cnt = 190)[0m
+[0;32mI (205239) UART: Received line 2: t = 245)[0m
+[0;32mI (205459) UART: Task 1 sent: Task 1 of Bach (cnt = 288)[0m
+
+[0;32mI (205929) UART: Task 2 sent: Task 2 of Bach (cnt = 288)[0m
+
+[0;32mI (205939) UART: Received line 1: [0m
+
+[0;32mI (205939) UART: Received line 2: Task 2 of Bach (cnt = 245)[0m
+[0;32mI (206279) UART: Task 1 sent: Task 1 of Bach (cnt = 289)[0m
+
+[0;32mI (206449) UART: Task 2 sent: Task 2 of Bach (cnt = 289)[0m
+
+[0;32mI (206459) UART: Received line 1: [0m
+
+[0;32mI (206459) UART: Received line 2: [0m
+
+[0;32mI (207049) UART: Task 1 sent: Task 1 of Bach (cnt = 290)[0m
+
+[0;32mI (207109) UART: Task 2 sent: Task 2 of Bach (cnt = 290)[0m
+
+[0;32mI (207119) UART: Received line 1: Task 2 of Bach (cnt = 194)[0m
+[0;32mI (207119) UART: Received line 2: Task 1 of Bach (cnt = 246)[0m
+[0;32mI (207759) UART: Task 1 sent: Task 1 of Bach (cnt = 291)[0m
+
+[0;32mI (207769) UART: Task 2 sent: Task 2 of Bach (cnt = 291)[0m
+
+[0;32mI (207779) UART: Received line 1: [0m
+
+[0;32mI (207779) UART: Received line 2: Task 2 of Bach (cnt = 246)[0m
+[0;32mI (208649) UART: Task 1 sent: Task 1 of Bach (cnt = 292)[0m
+
+[0;32mI (208659) UART: Task 2 sent: Task 2 of Bach (cnt = 292)[0m
+
+[0;32mI (208669) UART: Received line 1: [0m
+
+[0;32mI (208669) UART: Received line 2: [0m
+
+[0;32mI (209319) UART: Task 1 sent: Task 1 of Bach (cnt = 293)[0m
+
+[0;32mI (209349) UART: Task 2 sent: Task 2 of Bach (cnt = 293)[0m
+
+[0;32mI (209359) UART: Received line 1: [0m
+
+[0;32mI (209359) UART: Received line 2:  (cnt = 162)[0m
+[0;32mI (210099) UART: Task 1 sent: Task 1 of Bach (cnt = 294)[0m
+
+[0;32mI (210109) UART: Task 2 sent: Task 2 of Bach (cnt = 294)[0m
+
+[0;32mI (210119) UART: Received line 1: Task 1 of Bach (cnt = 250)[0m
+[0;32mI (210119) UART: Received line 2: [0m
+
+[0;32mI (210819) UART: Task 1 sent: Task 1 of Bach (cnt = 295)[0m
+
+[0;32mI (210829) UART: Task 2 sent: Task 2 of Bach (cnt = 295)[0m
+
+[0;32mI (210839) UART: Received line 1: Task 2 of Bach (cnt = 250)[0m
+[0;32mI (210839) UART: Received line 2: [0m
+
+[0;32mI (211349) UART: Task 1 sent: Task 1 of Bach (cnt = 296)[0m
+
+[0;32mI (211519) UART: Task 2 sent: Task 2 of Bach (cnt = 296)[0m
+
+[0;32mI (211529) UART: Received line 1: [0m
+
+[0;32mI (211529) UART: Received line 2: nt = 202)[0m
+[0;32mI (211939) UART: Task 1 sent: Task 1 of Bach (cnt = 297)[0m
+
+[0;32mI (212189) UART: Task 2 sent: Task 2 of Bach (cnt = 297)[0m
+
+[0;32mI (212199) UART: Received line 1: [0m
+
+[0;32mI (212199) UART: Received line 2: Task 2 of Bach (cnt = 254)[0m
+[0;32mI (212519) UART: Task 1 sent: Task 1 of Bach (cnt = 298)[0m
+
+[0;32mI (212829) UART: Task 2 sent: Task 2 of Bach (cnt = 298)[0m
+
+[0;32mI (212839) UART: Received line 1: [0m
+
+[0;32mI (212839) UART: Received line 2: [0m
+
+[0;32mI (213129) UART: Task 1 sent: Task 1 of Bach (cnt = 299)[0m
+
+[0;32mI (213549) UART: Task 2 sent: Task 2 of Bach (cnt = 299)[0m
+
+[0;32mI (213559) UART: Received line 1: Task 1 of Bach (cnt = 205)[0m
+[0;32mI (213559) UART: Received line 2: nt = 256)[0m
+[0;32mI (213979) UART: Task 1 sent: Task 1 of Bach (cnt = 300)[0m
+
+[0;32mI (214409) UART: Task 2 sent: Task 2 of Bach (cnt = 300)[0m
+
+[0;32mI (214419) UART: Received line 1: [0m
+
+[0;32mI (214419) UART: Received line 2: [0m
+
+[0;32mI (214789) UART: Task 1 sent: Task 1 of Bach (cnt = 301)[0m
+
+[0;32mI (215189) UART: Task 2 sent: Task 2 of Bach (cnt = 301)[0m
+
+[0;32mI (215199) UART: Received line 1: 120)[0m
+[0;32mI (215199) UART: Received line 2: Task 1 of Bach (cnt = 257)[0m
+[0;32mI (215359) UART: Task 1 sent: Task 1 of Bach (cnt = 302)[0m
+
+[0;32mI (215749) UART: Task 2 sent: Task 2 of Bach (cnt = 302)[0m
+
+[0;32mI (215759) UART: Received line 1: [0m
+
+[0;32mI (215759) UART: Received line 2: Task 2 of Bach (cnt = 257)[0m
+[0;32mI (216119) UART: Task 1 sent: Task 1 of Bach (cnt = 303)[0m
+
+[0;32mI (216539) UART: Task 2 sent: Task 2 of Bach (cnt = 303)[0m
+
+[0;32mI (216549) UART: Received line 1: [0m
+
+[0;32mI (216549) UART: Received line 2: [0m
+
+[0;32mI (216959) UART: Task 1 sent: Task 1 of Bach (cnt = 304)[0m
+
+[0;32mI (217179) UART: Task 2 sent: Task 2 of Bach (cnt = 304)[0m
+
+[0;32mI (217189) UART: Received line 1: Task 1 of Bach (cnt = 206)[0m
+[0;32mI (217189) UART: Received line 2: Task 1 of Bach (cnt = 258)[0m
+[0;32mI (217759) UART: Task 1 sent: Task 1 of Bach (cnt = 305)[0m
+
+[0;32mI (217999) UART: Task 2 sent: Task 2 of Bach (cnt = 305)[0m
+
+[0;32mI (218009) UART: Received line 1: [0m
+
+[0;32mI (218009) UART: Received line 2:  = 261)[0m
+[0;32mI (218499) UART: Task 1 sent: Task 1 of Bach (cnt = 306)[0m
+
+[0;32mI (218729) UART: Task 2 sent: Task 2 of Bach (cnt = 306)[0m
+
+[0;32mI (218739) UART: Received line 1: [0m
+
+[0;32mI (218739) UART: Received line 2: [0m
+
+[0;32mI (219099) UART: Task 1 sent: Task 1 of Bach (cnt = 307)[0m
+
+[0;32mI (219509) UART: Task 2 sent: Task 2 of Bach (cnt = 307)[0m
+
+[0;32mI (219519) UART: Received line 1: Task 1 of Bach (cnt = 212)[0m
+[0;32mI (219519) UART: Received line 2: Task 1 of Bach (cnt = 262)[0m
+[0;32mI (219629) UART: Task 1 sent: Task 1 of Bach (cnt = 308)[0m
+
+[0;32mI (220139) UART: Task 2 sent: Task 2 of Bach (cnt = 308)[0m
+
+[0;32mI (220149) UART: Received line 1: [0m
+
+[0;32mI (220149) UART: Received line 2: cnt = 172)[0m
+[0;32mI (220479) UART: Task 1 sent: Task 1 of Bach (cnt = 309)[0m
+
+[0;32mI (221029) UART: Task 2 sent: Task 2 of Bach (cnt = 309)[0m
+
+[0;32mI (221039) UART: Received line 1: Task 1 of Bach (cnt = 264)[0m
+[0;32mI (221039) UART: Received line 2: [0m
+
+[0;32mI (221059) UART: Task 1 sent: Task 1 of Bach (cnt = 310)[0m
+
+[0;32mI (221709) UART: Task 2 sent: Task 2 of Bach (cnt = 310)[0m
+
+[0;32mI (221719) UART: Received line 1: Task 2 of Bach (cnt = 264)[0m
+[0;32mI (221719) UART: Received line 2: [0m
+
+[0;32mI (221719) UART: Task 1 sent: Task 1 of Bach (cnt = 311)[0m
+
+[0;32mI (222379) UART: Task 2 sent: Task 2 of Bach (cnt = 311)[0m
+
+[0;32mI (222389) UART: Received line 1: [0m
+
+[0;32mI (222389) UART: Received line 2: Task 1 of Bach (cnt = 213)[0m
+[0;32mI (222389) UART: Task 1 sent: Task 1 of Bach (cnt = 312)[0m
+
+[0;32mI (222959) UART: Task 2 sent: Task 2 of Bach (cnt = 312)[0m
+
+[0;32mI (222969) UART: Received line 1: Task 1 of Bach (cnt = 265)[0m
+[0;32mI (222969) UART: Received line 2: [0m
+
+[0;32mI (223269) UART: Task 1 sent: Task 1 of Bach (cnt = 313)[0m
+
+[0;32mI (223599) UART: Task 2 sent: Task 2 of Bach (cnt = 313)[0m
+
+[0;32mI (223609) UART: Received line 1: [0m
+[0;32mI (223609) UART: Received line 2: [0m
+
+[0;32mI (224129) UART: Task 1 sent: Task 1 of Bach (cnt = 314)[0m
+
+[0;32mI (224409) UART: Task 2 sent: Task 2 of Bach (cnt = 314)[0m
+
+[0;32mI (224419) UART: Received line 1: Task 2 of Bach (cnt = 270)[0m
+[0;32mI (224419) UART: Received line 2: [0m
+
+[0;32mI (224939) UART: Task 1 sent: Task 1 of Bach (cnt = 315)[0m
+
+[0;32mI (225269) UART: Task 2 sent: Task 2 of Bach (cnt = 315)[0m
+
+[0;32mI (225279) UART: Received line 1: [0m
+
+[0;32mI (225279) UART: Received line 2: Bach (cnt = 179)[0m
+[0;32mI (225769) UART: Task 1 sent: Task 1 of Bach (cnt = 316)[0m
+
+[0;32mI (226089) UART: Task 2 sent: Task 2 of Bach (cnt = 316)[0m
+
+[0;32mI (226099) UART: Received line 1: Task 1 of Bach (cnt = 271)[0m
+[0;32mI (226099) UART: Received line 2: [0m
+
+[0;32mI (226309) UART: Task 1 sent: Task 1 of Bach (cnt = 317)[0m
+
+[0;32mI (226909) UART: Task 2 sent: Task 2 of Bach (cnt = 317)[0m
+
+[0;32mI (226919) UART: Received line 1: Task 2 of Bach (cnt = 271)[0m
+[0;32mI (226919) UART: Received line 2: [0m
+
+[0;32mI (227059) UART: Task 1 sent: Task 1 of Bach (cnt = 318)[0m
+
+[0;32mI (227589) UART: Task 2 sent: Task 2 of Bach (cnt = 318)[0m
+
+[0;32mI (227599) UART: Received line 1:  = 276)[0m
+[0;32mI (227599) UART: Received line 2: [0m
+
+[0;32mI (227739) UART: Task 1 sent: Task 1 of Bach (cnt = 319)[0m
+
+[0;32mI (228229) UART: Task 2 sent: Task 2 of Bach (cnt = 319)[0m
+
+[0;32mI (228239) UART: Received line 1: Task 2 of Bach (cnt = 224)[0m
+[0;32mI (228239) UART: Received line 2: [0m
+
+[0;32mI (228409) UART: Task 1 sent: Task 1 of Bach (cnt = 320)[0m
+
+[0;32mI (228999) UART: Task 2 sent: Task 2 of Bach (cnt = 320)[0m
+
+[0;32mI (229009) UART: Received line 1: Task 1 of Bach (cnt = 277)[0m
+[0;32mI (229009) UART: Received line 2: [0m
+
+[0;32mI (229149) UART: Task 1 sent: Task 1 of Bach (cnt = 321)[0m
+
+[0;32mI (229619) UART: Task 2 sent: Task 2 of Bach (cnt = 321)[0m
+
+[0;32mI (229629) UART: Received line 1: [0m
+[0;32mI (229629) UART: Received line 2: [0m
+

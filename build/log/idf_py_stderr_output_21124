@@ -1,0 +1,29 @@
+Command: C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\tools/idf_monitor.py -p COM8 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\examples\get-started\RTOS_part2\build\RTOS_part2.elf C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\examples\get-started\RTOS_part2\build\bootloader\bootloader.elf --force-color -m 'C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\tools\idf.py' '-p' 'COM8'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM8 instead...[0m
+[0;33m--- esp-idf-monitor 1.7.0 on \\.\COM8 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Lib\site-packages\esp_idf_monitor\__main__.py", line 4, in <module>
+    main()
+  File "C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Lib\site-packages\esp_idf_monitor\idf_monitor.py", line 457, in main
+    monitor.main_loop()
+  File "C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Lib\site-packages\esp_idf_monitor\idf_monitor.py", line 201, in main_loop
+    self._main_loop()
+  File "C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Lib\site-packages\esp_idf_monitor\idf_monitor.py", line 317, in _main_loop
+    super()._main_loop()
+  File "C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Lib\site-packages\esp_idf_monitor\idf_monitor.py", line 249, in _main_loop
+    self.serial_handler.handle_serial_input(data, self.console_parser, self.coredump,  # type: ignore
+  File "C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Lib\site-packages\esp_idf_monitor\base\serial_handler.py", line 167, in handle_serial_input
+    text_lines, self._last_line_part = self.binlog.convert_to_text(sp[0])
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Lib\site-packages\esp_idf_monitor\base\binlog.py", line 251, in convert_to_text
+    messages.append(self.format_message(msg))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Lib\site-packages\esp_idf_monitor\base\binlog.py", line 256, in format_message
+    level_name = {1: 'E', 2: 'W', 3: 'I', 4: 'D', 5: 'V'}[message.control.level]
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 6

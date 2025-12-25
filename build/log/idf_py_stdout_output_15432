@@ -1,0 +1,148 @@
+Command: C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\tools/idf_monitor.py -p COM6 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\examples\get-started\RTOS_part2\build\RTOS_part2.elf C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\examples\get-started\RTOS_part2\build\bootloader\bootloader.elf --force-color -m 'C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\tools\idf.py' '-p' 'COM6'
+���Speed      : 40M�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Aug 18 2025 09:30:05[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.0[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=091a0h ( 37280) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=000191c8 vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (101) esp_image: segment 2: paddr=000191f0 vaddr=3ffb0000 size=022a8h (  8872) load[0m
+[0;32mI (109) esp_image: segment 3: paddr=0001b4a0 vaddr=40080000 size=04b78h ( 19320) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=160b8h ( 90296) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=000360e0 vaddr=40084b78 size=095dch ( 38364) load[0m
+[0;32mI (174) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (174) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (193) cpu_start: Pro cpu start user code[0m
+[0;32mI (193) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (193) app_init: Application information:[0m
+[0;32mI (193) app_init: Project name:     RTOS_part2[0m
+[0;32mI (197) app_init: App version:      v5.5-dirty[0m
+[0;32mI (201) app_init: Compile time:     Aug 18 2025 09:29:49[0m
+[0;32mI (206) app_init: ELF file SHA256:  8684203fe...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (215) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (218) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (222) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (227) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (233) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (238) heap_init: At 3FFB2B38 len 0002D4C8 (181 KiB): DRAM[0m
+[0;32mI (243) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (254) heap_init: At 4008E154 len 00011EAC (71 KiB): IRAM[0m
+[0;32mI (260) spi_flash: detected chip: generic[0m
+[0;32mI (263) spi_flash: flash io: dio[0m
+[0;33mW (266) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (279) main_task: Started on CPU0[0m
+[0;32mI (289) main_task: Calling app_main()[0m
+[0;32mI (289) main_task: Returned from app_main()[0m
+[0;32mI (469) UART: Received [1]: [0m
+[0;32mI (569) UART: Received [2]: [0m
+[0;32mI (749) UART: Received [3]: �
+[0;32mI (949) UART: Received [4]: `[0m
+[0;32mI (1069) UART: Received [5]: [0m
+[0;32mI (1229) UART: Received [6]: k2![0m
+
+[0;32mI (1409) UART: Received [7]: [0m
+[0;32mI (1569) UART: Received [8]: [0m
+[0;32mI (1729) UART: Received [9]: ��f�[0m
+[0;32mI (1909) UART: Received [10]: [0m
+[0;32mI (2129) UART: Received [11]: [0m
+[0;32mI (2289) UART: Received [12]: �
+[0;32mI (2489) UART: Received [13]: [0m
+[0;32mI (2649) UART: Received [14]: �[0m
+[0;32mI (2849) UART: Received [15]: �
+[0;32mI (2989) UART: Received [16]: �
+[0;32mI (3179) UART: Received [17]: �
+[0;32mI (3379) UART: Received [18]: �
+[0;32mI (3559) UART: Received [19]: [0m
+[0;32mI (3709) UART: Received [20]: X[0m
+[0;32mI (3909) UART: Received [21]: [0m
+[0;32mI (4069) UART: Received [22]: �
+[0;32mI (4239) UART: Received [23]: �Task2![0m
+
+[0;32mI (4439) UART: Received [24]: [0m
+[0;32mI (4569) UART: Received [25]: �
+[0;32mI (4739) UART: Received [26]: k1![0m
+[0;32mI (4939) UART: Received [27]: [0m
+[0;32mI (5119) UART: Received [28]: [0m
+[0;32mI (5299) UART: Received [29]: "�
+[0;32mI (5479) UART: Received [30]: [0m
+[0;32mI (5579) UART: Received [31]: [0m
+[0;32mI (5739) UART: Received [32]: om Task2![0m
+
+[0;32mI (5919) UART: Received [33]: [0m
+[0;32mI (6109) UART: Received [34]: ��c[0m
+[0;32mI (6299) UART: Received [35]: x�
+[0;32mI (6479) UART: Received [36]: �
+[0;32mI (6599) UART: Received [37]: �
+[0;32mI (6779) UART: Received [38]: [0m
+[0;32mI (6969) UART: Received [39]: [0m
+[0;32mI (7069) UART: Received [40]: �
+[0;32mI (7259) UART: Received [41]: [0m
+[0;32mI (7439) UART: Received [42]: ��[0m
+[0;32mI (7569) UART: Received [43]: }8[0m
+[0;32mI (7729) UART: Received [44]: sk1![0m
+
+[0;32mI (7919) UART: Received [45]: �
+[0;32mI (8119) UART: Received [46]: �
+[0;32mI (8309) UART: Received [47]: ��[0m
+[0;32mI (8509) UART: Received [48]: [0m
+[0;32mI (8639) UART: Received [49]: [0m
+[0;32mI (8829) UART: Received [50]: ��[0m
+[0;32mI (9009) UART: Received [51]: [0m
+[0;32mI (9189) UART: Received [52]: [0m
+[0;32mI (9389) UART: Received [53]: �
+[0;32mI (9569) UART: Received [54]: [0m
+[0;32mI (9749) UART: Received [55]: � �x0�
+[0;32mI (9939) UART: Received [56]: �
+[0;32mI (10109) UART: Received [57]: [0m
+[0;32mI (10279) UART: Received [58]: �
+[0;32mI (10469) UART: Received [59]: [0m
+[0;32mI (10579) UART: Received [60]: �
+[0;32mI (10759) UART: Received [61]: [0m
+[0;32mI (10929) UART: Received [62]: �
+[0;32mI (11099) UART: Received [63]: �[0m
+[0;32mI (11279) UART: Received [64]: �>[0m
+[0;32mI (11459) UART: Received [65]: [0m
+[0;32mI (11579) UART: Received [66]: [0m
+[0;32mI (11719) UART: Received [67]: ello from Ta'[0m
+�
+[0;32mI (11899) UART: Received [68]: [0m
+[0;32mI (12099) UART: Received [69]: [0m
+[0;32mI (12279) UART: Received [70]: �
+[0;32mI (12459) UART: Received [71]: [0m
+[0;32mI (12599) UART: Received [72]: [0m
+[0;32mI (12799) UART: Received [73]: [0m
+[0;32mI (12979) UART: Received [74]: [0m
+[0;32mI (13099) UART: Received [75]: �
+[0;32mI (13289) UART: Received [76]: �
+[0;32mI (13469) UART: Received [77]: [0m
+[0;32mI (13589) UART: Received [78]: �
+[0;32mI (13769) UART: Received [79]: �
+[0;32mI (13969) UART: Received [80]: [0m
+[0;32mI (14149) UART: Received [81]: [0m
+[0;32mI (14349) UART: Received [82]: ���
+[0;32mI (14529) UART: Received [83]: �
+[0;32mI (14629) UART: Received [84]: [0m
+[0;32mI (14819) UART: Received [85]: [0m

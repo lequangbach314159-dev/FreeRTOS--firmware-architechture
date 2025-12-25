@@ -1,0 +1,2 @@
+source C:/PROJECT_ESP32/Espressif/frameworks/esp-idf-v5.5/examples/get-started/RTOS_part2/build/bootloader/gdbinit/symbols
+source C:/PROJECT_ESP32/Espressif/frameworks/esp-idf-v5.5/examples/get-started/RTOS_part2/build/bootloader/gdbinit/connect

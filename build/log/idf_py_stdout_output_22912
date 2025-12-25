@@ -1,0 +1,777 @@
+Command: C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\tools/idf_monitor.py -p COM6 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\examples\get-started\RTOS_part2\build\RTOS_part2.elf C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\examples\get-started\RTOS_part2\build\bootloader\bootloader.elf --force-color -m 'C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\tools\idf.py' '-p' 'COM6'
+
+[0;32mI (289) ESPets Jul 29 2019 12:21:46[0m
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Aug 18 2025 09:30:05[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.0[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=091d0h ( 37328) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=000191f8 vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (101) esp_image: segment 2: paddr=00019220 vaddr=3ffb0000 size=022a8h (  8872) load[0m
+[0;32mI (109) esp_image: segment 3: paddr=0001b4d0 vaddr=40080000 size=04b48h ( 19272) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=160d8h ( 90328) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=00036100 vaddr=40084b48 size=095c4h ( 38340) load[0m
+[0;32mI (174) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (174) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (193) cpu_start: Pro cpu start user code[0m
+[0;32mI (193) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (193) app_init: Application information:[0m
+[0;32mI (193) app_init: Project name:     RTOS_part2[0m
+[0;32mI (197) app_init: App version:      v5.5-dirty[0m
+[0;32mI (201) app_init: Compile time:     Aug 18 2025 09:29:49[0m
+[0;32mI (206) app_init: ELF file SHA256:  14e6f6d1a...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (215) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (218) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (222) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (227) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (233) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (238) heap_init: At 3FFB2B38 len 0002D4C8 (181 KiB): DRAM[0m
+[0;32mI (243) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (254) heap_init: At 4008E10C len 00011EF4 (71 KiB): IRAM[0m
+[0;32mI (260) spi_flash: detected chip: generic[0m
+[0;32mI (263) spi_flash: flash io: dio[0m
+[0;33mW (266) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (279) main_task: Started on CPU0[0m
+[0;32mI (289) main_task: Calling app_main()[0m
+[0;32mI (289) ESP1: Task1 sent: hello ESP2 1[0m
+
+[0;32mI (289) main_task: Returned from app_main()[0m
+[0;32mI (419) ESP1: Received from ESP2: A[0m
+[0;32mI (1289) ESP1: Task2 sent: hello ESP2 1[0m
+
+[0;32mI (1479) ESP1: Received from ESP2: hello ESP2 1[0m
+
+[0;32mI (2289) ESP1: Task1 sent: hello ESP2 2[0m
+
+[0;32mI (2479) ESP1: Received from ESP2: hello ESP2 2[0m
+
+[0;32mI (3289) ESP1: Task2 sent: hello ESP2 2[0m
+
+[0;32mI (3479) ESP1: Received from ESP2: hello ESP2 2[0m
+
+[0;32mI (4289) ESP1: Task1 sent: hello ESP2 3[0m
+
+[0;32mI (4479) ESP1: Received from ESP2: hello ESP2 3[0m
+
+[0;32mI (5289) ESP1: Task2 sent: hello ESP2 3[0m
+
+[0;32mI (5479) ESP1: Received from ESP2: hello ESP2 3[0m
+
+[0;32mI (6289) ESP1: Task1 sent: hello ESP2 4[0m
+
+[0;32mI (6479) ESP1: Received from ESP2: hello ESP2 4[0m
+
+[0;32mI (7289) ESP1: Task2 sent: hello ESP2 4[0m
+
+[0;32mI (7479) ESP1: Received from ESP2: hello ESP2 4[0m
+
+[0;32mI (8289) ESP1: Task1 sent: hello ESP2 5[0m
+
+[0;32mI (8479) ESP1: Received from ESP2: hello ESP2 5[0m
+
+[0;32mI (9289) ESP1: Task2 sent: hello ESP2 5[0m
+
+[0;32mI (9479) ESP1: Received from ESP2: hello ESP2 5[0m
+
+[0;32mI (10289) ESP1: Task1 sent: hello ESP2 6[0m
+
+[0;32mI (10479) ESP1: Received from ESP2: hello ESP2 6[0m
+
+[0;32mI (11289) ESP1: Task2 sent: hello ESP2 6[0m
+
+[0;32mI (11479) ESP1: Received from ESP2: hello ESP2 6[0m
+
+[0;32mI (12289) ESP1: Task1 sent: hello ESP2 7[0m
+
+[0;32mI (12479) ESP1: Received from ESP2: hello ESP2 7[0m
+
+[0;32mI (13289) ESP1: Task2 sent: hello ESP2 7[0m
+
+[0;32mI (13479) ESP1: Received from ESP2: hello ESP2 7[0m
+
+[0;32mI (14289) ESP1: Task1 sent: hello ESP2 8[0m
+
+[0;32mI (14479) ESP1: Received from ESP2: hello ESP2 8[0m
+
+[0;32mI (15289) ESP1: Task2 sent: hello ESP2 8[0m
+
+[0;32mI (15479) ESP1: Received from ESP2: hello ESP2 8[0m
+
+[0;32mI (16289) ESP1: Task1 sent: hello ESP2 9[0m
+
+[0;32mI (16479) ESP1: Received from ESP2: hello ESP2 9[0m
+
+[0;32mI (17289) ESP1: Task2 sent: hello ESP2 9[0m
+
+[0;32mI (17479) ESP1: Received from ESP2: hello ESP2 9[0m
+
+[0;32mI (18289) ESP1: Task1 sent: hello ESP2 10[0m
+
+[0;32mI (18479) ESP1: Received from ESP2: hello ESP2 10[0m
+
+[0;32mI (19289) ESP1: Task2 sent: hello ESP2 10[0m
+
+[0;32mI (19479) ESP1: Received from ESP2: hello ESP2 10[0m
+
+[0;32mI (20289) ESP1: Task1 sent: hello ESP2 11[0m
+
+[0;32mI (20479) ESP1: Received from ESP2: hello ESP2 11[0m
+
+[0;32mI (21289) ESP1: Task2 sent: hello ESP2 11[0m
+
+[0;32mI (21479) ESP1: Received from ESP2: hello ESP2 11[0m
+
+[0;32mI (22289) ESP1: Task1 sent: hello ESP2 12[0m
+
+[0;32mI (22479) ESP1: Received from ESP2: hello ESP2 12[0m
+
+[0;32mI (23289) ESP1: Task2 sent: hello ESP2 12[0m
+
+[0;32mI (23479) ESP1: Received from ESP2: hello ESP2 12[0m
+
+[0;32mI (24289) ESP1: Task1 sent: hello ESP2 13[0m
+
+[0;32mI (24479) ESP1: Received from ESP2: hello ESP2 13[0m
+
+[0;32mI (25289) ESP1: Task2 sent: hello ESP2 13[0m
+
+[0;32mI (25479) ESP1: Received from ESP2: hello ESP2 13[0m
+
+[0;32mI (26289) ESP1: Task1 sent: hello ESP2 14[0m
+
+[0;32mI (26479) ESP1: Received from ESP2: hello ESP2 14[0m
+
+[0;32mI (27289) ESP1: Task2 sent: hello ESP2 14[0m
+
+[0;32mI (27479) ESP1: Received from ESP2: hello ESP2 14[0m
+
+[0;32mI (28289) ESP1: Task1 sent: hello ESP2 15[0m
+
+[0;32mI (28479) ESP1: Received from ESP2: hello ESP2 15[0m
+
+[0;32mI (29289) ESP1: Task2 sent: hello ESP2 15[0m
+
+[0;32mI (29479) ESP1: Received from ESP2: hello ESP2 15[0m
+
+[0;32mI (30289) ESP1: Task1 sent: hello ESP2 16[0m
+
+[0;32mI (30479) ESP1: Received from ESP2: hello ESP2 16[0m
+
+[0;32mI (31289) ESP1: Task2 sent: hello ESP2 16[0m
+
+[0;32mI (31479) ESP1: Received from ESP2: hello ESP2 16[0m
+
+[0;32mI (32289) ESP1: Task1 sent: hello ESP2 17[0m
+
+[0;32mI (32479) ESP1: Received from ESP2: hello ESP2 17[0m
+
+[0;32mI (33289) ESP1: Task2 sent: hello ESP2 17[0m
+
+[0;32mI (33479) ESP1: Received from ESP2: hello ESP2 17[0m
+
+[0;32mI (34289) ESP1: Task1 sent: hello ESP2 18[0m
+
+[0;32mI (34479) ESP1: Received from ESP2: hello ESP2 18[0m
+
+[0;32mI (35289) ESP1: Task2 sent: hello ESP2 18[0m
+
+[0;32mI (35479) ESP1: Received from ESP2: hello ESP2 18[0m
+
+[0;32mI (36289) ESP1: Task1 sent: hello ESP2 19[0m
+
+[0;32mI (36479) ESP1: Received from ESP2: hello ESP2 19[0m
+
+[0;32mI (37289) ESP1: Task2 sent: hello ESP2 19[0m
+
+[0;32mI (37479) ESP1: Received from ESP2: hello ESP2 19[0m
+
+[0;32mI (38289) ESP1: Task1 sent: hello ESP2 20[0m
+
+[0;32mI (38479) ESP1: Received from ESP2: hello ESP2 20[0m
+
+[0;32mI (39289) ESP1: Task2 sent: hello ESP2 20[0m
+
+[0;32mI (39479) ESP1: Received from ESP2: hello ESP2 20[0m
+
+[0;32mI (40289) ESP1: Task1 sent: hello ESP2 21[0m
+
+[0;32mI (40479) ESP1: Received from ESP2: hello ESP2 21[0m
+
+[0;32mI (41289) ESP1: Task2 sent: hello ESP2 21[0m
+
+[0;32mI (41479) ESP1: Received from ESP2: hello ESP2 21[0m
+
+[0;32mI (42289) ESP1: Task1 sent: hello ESP2 22[0m
+
+[0;32mI (42479) ESP1: Received from ESP2: hello ESP2 22[0m
+
+[0;32mI (43289) ESP1: Task2 sent: hello ESP2 22[0m
+
+[0;32mI (43479) ESP1: Received from ESP2: hello ESP2 22[0m
+
+[0;32mI (44289) ESP1: Task1 sent: hello ESP2 23[0m
+
+[0;32mI (44479) ESP1: Received from ESP2: hello ESP2 23[0m
+
+[0;32mI (45289) ESP1: Task2 sent: hello ESP2 23[0m
+
+[0;32mI (45479) ESP1: Received from ESP2: hello ESP2 23[0m
+
+[0;32mI (46289) ESP1: Task1 sent: hello ESP2 24[0m
+
+[0;32mI (46479) ESP1: Received from ESP2: hello ESP2 24[0m
+
+[0;32mI (47289) ESP1: Task2 sent: hello ESP2 24[0m
+
+[0;32mI (47479) ESP1: Received from ESP2: hello ESP2 24[0m
+
+[0;32mI (48289) ESP1: Task1 sent: hello ESP2 25[0m
+
+[0;32mI (48479) ESP1: Received from ESP2: hello ESP2 25[0m
+
+[0;32mI (49289) ESP1: Task2 sent: hello ESP2 25[0m
+
+[0;32mI (49479) ESP1: Received from ESP2: hello ESP2 25[0m
+
+[0;32mI (50289) ESP1: Task1 sent: hello ESP2 26[0m
+
+[0;32mI (50479) ESP1: Received from ESP2: hello ESP2 26[0m
+
+[0;32mI (51289) ESP1: Task2 sent: hello ESP2 26[0m
+
+[0;32mI (51479) ESP1: Received from ESP2: hello ESP2 26[0m
+
+[0;32mI (52289) ESP1: Task1 sent: hello ESP2 27[0m
+
+[0;32mI (52479) ESP1: Received from ESP2: hello ESP2 27[0m
+
+[0;32mI (53289) ESP1: Task2 sent: hello ESP2 27[0m
+
+[0;32mI (53479) ESP1: Received from ESP2: hello ESP2 27[0m
+
+[0;32mI (54289) ESP1: Task1 sent: hello ESP2 28[0m
+
+[0;32mI (54479) ESP1: Received from ESP2: hello ESP2 28[0m
+
+[0;32mI (55289) ESP1: Task2 sent: hello ESP2 28[0m
+
+[0;32mI (55479) ESP1: Received from ESP2: hello ESP2 28[0m
+
+[0;32mI (56289) ESP1: Task1 sent: hello ESP2 29[0m
+
+[0;32mI (56479) ESP1: Received from ESP2: hello ESP2 29[0m
+
+[0;32mI (57289) ESP1: Task2 sent: hello ESP2 29[0m
+
+[0;32mI (57479) ESP1: Received from ESP2: hello ESP2 29[0m
+
+[0;32mI (58289) ESP1: Task1 sent: hello ESP2 30[0m
+
+[0;32mI (58479) ESP1: Received from ESP2: hello ESP2 30[0m
+
+[0;32mI (59289) ESP1: Task2 sent: hello ESP2 30[0m
+
+[0;32mI (59479) ESP1: Received from ESP2: hello ESP2 30[0m
+
+[0;32mI (60289) ESP1: Task1 sent: hello ESP2 31[0m
+
+[0;32mI (60479) ESP1: Received from ESP2: hello ESP2 31[0m
+
+[0;32mI (61289) ESP1: Task2 sent: hello ESP2 31[0m
+
+[0;32mI (61479) ESP1: Received from ESP2: hello ESP2 31[0m
+
+[0;32mI (62289) ESP1: Task1 sent: hello ESP2 32[0m
+
+[0;32mI (62479) ESP1: Received from ESP2: hello ESP2 32[0m
+
+[0;32mI (63289) ESP1: Task2 sent: hello ESP2 32[0m
+
+[0;32mI (63479) ESP1: Received from ESP2: hello ESP2 32[0m
+
+[0;32mI (64289) ESP1: Task1 sent: hello ESP2 33[0m
+
+[0;32mI (64479) ESP1: Received from ESP2: hello ESP2 33[0m
+
+[0;32mI (65289) ESP1: Task2 sent: hello ESP2 33[0m
+
+[0;32mI (65479) ESP1: Received from ESP2: hello ESP2 33[0m
+
+[0;32mI (66289) ESP1: Task1 sent: hello ESP2 34[0m
+
+[0;32mI (66479) ESP1: Received from ESP2: hello ESP2 34[0m
+
+[0;32mI (67289) ESP1: Task2 sent: hello ESP2 34[0m
+
+[0;32mI (67479) ESP1: Received from ESP2: hello ESP2 34[0m
+
+[0;32mI (68289) ESP1: Task1 sent: hello ESP2 35[0m
+
+[0;32mI (68479) ESP1: Received from ESP2: hello ESP2 35[0m
+
+[0;32mI (69289) ESP1: Task2 sent: hello ESP2 35[0m
+
+[0;32mI (69479) ESP1: Received from ESP2: hello ESP2 35[0m
+
+[0;32mI (70289) ESP1: Task1 sent: hello ESP2 36[0m
+
+[0;32mI (70479) ESP1: Received from ESP2: hello ESP2 36[0m
+
+[0;32mI (71289) ESP1: Task2 sent: hello ESP2 36[0m
+
+[0;32mI (71479) ESP1: Received from ESP2: hello ESP2 36[0m
+
+[0;32mI (72289) ESP1: Task1 sent: hello ESP2 37[0m
+
+[0;32mI (72479) ESP1: Received from ESP2: hello ESP2 37[0m
+
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Aug 18 2025 09:30:05[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.0[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=091d0h ( 37328) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=000191f8 vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (101) esp_image: segment 2: paddr=00019220 vaddr=3ffb0000 size=022a8h (  8872) load[0m
+[0;32mI (109) esp_image: segment 3: paddr=0001b4d0 vaddr=40080000 size=04b48h ( 19272) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=160d8h ( 90328) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=00036100 vaddr=40084b48 size=095c4h ( 38340) load[0m
+[0;32mI (174) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (174) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (193) cpu_start: Pro cpu start user code[0m
+[0;32mI (193) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (193) app_init: Application information:[0m
+[0;32mI (193) app_init: Project name:     RTOS_part2[0m
+[0;32mI (197) app_init: App version:      v5.5-dirty[0m
+[0;32mI (201) app_init: Compile time:     Aug 18 2025 09:29:49[0m
+[0;32mI (206) app_init: ELF file SHA256:  14e6f6d1a...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (215) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (218) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (222) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (227) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (233) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (238) heap_init: At 3FFB2B38 len 0002D4C8 (181 KiB): DRAM[0m
+[0;32mI (243) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (254) heap_init: At 4008E10C len 00011EF4 (71 KiB): IRAM[0m
+[0;32mI (260) spi_flash: detected chip: generic[0m
+[0;32mI (263) spi_flash: flash io: dio[0m
+[0;33mW (266) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (279) main_task: Started on CPU0[0m
+[0;32mI (289) main_task: Calling app_main()[0m
+[0;32mI (289) ESP1: Task1 sent: hello ESP2 1[0m
+
+[0;32mI (289) main_task: Returned from app_main()[0m
+[0;32mI (1269) ESP1: Received from ESP2: �
+[0;32mI (1289) ESP1: Task2 sent: hello ESP2 1[0m
+
+��Speed      : 40MHz
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=091d0h ( 37328) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=000191f8 vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (101) esp_image: segment 2: paddr=00019220 vaddr=3ffb0000 size=022a8h (  8872) load[0m
+[0;32mI (109) esp_image: segment 3: paddr=0001b4d0 vaddr=40080000 size=04b48h ( 19272) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=160d8h ( 90328) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=00036100 vaddr=40084b48 size=095c4h ( 38340) load[0m
+[0;32mI (174) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (174) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (193) cpu_start: Pro cpu start user code[0m
+[0;32mI (193) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (193) app_init: Application information:[0m
+[0;32mI (193) app_init: Project name:     RTOS_part2[0m
+[0;32mI (197) app_init: App version:      v5.5-dirty[0m
+[0;32mI (201) app_init: Compile time:     Aug 18 2025 09:29:49[0m
+[0;32mI (206) app_init: ELF file SHA256:  14e6f6d1a...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (215) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (218) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (222) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (227) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (233) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (238) heap_init: At 3FFB2B38 len 0002D4C8 (181 KiB): DRAM[0m
+[0;32mI (243) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (254) heap_init: At 4008E10C len 00011EF4 (71 KiB): IRAM[0m
+[0;32mI (260) spi_flash: detected chip: generic[0m
+[0;32mI (263) spi_flash: flash io: dio[0m
+[0;33mW (266) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (279) main_task: Started on CPU0[0m
+[0;32mI (289) main_task: Calling app_main()[0m
+[0;32mI (289) ESP1: Task1 sent: hello ESP2 1[0m
+
+[0;32mI (289) main_task: Returned from app_main()[0m
+[0;32mI (1099) ESP1: Received from ESP2: �$[0m
+[0;32mI (1289) ESP1: Task2 sent: hello ESP2 1[0m
+
+[0;32mI (1479) ESP1: Received from ESP2: hello ESP2 1[0m
+
+[0;32mI (2289) ESP1: Task1 sent: hello ESP2 2[0m
+
+[0;32mI (2479) ESP1: Received from ESP2: hello ESP2 2[0m
+
+[0;32mI (3289) ESP1: Task2 sent: hello ESP2 2[0m
+
+[0;32mI (3479) ESP1: Received from ESP2: hello ESP2 2[0m
+
+[0;32mI (4289) ESP1: Task1 sent: hello ESP2 3[0m
+
+[0;32mI (4479) ESP1: Received from ESP2: hello ESP2 3[0m
+
+[0;32mI (5289) ESP1: Task2 sent: hello ESP2 3[0m
+
+[0;32mI (5479) ESP1: Received from ESP2: hello ESP2 3[0m
+
+[0;32mI (6289) ESP1: Task1 sent: hello ESP2 4[0m
+
+[0;32mI (6479) ESP1: Received from ESP2: hello ESP2 4[0m
+
+[0;32mI (7289) ESP1: Task2 sent: hello ESP2 4[0m
+
+[0;32mI (7479) ESP1: Received from ESP2: hello ESP2 4[0m
+
+[0;32mI (8289) ESP1: Task1 sent: hello ESP2 5[0m
+
+[0;32mI (8479) ESP1: Received from ESP2: hello ESP2 5[0m
+
+[0;32mI (9289) ESP1: Task2 sent: hello ESP2 5[0m
+
+[0;32mI (9479) ESP1: Received from ESP2: hello ESP2 5[0m
+
+[0;32mI (10289) ESP1: Task1 sent: hello ESP2 6[0m
+
+[0;32mI (10479) ESP1: Received from ESP2: hello ESP2 6[0m
+
+[0;32mI (11289) ESP1: Task2 sent: hello ESP2 6[0m
+
+[0;32mI (11479) ESP1: Received from ESP2: hello ESP2 6[0m
+
+[0;32mI (12289) ESP1: Task1 sent: hello ESP2 7[0m
+
+[0;32mI (12479) ESP1: Received from ESP2: hello ESP2 7[0m
+
+[0;32mI (13289) ESP1: Task2 sent: hello ESP2 7[0m
+
+[0;32mI (13769) ESP1: Received from ESP2: |[0m
+[0;32mI (14289) ESP1: Task1 sent: hello ESP2 8[0m
+
+[0;32mI (14649) ESP1: Received from ESP2: �
+[0;32mI (14869) ESP1: Received from ESP2: C��[0m
+[0;32mI (15289) ESP1: Task2 sent: hello ESP2 8[0m
+
+[0;32mI (15709) ESP1: Received from ESP2: �6�[0m
+[0;32mI (16129) ESP1: Received from ESP2: �
+[0;32mI (16289) ESP1: Task1 sent: hello ESP2 9[0m
+
+[0;32mI (16349) ESP1: Received from ESP2: ���[0m
+[0;32mI (17289) ESP1: Task2 sent: hello ESP2 9[0m
+
+[0;32mI (17359) ESP1: Received from ESP2: �
+[0;32mI (17579) ESP1: Received from ESP2: p�~�[0m
+[0;32mI (18019) ESP1: Received from ESP2: �
+[0;32mI (18289) ESP1: Task1 sent: hello ESP2 10[0m
+
+[0;32mI (19289) ESP1: Task2 sent: hello ESP2 10[0m
+
+[0;32mI (19559) ESP1: Received from ESP2: �
+[0;32mI (19879) ESP1: Received from ESP2: ���[0m
+[0;32mI (20119) ESP1: Received from ESP2: ���[0m
+[0;32mI (20289) ESP1: Task1 sent: hello ESP2 11[0m
+
+[0;32mI (20529) ESP1: Received from ESP2: ��[0m
+[0;32mI (21289) ESP1: Task2 sent: hello ESP2 11[0m
+
+[0;32mI (21769) ESP1: Received from ESP2: �
+[0;32mI (22289) ESP1: Task1 sent: hello ESP2 12[0m
+
+[0;32mI (23289) ESP1: Task2 sent: hello ESP2 12[0m
+
+[0;32mI (23479) ESP1: Received from ESP2: hello ESP2 12[0m
+
+[0;32mI (24289) ESP1: Task1 sent: hello ESP2 13[0m
+
+[0;32mI (24479) ESP1: Received from ESP2: hello ESP2 13[0m
+
+[0;32mI (25289) ESP1: Task2 sent: hello ESP2 13[0m
+
+[0;32mI (25479) ESP1: Received from ESP2: hello ESP2 13[0m
+
+[0;32mI (26289) ESP1: Task1 sent: hello ESP2 14[0m
+
+[0;32mI (26479) ESP1: Received from ESP2: hello ESP2 14[0m
+
+[0;32mI (27289) ESP1: Task2 sent: hello ESP2 14[0m
+
+[0;32mI (27479) ESP1: Received from ESP2: hello ESP2 14[0m
+
+[0;32mI (28289) ESP1: Task1 sent: hello ESP2 15[0m
+
+[0;32mI (28479) ESP1: Received from ESP2: hello ESP2 15[0m
+
+[0;32mI (29289) ESP1: Task2 sent: hello ESP2 15[0m
+
+[0;32mI (29479) ESP1: Received from ESP2: hello ESP2 15[0m
+
+[0;32mI (30289) ESP1: Task1 sent: hello ESP2 16[0m
+
+[0;32mI (31289) ESP1: Task2 sent: hello ESP2 16[0m
+
+[0;33mW (31579) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (32289) ESP1: Task1 sent: hello ESP2 17[0m
+
+[0;32mI (33289) ESP1: Task2 sent: hello ESP2 17[0m
+
+[0;32mI (33399) ESP1: Received from ESP2: �
+[0;32mI (34289) ESP1: Task1 sent: hello ESP2 18[0m
+
+[0;32mI (34499) ESP1: Received from ESP2: �
+[0;32mI (35289) ESP1: Task2 sent: hello ESP2 18[0m
+
+[0;32mI (36129) ESP1: Received from ESP2: �
+[0;32mI (36289) ESP1: Task1 sent: hello ESP2 19[0m
+
+[0;32mI (37189) ESP1: Received from ESP2: �
+[0;32mI (37289) ESP1: Task2 sent: hello ESP2 19[0m
+
+[0;32mI (37829) ESP1: Received from ESP2: ��[0m
+[0;32mI (38289) ESP1: Task1 sent: hello ESP2 20[0m
+
+[0;32mI (38459) ESP1: Received from ESP2: �
+[0;32mI (38819) ESP1: Received from ESP2: �
+[0;32mI (39179) ESP1: Received from ESP2: �
+[0;32mI (39289) ESP1: Task2 sent: hello ESP2 20[0m
+
+[0;32mI (39539) ESP1: Received from ESP2: ��[0m
+[0;32mI (39919) ESP1: Received from ESP2: ��[0m
+[0;32mI (40119) ESP1: Received from ESP2: ���[0m
+[0;32mI (40289) ESP1: Task1 sent: hello ESP2 21[0m
+
+[0;32mI (40479) ESP1: Received from ESP2: hello ESP2 21[0m
+
+[0;32mI (41289) ESP1: Task2 sent: hello ESP2 21[0m
+
+[0;32mI (41479) ESP1: Received from ESP2: hello ESP2 21[0m
+
+[0;32mI (42289) ESP1: Task1 sent: hello ESP2 22[0m
+
+[0;32mI (42479) ESP1: Received from ESP2: hello ESP2 22[0m
+
+[0;32mI (43289) ESP1: Task2 sent: hello ESP2 22[0m
+
+[0;32mI (43479) ESP1: Received from ESP2: hello ESP2 22[0m
+
+[0;32mI (44289) ESP1: Task1 sent: hello ESP2 23[0m
+
+[0;32mI (44479) ESP1: Received from ESP2: hello ESP2 23[0m
+
+[0;32mI (45289) ESP1: Task2 sent: hello ESP2 23[0m
+
+[0;32mI (45479) ESP1: Received from ESP2: hello ESP2 23[0m
+
+[0;32mI (46289) ESP1: Task1 sent: hello ESP2 24[0m
+
+[0;32mI (46479) ESP1: Received from ESP2: hello ESP2 24[0m
+
+[0;32mI (47289) ESP1: Task2 sent: hello ESP2 24[0m
+
+[0;32mI (47479) ESP1: Received from ESP2: hello ESP2 24[0m
+
+[0;32mI (48289) ESP1: Task1 sent: hello ESP2 25[0m
+
+[0;32mI (48479) ESP1: Received from ESP2: hello ESP2 25[0m
+
+[0;32mI (49289) ESP1: Task2 sent: hello ESP2 25[0m
+
+[0;32mI (50289) ESP1: Task1 sent: hello ESP2 26[0m
+
+[0;33mW (50579) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (51289) ESP1: Task2 sent: hello ESP2 26[0m
+
+[0;32mI (52289) ESP1: Task1 sent: hello ESP2 27[0m
+
+[0;33mW (52679) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (53289) ESP1: Task2 sent: hello ESP2 27[0m
+
+[0;32mI (54289) ESP1: Task1 sent: hello ESP2 28[0m
+
+[0;33mW (54779) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (55289) ESP1: Task2 sent: hello ESP2 28[0m
+
+[0;32mI (56289) ESP1: Task1 sent: hello ESP2 29[0m
+
+[0;33mW (56879) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (57289) ESP1: Task2 sent: hello ESP2 29[0m
+
+[0;32mI (58289) ESP1: Task1 sent: hello ESP2 30[0m
+
+[0;33mW (58979) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (59289) ESP1: Task2 sent: hello ESP2 30[0m
+
+[0;32mI (60289) ESP1: Task1 sent: hello ESP2 31[0m
+
+[0;33mW (61079) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (61289) ESP1: Task2 sent: hello ESP2 31[0m
+
+[0;32mI (61479) ESP1: Received from ESP2: hello ESP2 31[0m
+
+[0;32mI (62289) ESP1: Task1 sent: hello ESP2 32[0m
+
+[0;32mI (62479) ESP1: Received from ESP2: hello ESP2 32[0m
+
+[0;32mI (63289) ESP1: Task2 sent: hello ESP2 32[0m
+
+[0;32mI (63479) ESP1: Received from ESP2: hello ESP2 32[0m
+
+[0;32mI (64289) ESP1: Task1 sent: hello ESP2 33[0m
+
+[0;32mI (64479) ESP1: Received from ESP2: hello ESP2 33[0m
+
+[0;32mI (65289) ESP1: Task2 sent: hello ESP2 33[0m
+
+[0;32mI (65479) ESP1: Received from ESP2: hello ESP2 33[0m
+
+[0;32mI (66289) ESP1: Task1 sent: hello ESP2 34[0m
+
+[0;32mI (66479) ESP1: Received from ESP2: hello ESP2 34[0m
+
+[0;32mI (67289) ESP1: Task2 sent: hello ESP2 34[0m
+
+[0;32mI (67479) ESP1: Received from ESP2: hello ESP2 34[0m
+
+[0;32mI (68289) ESP1: Task1 sent: hello ESP2 35[0m
+
+[0;32mI (68479) ESP1: Received from ESP2: hello ESP2 35[0m
+
+[0;32mI (69289) ESP1: Task2 sent: hello ESP2 35[0m
+
+[0;32mI (69479) ESP1: Received from ESP2: hello ESP2 35[0m
+
+[0;32mI (69679) ESP1: Received from ESP2: [0m
+[0;32mI (70289) ESP1: Task1 sent: hello ESP2 36[0m
+
+[0;32mI (71099) ESP1: Received from ESP2: [0m
+[0;32mI (71289) ESP1: Task2 sent: hello ESP2 36[0m
+
+[0;32mI (72069) ESP1: Received from ESP2: [0m
+[0;32mI (72289) ESP1: Task1 sent: hello ESP2 37[0m
+
+[0;32mI (73109) ESP1: Received from ESP2: [0m
+[0;32mI (73289) ESP1: Task2 sent: hello ESP2 37[0m
+
+[0;32mI (74209) ESP1: Received from ESP2: [0m
+[0;32mI (74289) ESP1: Task1 sent: hello ESP2 38[0m
+
+[0;32mI (75289) ESP1: Task2 sent: hello ESP2 38[0m
+
+[0;32mI (75289) ESP1: Received from ESP2: [0m
+[0;32mI (76289) ESP1: Task1 sent: hello ESP2 39[0m
+
+[0;32mI (76369) ESP1: Received from ESP2: 3�
+[0;32mI (76789) ESP1: Received from ESP2: [0m
+[0;32mI (77289) ESP1: Task2 sent: hello ESP2 39[0m
+
+[0;32mI (77479) ESP1: Received from ESP2: hello ESP2 39[0m
+
+[0;32mI (78289) ESP1: Task1 sent: hello ESP2 40[0m
+
+[0;32mI (78479) ESP1: Received from ESP2: hello ESP2 40[0m
+
+[0;32mI (79289) ESP1: Task2 sent: hello ESP2 40[0m
+
+[0;32mI (79479) ESP1: Received from ESP2: hello ESP2 40[0m
+
+[0;32mI (80129) ESP1: Received from ESP2: [0m
+[0;32mI (80289) ESP1: Task1 sent: hello ESP2 41[0m
+
+[0;32mI (80309) ESP1: Received from ESP2: [0m
+[0;32mI (80489) ESP1: Received from ESP2: [0m
+[0;32mI (80649) ESP1: Received from ESP2: [0m
+[0;32mI (80789) ESP1: Received from ESP2: [0m
+[0;32mI (80929) ESP1: Received from ESP2: �[0m
+[0;32mI (81049) ESP1: Received from ESP2: [0m
+[0;32mI (81189) ESP1: Received from ESP2: [0m
+[0;32mI (81289) ESP1: Task2 sent: hello ESP2 41[0m
+
+[0;32mI (81329) ESP1: Received from ESP2: [0m
+[0;32mI (81489) ESP1: Received from ESP2: [0m
+[0;32mI (81669) ESP1: Received from ESP2: �[0m
+[0;32mI (81809) ESP1: Received from ESP2: [0m
+[0;32mI (81949) ESP1: Received from ESP2: [0m
+[0;32mI (82089) ESP1: Received from ESP2: [0m
+[0;32mI (82229) ESP1: Received from ESP2: [0m
+[0;32mI (82289) ESP1: Task1 sent: hello ESP2 42[0m
+
+[0;32mI (82349) ESP1: Received from ESP2: [0m
+[0;32mI (82489) ESP1: Received from ESP2: [0m
+[0;32mI (82649) ESP1: Received from ESP2: [0m
+[0;32mI (82789) ESP1: Received from ESP2: [0m
+[0;32mI (82929) ESP1: Received from ESP2: [0m
+[0;32mI (83069) ESP1: Received from ESP2: [0m
+[0;32mI (83249) ESP1: Received from ESP2: [0m
+[0;32mI (83289) ESP1: Task2 sent: hello ESP2 42[0m
+
+[0;32mI (83359) ESP1: Received from ESP2: [0m
+[0;32mI (83539) ESP1: Received from ESP2: [0m
+[0;32mI (83699) ESP1: Received from ESP2: [0m
+[0;32mI (83909) ESP1: Received from ESP2: [0m
+[0;32mI (84289) ESP1: Task1 sent: hello ESP2 43[0m
+
+[0;32mI (84489) ESP1: Received from ESP2: hello ESP2 43[0m
+
+[0;32mI (85289) ESP1: Task2 sent: hello ESP2 43[0m
+
+[0;32mI (85489) ESP1: Received from ESP2: hello ESP2 43[0m
+

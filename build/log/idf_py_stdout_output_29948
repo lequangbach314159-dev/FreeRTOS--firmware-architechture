@@ -1,0 +1,871 @@
+Command: C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\tools/idf_monitor.py -p COM7 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\examples\get-started\RTOS_part2\build\RTOS_part2.elf C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\examples\get-started\RTOS_part2\build\bootloader\bootloader.elf --force-color -m 'C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\tools\idf.py' '-p' 'COM7'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Aug 18 2025 09:30:05[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09200h ( 37376) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00019228 vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (101) esp_image: segment 2: paddr=00019250 vaddr=3ffb0000 size=022a8h (  8872) load[0m
+[0;32mI (109) esp_image: segment 3: paddr=0001b500 vaddr=40080000 size=04b18h ( 19224) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=15f38h ( 89912) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=00035f60 vaddr=40084b18 size=09528h ( 38184) load[0m
+[0;32mI (173) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (174) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (192) cpu_start: Pro cpu start user code[0m
+[0;32mI (192) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (192) app_init: Application information:[0m
+[0;32mI (193) app_init: Project name:     RTOS_part2[0m
+[0;32mI (197) app_init: App version:      v5.5-dirty[0m
+[0;32mI (201) app_init: Compile time:     Aug 18 2025 09:29:49[0m
+[0;32mI (206) app_init: ELF file SHA256:  9dfb28631...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (214) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (218) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (222) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (226) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (232) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 3FFB2B40 len 0002D4C0 (181 KiB): DRAM[0m
+[0;32mI (243) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (254) heap_init: At 4008E040 len 00011FC0 (71 KiB): IRAM[0m
+[0;33mW (260) spi_flash: boya detected but related driver is not linked, please check option `SPI_FLASH_SUPPORT_BOYA_CHIP`[0m
+[0;32mI (269) spi_flash: detected chip: generic[0m
+[0;32mI (273) spi_flash: flash io: dio[0m
+[0;33mW (276) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (288) main_task: Started on CPU0[0m
+[0;32mI (298) main_task: Calling app_main()[0m
+[0;32mI (298) UART: Task 1 queued: Task 1 of Bach (cnt = 1)[0m
+
+[0;32mI (298) main_task: Returned from app_main()[0m
+[0;32mI (308) UART: Task 2 queued: Task 2 of Bach (cnt = 1)[0m
+
+[0;33mW (2418) UART: Timeout: No data received for line 1[0m
+[0;33mW (2418) UART: Timeout: No data received for line 2[0m
+[0;32mI (2418) UART: Task 1 queued: Task 1 of Bach (cnt = 2)[0m
+
+[0;32mI (2428) UART: Task 2 queued: Task 2 of Bach (cnt = 2)[0m
+
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Aug 18 2025 09:30:05[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09200h ( 37376) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00019228 vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (101) esp_image: segment 2: paddr=00019250 vaddr=3ffb0000 size=022a8h (  8872) load[0m
+[0;32mI (109) esp_image: segment 3: paddr=0001b500 vaddr=40080000 size=04b18h ( 19224) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=15f38h ( 89912) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=00035f60 vaddr=40084b18 size=09528h ( 38184) load[0m
+[0;32mI (173) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (174) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (192) cpu_start: Pro cpu start user code[0m
+[0;32mI (192) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (192) app_init: Application information:[0m
+[0;32mI (193) app_init: Project name:     RTOS_part2[0m
+[0;32mI (197) app_init: App version:      v5.5-dirty[0m
+[0;32mI (201) app_init: Compile time:     Aug 18 2025 09:29:49[0m
+[0;32mI (206) app_init: ELF file SHA256:  9dfb28631...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (214) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (218) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (222) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (226) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (232) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 3FFB2B40 len 0002D4C0 (181 KiB): DRAM[0m
+[0;32mI (243) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (254) heap_init: At 4008E040 len 00011FC0 (71 KiB): IRAM[0m
+[0;33mW (260) spi_flash: boya detected but related driver is not linked, please check option `SPI_FLASH_SUPPORT_BOYA_CHIP`[0m
+[0;32mI (269) spi_flash: detected chip: generic[0m
+[0;32mI (273) spi_flash: flash io: dio[0m
+[0;33mW (276) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (288) main_task: Started on CPU0[0m
+[0;32mI (298) main_task: Calling app_main()[0m
+[0;32mI (298) UART: Task 1 queued: Task 1 of Bach (cnt = 1)[0m
+
+[0;32mI (298) main_task: Returned from app_main()[0m
+[0;32mI (308) UART: Task 2 queued: Task 2 of Bach (cnt = 1)[0m
+
+[0;33mW (1848) UART: Timeout: No data received for line 1[0m
+[0;32mI (1848) UART: Task 1 queued: Task 1 of Bach (cnt = 2)[0m
+
+[0;32mI (1858) UART: Task 2 queued: Task 2 of Bach (cnt = 2)[0m
+
+[0;33mW (3268) UART: Timeout: No data received for line 2[0m
+[0;33mW (3368) UART: Queue full, Task 1 message lost[0m
+[0;33mW (3478) UART: Queue full, Task 2 message lost[0m
+[0;33mW (5588) UART: Timeout: No data received for line 1[0m
+[0;33mW (5588) UART: Timeout: No data received for line 2[0m
+[0;33mW (5688) UART: Queue full, Task 1 message lost[0m
+[0;33mW (5798) UART: Queue full, Task 2 message lost[0m
+[0;33mW (7908) UART: Timeout: No data received for line 1[0m
+[0;33mW (7908) UART: Timeout: No data received for line 2[0m
+[0;33mW (8008) UART: Queue full, Task 1 message lost[0m
+[0;33mW (8118) UART: Queue full, Task 2 message lost[0m
+[0;33mW (10228) UART: Timeout: No data received for line 1[0m
+[0;33mW (10228) UART: Timeout: No data received for line 2[0m
+[0;33mW (10328) UART: Queue full, Task 1 message lost[0m
+[0;33mW (10438) UART: Queue full, Task 2 message lost[0m
+[0;33mW (12548) UART: Timeout: No data received for line 1[0m
+[0;33mW (12548) UART: Timeout: No data received for line 2[0m
+[0;33mW (12648) UART: Queue full, Task 1 message lost[0m
+[0;33mW (12758) UART: Queue full, Task 2 message lost[0m
+[0;33mW (14868) UART: Timeout: No data received for line 1[0m
+[0;33mW (14868) UART: Timeout: No data received for line 2[0m
+[0;33mW (14968) UART: Queue full, Task 1 message lost[0m
+[0;33mW (15078) UART: Queue full, Task 2 message lost[0m
+[0;33mW (17188) UART: Timeout: No data received for line 1[0m
+[0;33mW (17188) UART: Timeout: No data received for line 2[0m
+[0;33mW (17288) UART: Queue full, Task 1 message lost[0m
+[0;33mW (17398) UART: Queue full, Task 2 message lost[0m
+[0;33mW (19508) UART: Timeout: No data received for line 1[0m
+[0;33mW (19508) UART: Timeout: No data received for line 2[0m
+[0;33mW (19608) UART: Queue full, Task 1 message lost[0m
+[0;33mW (19718) UART: Queue full, Task 2 message lost[0m
+[0;33mW (21828) UART: Timeout: No data received for line 1[0m
+[0;33mW (21828) UART: Timeout: No data received for line 2[0m
+[0;33mW (21928) UART: Queue full, Task 1 message lost[0m
+[0;33mW (22038) UART: Queue full, Task 2 message lost[0m
+[0;33mW (24148) UART: Timeout: No data received for line 1[0m
+[0;33mW (24148) UART: Timeout: No data received for line 2[0m
+[0;33mW (24248) UART: Queue full, Task 1 message lost[0m
+[0;33mW (24358) UART: Queue full, Task 2 message lost[0m
+[0;33mW (26468) UART: Timeout: No data received for line 1[0m
+[0;33mW (26468) UART: Timeout: No data received for line 2[0m
+[0;33mW (26568) UART: Queue full, Task 1 message lost[0m
+[0;33mW (26678) UART: Queue full, Task 2 message lost[0m
+[0;33mW (28788) UART: Timeout: No data received for line 1[0m
+[0;33mW (28788) UART: Timeout: No data received for line 2[0m
+[0;33mW (28888) UART: Queue full, Task 1 message lost[0m
+[0;33mW (28998) UART: Queue full, Task 2 message lost[0m
+[0;33mW (31108) UART: Timeout: No data received for line 1[0m
+[0;33mW (31108) UART: Timeout: No data received for line 2[0m
+[0;33mW (31208) UART: Queue full, Task 1 message lost[0m
+[0;33mW (31318) UART: Queue full, Task 2 message lost[0m
+[0;33mW (33428) UART: Timeout: No data received for line 1[0m
+[0;33mW (33428) UART: Timeout: No data received for line 2[0m
+[0;33mW (33528) UART: Queue full, Task 1 message lost[0m
+[0;33mW (33638) UART: Queue full, Task 2 message lost[0m
+[0;33mW (35748) UART: Timeout: No data received for line 1[0m
+[0;33mW (35748) UART: Timeout: No data received for line 2[0m
+[0;33mW (35848) UART: Queue full, Task 1 message lost[0m
+[0;33mW (35958) UART: Queue full, Task 2 message lost[0m
+[0;33mW (38068) UART: Timeout: No data received for line 1[0m
+[0;33mW (38068) UART: Timeout: No data received for line 2[0m
+[0;33mW (38168) UART: Queue full, Task 1 message lost[0m
+[0;33mW (38278) UART: Queue full, Task 2 message lost[0m
+[0;33mW (40388) UART: Timeout: No data received for line 1[0m
+[0;33mW (40388) UART: Timeout: No data received for line 2[0m
+[0;33mW (40488) UART: Queue full, Task 1 message lost[0m
+[0;33mW (40598) UART: Queue full, Task 2 message lost[0m
+[0;33mW (42708) UART: Timeout: No data received for line 1[0m
+[0;33mW (42708) UART: Timeout: No data received for line 2[0m
+[0;33mW (42808) UART: Queue full, Task 1 message lost[0m
+[0;33mW (42918) UART: Queue full, Task 2 message lost[0m
+[0;33mW (45028) UART: Timeout: No data received for line 1[0m
+[0;33mW (45028) UART: Timeout: No data received for line 2[0m
+[0;33mW (45128) UART: Queue full, Task 1 message lost[0m
+[0;33mW (45238) UART: Queue full, Task 2 message lost[0m
+[0;33mW (47348) UART: Timeout: No data received for line 1[0m
+[0;33mW (47348) UART: Timeout: No data received for line 2[0m
+[0;33mW (47448) UART: Queue full, Task 1 message lost[0m
+[0;33mW (47558) UART: Queue full, Task 2 message lost[0m
+[0;33mW (49668) UART: Timeout: No data received for line 1[0m
+[0;33mW (49668) UART: Timeout: No data received for line 2[0m
+[0;33mW (49768) UART: Queue full, Task 1 message lost[0m
+[0;33mW (49878) UART: Queue full, Task 2 message lost[0m
+[0;33mW (51988) UART: Timeout: No data received for line 1[0m
+[0;33mW (51988) UART: Timeout: No data received for line 2[0m
+[0;33mW (52088) UART: Queue full, Task 1 message lost[0m
+[0;33mW (52198) UART: Queue full, Task 2 message lost[0m
+[0;33mW (54308) UART: Timeout: No data received for line 1[0m
+[0;33mW (54308) UART: Timeout: No data received for line 2[0m
+[0;33mW (54408) UART: Queue full, Task 1 message lost[0m
+[0;33mW (54518) UART: Queue full, Task 2 message lost[0m
+[0;33mW (56628) UART: Timeout: No data received for line 1[0m
+[0;33mW (56628) UART: Timeout: No data received for line 2[0m
+[0;33mW (56728) UART: Queue full, Task 1 message lost[0m
+W (56838) UART: Queue full, Task 2 message lost
+[0;33mW (58948) UART: Timeout: No data received for line 1[0m
+[0;33mW (58948) UART: Timeout: No data received for line 2[0m
+[0;33mW (59048) UART: Queue full, Task 1 message lost[0m
+[0;33mW (59158) UART: Queue full, Task 2 message lost[0m
+[0;33mW (61268) UART: Timeout: No data received for line 1[0m
+[0;33mW (61268) UART: Timeout: No data received for line 2[0m
+[0;33mW (61368) UART: Queue full, Task 1 message lost[0m
+[0;33mW (61478) UART: Queue full, Task 2 message lost[0m
+[0;33mW (63588) UART: Timeout: No data received for line 1[0m
+[0;33mW (63588) UART: Timeout: No data received for line 2[0m
+[0;33mW (63688) UART: Queue full, Task 1 message lost[0m
+[0;33mW (63798) UART: Queue full, Task 2 message lost[0m
+[0;33mW (65908) UART: Timeout: No data received for line 1[0m
+[0;33mW (65908) UART: Timeout: No data received for line 2[0m
+[0;33mW (66008) UART: Queue full, Task 1 message lost[0m
+[0;33mW (66118) UART: Queue full, Task 2 message lost[0m
+[0;33mW (68228) UART: Timeout: No data received for line 1[0m
+[0;33mW (68228) UART: Timeout: No data received for line 2[0m
+[0;33mW (68328) UART: Queue full, Task 1 message lost[0m
+[0;33mW (68438) UART: Queue full, Task 2 message lost[0m
+[0;33mW (70548) UART: Timeout: No data received for line 1[0m
+[0;33mW (70548) UART: Timeout: No data received for line 2[0m
+[0;33mW (70648) UART: Queue full, Task 1 message lost[0m
+[0;33mW (70758) UART: Queue full, Task 2 message lost[0m
+[0;33mW (72868) UART: Timeout: No data received for line 1[0m
+[0;33mW (72868) UART: Timeout: No data received for line 2[0m
+[0;33mW (72968) UART: Queue full, Task 1 message lost[0m
+[0;33mW (73078) UART: Queue full, Task 2 message lost[0m
+[0;33mW (75188) UART: Timeout: No data received for line 1[0m
+[0;33mW (75188) UART: Timeout: No data received for line 2[0m
+[0;33mW (75288) UART: Queue full, Task 1 message lost[0m
+[0;33mW (75398) UART: Queue full, Task 2 message lost[0m
+[0;33mW (77508) UART: Timeout: No data received for line 1[0m
+[0;33mW (77508) UART: Timeout: No data received for line 2[0m
+[0;33mW (77608) UART: Queue full, Task 1 message lost[0m
+[0;33mW (77718) UART: Queue full, Task 2 message lost[0m
+[0;33mW (79828) UART: Timeout: No data received for line 1[0m
+[0;33mW (79828) UART: Timeout: No data received for line 2[0m
+[0;33mW (79928) UART: Queue full, Task 1 message lost[0m
+[0;33mW (80038) UART: Queue full, Task 2 message lost[0m
+[0;33mW (82148) UART: Timeout: No data received for line 1[0m
+[0;33mW (82148) UART: Timeout: No data received for line 2[0m
+[0;33mW (82248) UART: Queue full, Task 1 message lost[0m
+[0;33mW (82358) UART: Queue full, Task 2 message lost[0m
+[0;33mW (84468) UART: Timeout: No data received for line 1[0m
+[0;33mW (84468) UART: Timeout: No data received for line 2[0m
+[0;33mW (84568) UART: Queue full, Task 1 message lost[0m
+[0;33mW (84678) UART: Queue full, Task 2 message lost[0m
+[0;33mW (86788) UART: Timeout: No data received for line 1[0m
+[0;33mW (86788) UART: Timeout: No data received for line 2[0m
+[0;33mW (86888) UART: Queue full, Task 1 message lost[0m
+[0;33mW (86998) UART: Queue full, Task 2 message lost[0m
+[0;33mW (89108) UART: Timeout: No data received for line 1[0m
+[0;33mW (89108) UART: Timeout: No data received for line 2[0m
+[0;33mW (89208) UART: Queue full, Task 1 message lost[0m
+[0;33mW (89318) UART: Queue full, Task 2 message lost[0m
+[0;33mW (91428) UART: Timeout: No data received for line 1[0m
+[0;33mW (91428) UART: Timeout: No data received for line 2[0m
+[0;33mW (91528) UART: Queue full, Task 1 message lost[0m
+[0;33mW (91638) UART: Queue full, Task 2 message lost[0m
+[0;33mW (93748) UART: Timeout: No data received for line 1[0m
+[0;33mW (93748) UART: Timeout: No data received for line 2[0m
+[0;33mW (93848) UART: Queue full, Task 1 message lost[0m
+[0;33mW (93958) UART: Queue full, Task 2 message lost[0m
+[0;33mW (96068) UART: Timeout: No data received for line 1[0m
+[0;33mW (96068) UART: Timeout: No data received for line 2[0m
+[0;33mW (96168) UART: Queue full, Task 1 message lost[0m
+[0;33mW (96278) UART: Queue full, Task 2 message lost[0m
+[0;33mW (98388) UART: Timeout: No data received for line 1[0m
+[0;33mW (98388) UART: Timeout: No data received for line 2[0m
+[0;33mW (98488) UART: Queue full, Task 1 message lost[0m
+[0;33mW (98598) UART: Queue full, Task 2 message lost[0m
+����������������������������������������������������������������00708) UART: Timeout: No data received for line 1
+[0;33mW (100708) UART: Timeout: No data received for line 2[0m
+[0;33mW (100808) UART: Queue full, Task 1 message lost[0m
+[0;33mW (100918) UART: Queue full, Task 2 message lost[0m
+[0;33mW (103028) UART: Timeout: No data received for line 1[0m
+[0;33mW (103028) UART: Timeout: No data received for line 2[0m
+[0;33mW (103128) UART: Queue full, Task 1 message lost[0m
+[0;33mW (103238) UART: Queue full, Task 2 message lost[0m
+[0;33mW (105348) UART: Timeout: No data received for line 1[0m
+[0;33mW (105348) UART: Timeout: No data received for line 2[0m
+[0;33mW (105448) UART: Queue full, Task 1 message lost[0m
+[0;33mW (105558) UART: Queue full, Task 2 message lost[0m
+[0;33mW (107668) UART: Timeout: No data received for line 1[0m
+[0;33mW (107668) UART: Timeout: No data received for line 2[0m
+[0;33mW (107768) UART: Queue full, Task 1 message lost[0m
+[0;33mW (107878) UART: Queue full, Task 2 message lost[0m
+[0;33mW (109988) UART: Timeout: No data received for line 1[0m
+[0;33mW (109988) UART: Timeout: No data received for line 2[0m
+[0;33mW (110088) UART: Queue full, Task 1 message lost[0m
+[0;33mW (110198) UART: Queue full, Task 2 message lost[0m
+[0;33mW (112308) UART: Timeout: No data received for line 1[0m
+[0;33mW (112308) UART: Timeout: No data received for line 2[0m
+[0;33mW (112408) UART: Queue full, Task 1 message lost[0m
+[0;33mW (112518) UART: Queue full, Task 2 message lost[0m
+[0;33mW (114628) UART: Timeout: No data received for line 1[0m
+[0;33mW (114628) UART: Timeout: No data received for line 2[0m
+[0;33mW (114728) UART: Queue full, Task 1 message lost[0m
+[0;33mW (114838) UART: Queue full, Task 2 message lost[0m
+[0;33mW (116948) UART: Timeout: No data received for line 1[0m
+[0;33mW (116948) UART: Timeout: No data received for line 2[0m
+[0;33mW (117048) UART: Queue full, Task 1 message lost[0m
+[0;33mW (117158) UART: Queue full, Task 2 message lost[0m
+[0;33mW (119268) UART: Timeout: No data received for line 1[0m
+[0;33mW (119268) UART: Timeout: No data received for line 2[0m
+[0;33mW (119368) UART: Queue full, Task 1 message lost[0m
+[0;33mW (119478) UART: Queue full, Task 2 message lost[0m
+[0;33mW (121588) UART: Timeout: No data received for line 1[0m
+[0;33mW (121588) UART: Timeout: No data received for line 2[0m
+[0;33mW (121688) UART: Queue full, Task 1 message lost[0m
+[0;33mW (121798) UART: Queue full, Task 2 message lost[0m
+[0;33mW (123908) UART: Timeout: No data received for line 1[0m
+[0;33mW (123908) UART: Timeout: No data received for line 2[0m
+[0;33mW (124008) UART: Queue full, Task 1 message lost[0m
+[0;33mW (124118) UART: Queue full, Task 2 message lost[0m
+[0;33mW (126228) UART: Timeout: No data received for line 1[0m
+[0;33mW (126228) UART: Timeout: No data received for line 2[0m
+[0;33mW (126328) UART: Queue full, Task 1 message lost[0m
+[0;33mW (126438) UART: Queue full, Task 2 message lost[0m
+[0;33mW (128548) UART: Timeout: No data received for line 1[0m
+[0;33mW (128548) UART: Timeout: No data received for line 2[0m
+[0;33mW (128648) UART: Queue full, Task 1 message lost[0m
+[0;33mW (128758) UART: Queue full, Task 2 message lost[0m
+[0;33mW (130868) UART: Timeout: No data received for line 1[0m
+[0;33mW (130868) UART: Timeout: No data received for line 2[0m
+[0;33mW (130968) UART: Queue full, Task 1 message lost[0m
+[0;33mW (131078) UART: Queue full, Task 2 message lost[0m
+[0;33mW (133188) UART: Timeout: No data received for line 1[0m
+[0;33mW (133188) UART: Timeout: No data received for line 2[0m
+[0;33mW (133288) UART: Queue full, Task 1 message lost[0m
+[0;33mW (133398) UART: Queue full, Task 2 message lost[0m
+[0;33mW (135508) UART: Timeout: No data received for line 1[0m
+[0;33mW (135508) UART: Timeout: No data received for line 2[0m
+[0;33mW (135608) UART: Queue full, Task 1 message lost[0m
+[0;33mW (135718) UART: Queue full, Task 2 message lost[0m
+[0;33mW (137828) UART: Timeout: No data received for line 1[0m
+[0;33mW (137828) UART: Timeout: No data received for line 2[0m
+[0;33mW (137928) UART: Queue full, Task 1 message lost[0m
+[0;33mW (138038) UART: Queue full, Task 2 message lost[0m
+[0;33mW (140148) UART: Timeout: No data received for line 1[0m
+[0;33mW (140148) UART: Timeout: No data received for line 2[0m
+[0;33mW (140248) UART: Queue full, Task 1 message lost[0m
+[0;33mW (140358) UART: Queue full, Task 2 message lost[0m
+[0;33mW (142468) UART: Timeout: No data received for line 1[0m
+[0;33mW (142468) UART: Timeout: No data received for line 2[0m
+[0;33mW (142568) UART: Queue full, Task 1 message lost[0m
+[0;33mW (142678) UART: Queue full, Task 2 message lost[0m
+[0;33mW (144788) UART: Timeout: No data received for line 1[0m
+[0;33mW (144788) UART: Timeout: No data received for line 2[0m
+[0;33mW (144888) UART: Queue full, Task 1 message lost[0m
+[0;33mW (144998) UART: Queue full, Task 2 message lost[0m
+[0;33mW (147108) UART: Timeout: No data received for line 1[0m
+[0;33mW (147108) UART: Timeout: No data received for line 2[0m
+[0;33mW (147208) UART: Queue full, Task 1 message lost[0m
+[0;33mW (147318) UART: Queue full, Task 2 message lost[0m
+[0;33mW (149428) UART: Timeout: No data received for line 1[0m
+[0;33mW (149428) UART: Timeout: No data received for line 2[0m
+[0;33mW (149528) UART: Queue full, Task 1 message lost[0m
+[0;33mW (149638) UART: Queue full, Task 2 message lost[0m
+[0;33mW (151748) UART: Timeout: No data received for line 1[0m
+[0;33mW (151748) UART: Timeout: No data received for line 2[0m
+[0;33mW (151848) UART: Queue full, Task 1 message lost[0m
+[0;33mW (151958) UART: Queue full, Task 2 message lost[0m
+[0;33mW (154068) UART: Timeout: No data received for line 1[0m
+[0;33mW (154068) UART: Timeout: No data received for line 2[0m
+[0;33mW (154168) UART: Queue full, Task 1 message lost[0m
+[0;33mW (154278) UART: Queue full, Task 2 message lost[0m
+[0;33mW (156388) UART: Timeout: No data received for line 1[0m
+[0;33mW (156388) UART: Timeout: No data received for line 2[0m
+[0;33mW (156488) UART: Queue full, Task 1 message lost[0m
+[0;33mW (156598) UART: Queue full, Task 2 message lost[0m
+[0;33mW (158708) UART: Timeout: No data received for line 1[0m
+[0;33mW (158708) UART: Timeout: No data received for line 2[0m
+[0;33mW (158808) UART: Queue full, Task 1 message lost[0m
+[0;33mW (158918) UART: Queue full, Task 2 message lost[0m
+[0;33mW (161028) UART: Timeout: No data received for line 1[0m
+[0;33mW (161028) UART: Timeout: No data received for line 2[0m
+[0;33mW (161128) UART: Queue full, Task 1 message lost[0m
+[0;33mW (161238) UART: Queue full, Task 2 message lost[0m
+[0;33mW (163348) UART: Timeout: No data received for line 1[0m
+[0;33mW (163348) UART: Timeout: No data received for line 2[0m
+[0;33mW (163448) UART: Queue full, Task 1 message lost[0m
+[0;33mW (163558) UART: Queue full, Task 2 message lost[0m
+[0;33mW (165668) UART: Timeout: No data received for line 1[0m
+[0;33mW (165668) UART: Timeout: No data received for line 2[0m
+[0;33mW (165768) UART: Queue full, Task 1 message lost[0m
+[0;33mW (165878) UART: Queue full, Task 2 message lost[0m
+[0;33mW (167988) UART: Timeout: No data received for line 1[0m
+[0;33mW (167988) UART: Timeout: No data received for line 2[0m
+[0;33mW (168088) UART: Queue full, Task 1 message lost[0m
+[0;33mW (168198) UART: Queue full, Task 2 message lost[0m
+[0;33mW (170308) UART: Timeout: No data received for line 1[0m
+[0;33mW (170308) UART: Timeout: No data received for line 2[0m
+[0;33mW (170408) UART: Queue full, Task 1 message lost[0m
+[0;33mW (170518) UART: Queue full, Task 2 message lost[0m
+[0;33mW (172628) UART: Timeout: No data received for line 1[0m
+[0;33mW (172628) UART: Timeout: No data received for line 2[0m
+[0;33mW (172728) UART: Queue full, Task 1 message lost[0m
+[0;33mW (172838) UART: Queue full, Task 2 message lost[0m
+[0;33mW (174948) UART: Timeout: No data received for line 1[0m
+[0;33mW (174948) UART: Timeout: No data received for line 2[0m
+[0;33mW (175048) UART: Queue full, Task 1 message lost[0m
+[0;33mW (175158) UART: Queue full, Task 2 message lost[0m
+[0;33mW (177268) UART: Timeout: No data received for line 1[0m
+[0;33mW (177268) UART: Timeout: No data received for line 2[0m
+[0;33mW (177368) UART: Queue full, Task 1 message lost[0m
+[0;33mW (177478) UART: Queue full, Task 2 message lost[0m
+[0;33mW (179588) UART: Timeout: No data received for line 1[0m
+[0;33mW (179588) UART: Timeout: No data received for line 2[0m
+[0;33mW (179688) UART: Queue full, Task 1 message lost[0m
+[0;33mW (179798) UART: Queue full, Task 2 message lost[0m
+[0;33mW (181908) UART: Timeout: No data received for line 1[0m
+[0;33mW (181908) UART: Timeout: No data received for line 2[0m
+[0;33mW (182008) UART: Queue full, Task 1 message lost[0m
+[0;33mW (182118) UART: Queue full, Task 2 message lost[0m
+[0;33mW (184228) UART: Timeout: No data received for line 1[0m
+[0;33mW (184228) UART: Timeout: No data received for line 2[0m
+[0;33mW (184328) UART: Queue full, Task 1 message lost[0m
+[0;33mW (184438) UART: Queue full, Task 2 message lost[0m
+[0;33mW (186548) UART: Timeout: No data received for line 1[0m
+[0;33mW (186548) UART: Timeout: No data received for line 2[0m
+[0;33mW (186648) UART: Queue full, Task 1 message lost[0m
+[0;33mW (186758) UART: Queue full, Task 2 message lost[0m
+[0;33mW (188868) UART: Timeout: No data received for line 1[0m
+[0;33mW (188868) UART: Timeout: No data received for line 2[0m
+[0;33mW (188968) UART: Queue full, Task 1 message lost[0m
+[0;33mW (189078) UART: Queue full, Task 2 message lost[0m
+[0;33mW (191188) UART: Timeout: No data received for line 1[0m
+[0;33mW (191188) UART: Timeout: No data received for line 2[0m
+[0;33mW (191288) UART: Queue full, Task 1 message lost[0m
+[0;33mW (191398) UART: Queue full, Task 2 message lost[0m
+[0;33mW (193508) UART: Timeout: No data received for line 1[0m
+[0;33mW (193508) UART: Timeout: No data received for line 2[0m
+[0;33mW (193608) UART: Queue full, Task 1 message lost[0m
+[0;33mW (193718) UART: Queue full, Task 2 message lost[0m
+[0;33mW (195828) UART: Timeout: No data received for line 1[0m
+[0;33mW (195828) UART: Timeout: No data received for line 2[0m
+[0;33mW (195928) UART: Queue full, Task 1 message lost[0m
+[0;33mW (196038) UART: Queue full, Task 2 message lost[0m
+[0;33mW (198148) UART: Timeout: No data received for line 1[0m
+[0;33mW (198148) UART: Timeout: No data received for line 2[0m
+[0;33mW (198248) UART: Queue full, Task 1 message lost[0m
+[0;33mW (198358) UART: Queue full, Task 2 message lost[0m
+[0;33mW (200468) UART: Timeout: No data received for line 1[0m
+[0;33mW (200468) UART: Timeout: No data received for line 2[0m
+[0;33mW (200568) UART: Queue full, Task 1 message lost[0m
+[0;33mW (200678) UART: Queue full, Task 2 message lost[0m
+[0;33mW (202788) UART: Timeout: No data received for line 1[0m
+[0;33mW (202788) UART: Timeout: No data received for line 2[0m
+[0;33mW (202888) UART: Queue full, Task 1 message lost[0m
+[0;33mW (202998) UART: Queue full, Task 2 message lost[0m
+[0;33mW (205108) UART: Timeout: No data received for line 1[0m
+[0;33mW (205108) UART: Timeout: No data received for line 2[0m
+[0;33mW (205208) UART: Queue full, Task 1 message lost[0m
+[0;33mW (205318) UART: Queue full, Task 2 message lost[0m
+[0;33mW (207428) UART: Timeout: No data received for line 1[0m
+[0;33mW (207428) UART: Timeout: No data received for line 2[0m
+[0;33mW (207528) UART: Queue full, Task 1 message lost[0m
+[0;33mW (207638) UART: Queue full, Task 2 message lost[0m
+[0;33mW (209748) UART: Timeout: No data received for line 1[0m
+[0;33mW (209748) UART: Timeout: No data received for line 2[0m
+[0;33mW (209848) UART: Queue full, Task 1 message lost[0m
+[0;33mW (209958) UART: Queue full, Task 2 message lost[0m
+[0;33mW (212068) UART: Timeout: No data received for line 1[0m
+[0;33mW (212068) UART: Timeout: No data received for line 2[0m
+[0;33mW (212168) UART: Queue full, Task 1 message lost[0m
+[0;33mW (212278) UART: Queue full, Task 2 message lost[0m
+[0;33mW (214388) UART: Timeout: No data received for line 1[0m
+[0;33mW (214388) UART: Timeout: No data received for line 2[0m
+[0;33mW (214488) UART: Queue full, Task 1 message lost[0m
+[0;33mW (214598) UART: Queue full, Task 2 message lost[0m
+[0;33mW (216708) UART: Timeout: No data received for line 1[0m
+[0;33mW (216708) UART: Timeout: No data received for line 2[0m
+[0;33mW (216808) UART: Queue full, Task 1 message lost[0m
+[0;33mW (216918) UART: Queue full, Task 2 message lost[0m
+[0;33mW (219028) UART: Timeout: No data received for line 1[0m
+[0;33mW (219028) UART: Timeout: No data received for line 2[0m
+[0;33mW (219128) UART: Queue full, Task 1 message lost[0m
+[0;33mW (219238) UART: Queue full, Task 2 message lost[0m
+[0;33mW (221348) UART: Timeout: No data received for line 1[0m
+[0;33mW (221348) UART: Timeout: No data received for line 2[0m
+[0;33mW (221448) UART: Queue full, Task 1 message lost[0m
+[0;33mW (221558) UART: Queue full, Task 2 message lost[0m
+[0;33mW (223668) UART: Timeout: No data received for line 1[0m
+[0;33mW (223668) UART: Timeout: No data received for line 2[0m
+[0;33mW (223768) UART: Queue full, Task 1 message lost[0m
+[0;33mW (223878) UART: Queue full, Task 2 message lost[0m
+[0;33mW (225988) UART: Timeout: No data received for line 1[0m
+[0;33mW (225988) UART: Timeout: No data received for line 2[0m
+[0;33mW (226088) UART: Queue full, Task 1 message lost[0m
+[0;33mW (226198) UART: Queue full, Task 2 message lost[0m
+[0;33mW (228308) UART: Timeout: No data received for line 1[0m
+[0;33mW (228308) UART: Timeout: No data received for line 2[0m
+[0;33mW (228408) UART: Queue full, Task 1 message lost[0m
+[0;33mW (228518) UART: Queue full, Task 2 message lost[0m
+[0;33mW (230628) UART: Timeout: No data received for line 1[0m
+[0;33mW (230628) UART: Timeout: No data received for line 2[0m
+[0;33mW (230728) UART: Queue full, Task 1 message lost[0m
+[0;33mW (230838) UART: Queue full, Task 2 message lost[0m
+[0;33mW (232948) UART: Timeout: No data received for line 1[0m
+[0;33mW (232948) UART: Timeout: No data received for line 2[0m
+[0;33mW (233048) UART: Queue full, Task 1 message lost[0m
+[0;33mW (233158) UART: Queue full, Task 2 message lost[0m
+[0;33mW (235268) UART: Timeout: No data received for line 1[0m
+[0;33mW (235268) UART: Timeout: No data received for line 2[0m
+[0;33mW (235368) UART: Queue full, Task 1 message lost[0m
+[0;33mW (235478) UART: Queue full, Task 2 message lost[0m
+[0;33mW (237588) UART: Timeout: No data received for line 1[0m
+[0;33mW (237588) UART: Timeout: No data received for line 2[0m
+[0;33mW (237688) UART: Queue full, Task 1 message lost[0m
+[0;33mW (237798) UART: Queue full, Task 2 message lost[0m
+[0;33mW (239908) UART: Timeout: No data received for line 1[0m
+[0;33mW (239908) UART: Timeout: No data received for line 2[0m
+[0;33mW (240008) UART: Queue full, Task 1 message lost[0m
+[0;33mW (240118) UART: Queue full, Task 2 message lost[0m
+[0;33mW (242228) UART: Timeout: No data received for line 1[0m
+[0;33mW (242228) UART: Timeout: No data received for line 2[0m
+[0;33mW (242328) UART: Queue full, Task 1 message lost[0m
+[0;33mW (242438) UART: Queue full, Task 2 message lost[0m
+[0;33mW (244548) UART: Timeout: No data received for line 1[0m
+[0;33mW (244548) UART: Timeout: No data received for line 2[0m
+[0;33mW (244648) UART: Queue full, Task 1 message lost[0m
+[0;33mW (244758) UART: Queue full, Task 2 message lost[0m
+[0;33mW (246868) UART: Timeout: No data received for line 1[0m
+[0;33mW (246868) UART: Timeout: No data received for line 2[0m
+[0;33mW (246968) UART: Queue full, Task 1 message lost[0m
+[0;33mW (247078) UART: Queue full, Task 2 message lost[0m
+[0;33mW (249188) UART: Timeout: No data received for line 1[0m
+[0;33mW (249188) UART: Timeout: No data received for line 2[0m
+[0;33mW (249288) UART: Queue full, Task 1 message lost[0m
+W (249398) UART: Queue full, Task 2 message lost
+[0;33mW (251508) UART: Timeout: No data received for line 1[0m
+[0;33mW (251508) UART: Timeout: No data received for line 2[0m
+[0;33mW (251608) UART: Queue full, Task 1 message lost[0m
+[0;33mW (251718) UART: Queue full, Task 2 message lost[0m
+[0;33mW (253828) UART: Timeout: No data received for line 1[0m
+[0;33mW (253828) UART: Timeout: No data received for line 2[0m
+[0;33mW (253928) UART: Queue full, Task 1 message lost[0m
+[0;33mW (254038) UART: Queue full, Task 2 message lost[0m
+[0;33mW (256148) UART: Timeout: No data received for line 1[0m
+[0;33mW (256148) UART: Timeout: No data received for line 2[0m
+[0;33mW (256248) UART: Queue full, Task 1 message lost[0m
+[0;33mW (256358) UART: Queue full, Task 2 message lost[0m
+[0;33mW (258468) UART: Timeout: No data received for line 1[0m
+[0;33mW (258468) UART: Timeout: No data received for line 2[0m
+[0;33mW (258568) UART: Queue full, Task 1 message lost[0m
+[0;33mW (258678) UART: Queue full, Task 2 message lost[0m
+[0;33mW (260788) UART: Timeout: No data received for line 1[0m
+[0;33mW (260788) UART: Timeout: No data received for line 2[0m
+[0;33mW (260888) UART: Queue full, Task 1 message lost[0m
+[0;33mW (260998) UART: Queue full, Task 2 message lost[0m
+[0;33mW (263108) UART: Timeout: No data received for line 1[0m
+[0;33mW (263108) UART: Timeout: No data received for line 2[0m
+[0;33mW (263208) UART: Queue full, Task 1 message lost[0m
+[0;33mW (263318) UART: Queue full, Task 2 message lost[0m
+[0;33mW (265428) UART: Timeout: No data received for line 1[0m
+[0;33mW (265428) UART: Timeout: No data received for line 2[0m
+[0;33mW (265528) UART: Queue full, Task 1 message lost[0m
+[0;33mW (265638) UART: Queue full, Task 2 message lost[0m
+[0;33mW (267748) UART: Timeout: No data received for line 1[0m
+[0;33mW (267748) UART: Timeout: No data received for line 2[0m
+[0;33mW (267848) UART: Queue full, Task 1 message lost[0m
+[0;33mW (267958) UART: Queue full, Task 2 message lost[0m
+[0;33mW (270068) UART: Timeout: No data received for line 1[0m
+[0;33mW (270068) UART: Timeout: No data received for line 2[0m
+[0;33mW (270168) UART: Queue full, Task 1 message lost[0m
+[0;33mW (270278) UART: Queue full, Task 2 message lost[0m
+[0;33mW (272388) UART: Timeout: No data received for line 1[0m
+[0;33mW (272388) UART: Timeout: No data received for line 2[0m
+[0;33mW (272488) UART: Queue full, Task 1 message lost[0m
+[0;33mW (272598) UART: Queue full, Task 2 message lost[0m
+[0;33mW (274708) UART: Timeout: No data received for line 1[0m
+[0;33mW (274708) UART: Timeout: No data received for line 2[0m
+[0;33mW (274808) UART: Queue full, Task 1 message lost[0m
+[0;33mW (274918) UART: Queue full, Task 2 message lost[0m
+[0;33mW (277028) UART: Timeout: No data received for line 1[0m
+[0;33mW (277028) UART: Timeout: No data received for line 2[0m
+[0;33mW (277128) UART: Queue full, Task 1 message lost[0m
+[0;33mW (277238) UART: Queue full, Task 2 message lost[0m
+[0;33mW (279348) UART: Timeout: No data received for line 1[0m
+[0;33mW (279348) UART: Timeout: No data received for line 2[0m
+[0;33mW (279448) UART: Queue full, Task 1 message lost[0m
+[0;33mW (279558) UART: Queue full, Task 2 message lost[0m
+[0;33mW (281668) UART: Timeout: No data received for line 1[0m
+[0;33mW (281668) UART: Timeout: No data received for line 2[0m
+[0;33mW (281768) UART: Queue full, Task 1 message lost[0m
+[0;33mW (281878) UART: Queue full, Task 2 message lost[0m
+[0;33mW (283988) UART: Timeout: No data received for line 1[0m
+[0;33mW (283988) UART: Timeout: No data received for line 2[0m
+[0;33mW (284088) UART: Queue full, Task 1 message lost[0m
+[0;33mW (284198) UART: Queue full, Task 2 message lost[0m
+[0;33mW (286308) UART: Timeout: No data received for line 1[0m
+[0;33mW (286308) UART: Timeout: No data received for line 2[0m
+[0;33mW (286408) UART: Queue full, Task 1 message lost[0m
+[0;33mW (286518) UART: Queue full, Task 2 message lost[0m
+[0;33mW (288628) UART: Timeout: No data received for line 1[0m
+[0;33mW (288628) UART: Timeout: No data received for line 2[0m
+[0;33mW (288728) UART: Queue full, Task 1 message lost[0m
+[0;33mW (288838) UART: Queue full, Task 2 message lost[0m
+[0;33mW (290948) UART: Timeout: No data received for line 1[0m
+[0;33mW (290948) UART: Timeout: No data received for line 2[0m
+[0;33mW (291048) UART: Queue full, Task 1 message lost[0m
+[0;33mW (291158) UART: Queue full, Task 2 message lost[0m
+[0;33mW (293268) UART: Timeout: No data received for line 1[0m
+[0;33mW (293268) UART: Timeout: No data received for line 2[0m
+[0;33mW (293368) UART: Queue full, Task 1 message lost[0m
+[0;33mW (293478) UART: Queue full, Task 2 message lost[0m
+[0;33mW (295588) UART: Timeout: No data received for line 1[0m
+[0;33mW (295588) UART: Timeout: No data received for line 2[0m
+[0;33mW (295688) UART: Queue full, Task 1 message lost[0m
+[0;33mW (295798) UART: Queue full, Task 2 message lost[0m
+[0;33mW (297908) UART: Timeout: No data received for line 1[0m
+[0;33mW (297908) UART: Timeout: No data received for line 2[0m
+[0;33mW (298008) UART: Queue full, Task 1 message lost[0m
+[0;33mW (298118) UART: Queue full, Task 2 message lost[0m
+[0;33mW (300228) UART: Timeout: No data received for line 1[0m
+[0;33mW (300228) UART: Timeout: No data received for line 2[0m
+[0;33mW (300328) UART: Queue full, Task 1 message lost[0m
+[0;33mW (300438) UART: Queue full, Task 2 message lost[0m
+[0;33mW (302548) UART: Timeout: No data received for line 1[0m
+[0;33mW (302548) UART: Timeout: No data received for line 2[0m
+[0;33mW (302648) UART: Queue full, Task 1 message lost[0m
+[0;33mW (302758) UART: Queue full, Task 2 message lost[0m
+[0;33mW (304868) UART: Timeout: No data received for line 1[0m
+[0;33mW (304868) UART: Timeout: No data received for line 2[0m
+[0;33mW (304968) UART: Queue full, Task 1 message lost[0m
+[0;33mW (305078) UART: Queue full, Task 2 message lost[0m
+[0;33mW (307188) UART: Timeout: No data received for line 1[0m
+[0;33mW (307188) UART: Timeout: No data received for line 2[0m
+[0;33mW (307288) UART: Queue full, Task 1 message lost[0m
+[0;33mW (307398) UART: Queue full, Task 2 message lost[0m
+[0;33mW (309508) UART: Timeout: No data received for line 1[0m
+[0;33mW (309508) UART: Timeout: No data received for line 2[0m
+[0;33mW (309608) UART: Queue full, Task 1 message lost[0m
+[0;33mW (309718) UART: Queue full, Task 2 message lost[0m
+[0;33mW (311828) UART: Timeout: No data received for line 1[0m
+[0;33mW (311828) UART: Timeout: No data received for line 2[0m
+[0;33mW (311928) UART: Queue full, Task 1 message lost[0m
+[0;33mW (312038) UART: Queue full, Task 2 message lost[0m
+[0;33mW (314148) UART: Timeout: No data received for line 1[0m
+[0;33mW (314148) UART: Timeout: No data received for line 2[0m
+[0;33mW (314248) UART: Queue full, Task 1 message lost[0m
+[0;33mW (314358) UART: Queue full, Task 2 message lost[0m
+[0;33mW (316468) UART: Timeout: No data received for line 1[0m
+[0;33mW (316468) UART: Timeout: No data received for line 2[0m
+[0;33mW (316568) UART: Queue full, Task 1 message lost[0m
+[0;33mW (316678) UART: Queue full, Task 2 message lost[0m
+[0;33mW (318788) UART: Timeout: No data received for line 1[0m
+[0;33mW (318788) UART: Timeout: No data received for line 2[0m
+[0;33mW (318888) UART: Queue full, Task 1 message lost[0m
+[0;33mW (318998) UART: Queue full, Task 2 message lost[0m
+[0;33mW (321108) UART: Timeout: No data received for line 1[0m
+[0;33mW (321108) UART: Timeout: No data received for line 2[0m
+[0;33mW (321208) UART: Queue full, Task 1 message lost[0m
+[0;33mW (321318) UART: Queue full, Task 2 message lost[0m
+[0;33mW (323428) UART: Timeout: No data received for line 1[0m
+[0;33mW (323428) UART: Timeout: No data received for line 2[0m
+[0;33mW (323528) UART: Queue full, Task 1 message lost[0m
+[0;33mW (323638) UART: Queue full, Task 2 message lost[0m
+[0;33mW (325748) UART: Timeout: No data received for line 1[0m
+[0;33mW (325748) UART: Timeout: No data received for line 2[0m
+[0;33mW (325848) UART: Queue full, Task 1 message lost[0m
+[0;33mW (325958) UART: Queue full, Task 2 message lost[0m
+[0;33mW (328068) UART: Timeout: No data received for line 1[0m
+[0;33mW (328068) UART: Timeout: No data received for line 2[0m
+[0;33mW (328168) UART: Queue full, Task 1 message lost[0m
+[0;33mW (328278) UART: Queue full, Task 2 message lost[0m
+[0;33mW (330388) UART: Timeout: No data received for line 1[0m
+[0;33mW (330388) UART: Timeout: No data received for line 2[0m
+[0;33mW (330488) UART: Queue full, Task 1 message lost[0m
+[0;33mW (330598) UART: Queue full, Task 2 message lost[0m
+[0;33mW (332708) UART: Timeout: No data received for line 1[0m
+[0;33mW (332708) UART: Timeout: No data received for line 2[0m
+[0;33mW (332808) UART: Queue full, Task 1 message lost[0m
+[0;33mW (332918) UART: Queue full, Task 2 message lost[0m
+[0;33mW (335028) UART: Timeout: No data received for line 1[0m
+[0;33mW (335028) UART: Timeout: No data received for line 2[0m
+[0;33mW (335128) UART: Queue full, Task 1 message lost[0m
+[0;33mW (335238) UART: Queue full, Task 2 message lost[0m
+[0;33mW (337348) UART: Timeout: No data received for line 1[0m
+[0;33mW (337348) UART: Timeout: No data received for line 2[0m
+[0;33mW (337448) UART: Queue full, Task 1 message lost[0m
+[0;33mW (337558) UART: Queue full, Task 2 message lost[0m
+[0;33mW (339668) UART: Timeout: No data received for line 1[0m
+[0;33mW (339668) UART: Timeout: No data received for line 2[0m
+[0;33mW (339768) UART: Queue full, Task 1 message lost[0m
+[0;33mW (339878) UART: Queue full, Task 2 message lost[0m
+[0;33mW (341988) UART: Timeout: No data received for line 1[0m
+[0;33mW (341988) UART: Timeout: No data received for line 2[0m
+[0;33mW (342088) UART: Queue full, Task 1 message lost[0m
+[0;33mW (342198) UART: Queue full, Task 2 message lost[0m
+[0;33mW (344308) UART: Timeout: No data received for line 1[0m
+[0;33mW (344308) UART: Timeout: No data received for line 2[0m
+[0;33mW (344408) UART: Queue full, Task 1 message lost[0m
+[0;33mW (344518) UART: Queue full, Task 2 message lost[0m
+[0;33mW (346628) UART: Timeout: No data received for line 1[0m
+[0;33mW (346628) UART: Timeout: No data received for line 2[0m
+[0;33mW (346728) UART: Queue full, Task 1 message lost[0m
+[0;33mW (346838) UART: Queue full, Task 2 message lost[0m
+[0;33mW (348948) UART: Timeout: No data received for line 1[0m
+[0;33mW (348948) UART: Timeout: No data received for line 2[0m
+[0;33mW (349048) UART: Queue full, Task 1 message lost[0m
+[0;33mW (349158) UART: Queue full, Task 2 message lost[0m
+[0;33mW (351268) UART: Timeout: No data received for line 1[0m
+[0;33mW (351268) UART: Timeout: No data received for line 2[0m
+[0;33mW (351368) UART: Queue full, Task 1 message lost[0m
+[0;33mW (351478) UART: Queue full, Task 2 message lost[0m
+[0;33mW (353588) UART: Timeout: No data received for line 1[0m
+[0;33mW (353588) UART: Timeout: No data received for line 2[0m
+[0;33mW (353688) UART: Queue full, Task 1 message lost[0m
+[0;33mW (353798) UART: Queue full, Task 2 message lost[0m
+[0;33mW (355908) UART: Timeout: No data received for line 1[0m
+[0;33mW (355908) UART: Timeout: No data received for line 2[0m
+[0;33mW (356008) UART: Queue full, Task 1 message lost[0m
+[0;33mW (356118) UART: Queue full, Task 2 message lost[0m
+[0;33mW (358228) UART: Timeout: No data received for line 1[0m
+[0;33mW (358228) UART: Timeout: No data received for line 2[0m
+[0;33mW (358328) UART: Queue full, Task 1 message lost[0m
+[0;33mW (358438) UART: Queue full, Task 2 message lost[0m
+[0;33mW (360548) UART: Timeout: No data received for line 1[0m
+[0;33mW (360548) UART: Timeout: No data received for line 2[0m
+[0;33mW (360648) UART: Queue full, Task 1 message lost[0m
+[0;33mW (360758) UART: Queue full, Task 2 message lost[0m
+[0;33mW (362868) UART: Timeout: No data received for line 1[0m
+[0;33mW (362868) UART: Timeout: No data received for line 2[0m
+[0;33mW (362968) UART: Queue full, Task 1 message lost[0m
+[0;33mW (363078) UART: Queue full, Task 2 message lost[0m
+[0;33mW (365188) UART: Timeout: No data received for line 1[0m
+[0;33mW (365188) UART: Timeout: No data received for line 2[0m
+[0;33mW (365288) UART: Queue full, Task 1 message lost[0m
+[0;33mW (365398) UART: Queue full, Task 2 message lost[0m
+[0;33mW (367508) UART: Timeout: No data received for line 1[0m
+[0;33mW (367508) UART: Timeout: No data received for line 2[0m
+[0;33mW (367608) UART: Queue full, Task 1 message lost[0m
+[0;33mW (367718) UART: Queue full, Task 2 message lost[0m
+[0;33mW (369828) UART: Timeout: No data received for line 1[0m
+[0;33mW (369828) UART: Timeout: No data received for line 2[0m
+[0;33mW (369928) UART: Queue full, Task 1 message lost[0m
+[0;33mW (370038) UART: Queue full, Task 2 message lost[0m
+[0;33mW (372148) UART: Timeout: No data received for line 1[0m
+[0;33mW (372148) UART: Timeout: No data received for line 2[0m
+[0;33mW (372248) UART: Queue full, Task 1 message lost[0m
+[0;33mW (372358) UART: Queue full, Task 2 message lost[0m
+[0;33mW (374468) UART: Timeout: No data received for line 1[0m
+[0;33mW (374468) UART: Timeout: No data received for line 2[0m
+[0;33mW (374568) UART: Queue full, Task 1 message lost[0m
+[0;33mW (374678) UART: Queue full, Task 2 message lost[0m
+[0;33mW (376788) UART: Timeout: No data received for line 1[0m
+[0;33mW (376788) UART: Timeout: No data received for line 2[0m
+[0;33mW (376888) UART: Queue full, Task 1 message lost[0m
+[0;33mW (376998) UART: Queue full, Task 2 message lost[0m
+[0;33mW (379108) UART: Timeout: No data received for line 1[0m
+[0;33mW (379108) UART: Timeout: No data received for line 2[0m
+[0;33mW (379208) UART: Queue full, Task 1 message lost[0m
+[0;33mW (379318) UART: Queue full, Task 2 message lost[0m
+[0;33mW (381428) UART: Timeout: No data received for line 1[0m
+[0;33mW (381428) UART: Timeout: No data received for line 2[0m
+[0;33mW (381528) UART: Queue full, Task 1 message lost[0m
+[0;33mW (381638) UART: Queue full, Task 2 message lost[0m
+[0;33mW (383748) UART: Timeout: No data received for line 1[0m
+[0;33mW (383748) UART: Timeout: No data received for line 2[0m
+[0;33mW (383848) UART: Queue full, Task 1 message lost[0m
+[0;33mW (383958) UART: Queue full, Task 2 message lost[0m
+[0;33mW (386068) UART: Timeout: No data received for line 1[0m
+[0;33mW (386068) UART: Timeout: No data received for line 2[0m
+[0;33mW (386168) UART: Queue full, Task 1 message lost[0m
+[0;33mW (386278) UART: Queue full, Task 2 message lost[0m
+[0;33mW (388388) UART: Timeout: No data received for line 1[0m
+[0;33mW (388388) UART: Timeout: No data received for line 2[0m
+[0;33mW (388488) UART: Queue full, Task 1 message lost[0m
+[0;33mW (388598) UART: Queue full, Task 2 message lost[0m
+[0;33mW (390708) UART: Timeout: No data received for line 1[0m
+[0;33mW (390708) UART: Timeout: No data received for line 2[0m
+[0;33mW (390808) UART: Queue full, Task 1 message lost[0m
+[0;33mW (390918) UART: Queue full, Task 2 message lost[0m
+[0;33mW (393028) UART: Timeout: No data received for line 1[0m
+[0;33mW (393028) UART: Timeout: No data received for line 2[0m
+[0;33mW (393128) UART: Queue full, Task 1 message lost[0m
+[0;33mW (393238) UART: Queue full, Task 2 message lost[0m
+[0;33mW (395348) UART: Timeout: No data received for line 1[0m
+[0;33mW (395348) UART: Timeout: No data received for line 2[0m
+[0;33mW (395448) UART: Queue full, Task 1 message lost[0m
+[0;33mW (395558) UART: Queue full, Task 2 message lost[0m
+[0;33mW (397668) UART: Timeout: No data received for line 1[0m
+[0;33mW (397668) UART: Timeout: No data received for line 2[0m
+[0;33mW (397768) UART: Queue full, Task 1 message lost[0m
+[0;33mW (397878) UART: Queue full, Task 2 message lost[0m
+[0;33mW (399988) UART: Timeout: No data received for line 1[0m
+[0;33mW (399988) UART: Timeout: No data received for line 2[0m
+[0;33mW (400088) UART: Queue full, Task 1 message lost[0m
+[0;33mW (400198) UART: Queue full, Task 2 message lost[0m
+[0;33mW (402308) UART: Timeout: No data received for line 1[0m
+[0;33mW (402308) UART: Timeout: No data received for line 2[0m
+[0;33mW (402408) UART: Queue full, Task 1 message lost[0m
+[0;33mW (402518) UART: Queue full, Task 2 message lost[0m
+[0;33mW (404628) UART: Timeout: No data received for line 1[0m
+[0;33mW (404628) UART: Timeout: No data received for line 2[0m
+[0;33mW (404728) UART: Queue full, Task 1 message lost[0m
+[0;33mW (404838) UART: Queue full, Task 2 message lost[0m
+[0;33mW (406948) UART: Timeout: No data received for line 1[0m
+[0;33mW (406948) UART: Timeout: No data received for line 2[0m
+[0;33mW (407048) UART: Queue full, Task 1 message lost[0m
+[0;33mW (407158) UART: Queue full, Task 2 message lost[0m
+[0;33mW (409268) UART: Timeout: No data received for line 1[0m
+[0;33mW (409268) UART: Timeout: No data received for line 2[0m
+[0;33mW (409368) UART: Queue full, Task 1 message lost[0m
+[0;33mW (409478) UART: Queue full, Task 2 message lost[0m
+[0;33mW (411588) UART: Timeout: No data received for line 1[0m
+[0;33mW (411588) UART: Timeout: No data received for line 2[0m
+[0;33mW (411688) UART: Queue full, Task 1 message lost[0m
+[0;33mW (411798) UART: Queue full, Task 2 message lost[0m
+[0;33mW (413908) UART: Timeout: No data received for line 1[0m
+[0;33mW (413908) UART: Timeout: No data received for line 2[0m
+[0;33mW (414008) UART: Queue full, Task 1 message lost[0m
+[0;33mW (414118) UART: Queue full, Task 2 message lost[0m
+[0;33mW (416228) UART: Timeout: No data received for line 1[0m
+[0;33mW (416228) UART: Timeout: No data received for line 2[0m
+[0;33mW (416328) UART: Queue full, Task 1 message lost[0m
+[0;33mW (416438) UART: Queue full, Task 2 message lost[0m
+[0;33mW (418548) UART: Timeout: No data received for line 1[0m
+[0;33mW (418548) UART: Timeout: No data received for line 2[0m
+[0;33mW (418648) UART: Queue full, Task 1 message lost[0m
+[0;33mW (418758) UART: Queue full, Task 2 message lost[0m
+[0;33mW (420868) UART: Timeout: No data received for line 1[0m
+[0;33mW (420868) UART: Timeout: No data received for line 2[0m
+[0;33mW (420968) UART: Queue full, Task 1 message lost[0m
+[0;33mW (421078) UART: Queue full, Task 2 message lost[0m
+[0;33mW (423188) UART: Timeout: No data received for line 1[0m
+[0;33mW (423188) UART: Timeout: No data received for line 2[0m
+[0;33mW (423288) UART: Queue full, Task 1 message lost[0m
+[0;33mW (423398) UART: Queue full, Task 2 message lost[0m
+[0;33mW (425508) UART: Timeout: No data received for line 1[0m
+[0;33mW (425508) UART: Timeout: No data received for line 2[0m
+[0;33mW (425608) UART: Queue full, Task 1 message lost[0m
+[0;33mW (425718) UART: Queue full, Task 2 message lost[0m
+[0;33mW (427828) UART: Timeout: No data received for line 1[0m
+[0;33mW (427828) UART: Timeout: No data received for line 2[0m
+[0;33mW (427928) UART: Queue full, Task 1 message lost[0m
+[0;33mW (428038) UART: Queue full, Task 2 message lost[0m

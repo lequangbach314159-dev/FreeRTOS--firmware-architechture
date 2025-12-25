@@ -1,0 +1,949 @@
+Command: C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\tools/idf_monitor.py -p COM6 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\examples\get-started\RTOS_part2\build\RTOS_part2.elf C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\examples\get-started\RTOS_part2\build\bootloader\bootloader.elf --force-color -m 'C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\tools\idf.py' '-p' 'COM6'
+SPI Speed      : 40M�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Aug 18 2025 09:30:05[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.0[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09230h ( 37424) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00019258 vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (101) esp_image: segment 2: paddr=00019280 vaddr=3ffb0000 size=022a8h (  8872) load[0m
+[0;32mI (109) esp_image: segment 3: paddr=0001b530 vaddr=40080000 size=04ae8h ( 19176) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=1618ch ( 90508) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=000361b4 vaddr=40084ae8 size=0966ch ( 38508) load[0m
+[0;32mI (174) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (174) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (193) cpu_start: Pro cpu start user code[0m
+[0;32mI (193) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (193) app_init: Application information:[0m
+[0;32mI (193) app_init: Project name:     RTOS_part2[0m
+[0;32mI (197) app_init: App version:      v5.5-dirty[0m
+[0;32mI (201) app_init: Compile time:     Aug 18 2025 09:29:49[0m
+[0;32mI (206) app_init: ELF file SHA256:  c48f9408f...[0m
+[0;32mI (211) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (215) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (219) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (223) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (227) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (233) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (238) heap_init: At 3FFB2BC0 len 0002D440 (181 KiB): DRAM[0m
+[0;32mI (243) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (254) heap_init: At 4008E154 len 00011EAC (71 KiB): IRAM[0m
+[0;32mI (260) spi_flash: detected chip: generic[0m
+[0;32mI (263) spi_flash: flash io: dio[0m
+[0;33mW (266) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (279) main_task: Started on CPU0[0m
+[0;32mI (289) main_task: Calling app_main()[0m
+[0;32mI (289) ESP1: Task1 sent: hello ESP2 task 1 1[0m
+
+[0;32mI (289) main_task: Returned from app_main()[0m
+[0;32mI (1169) ESP1: Task2 sent: hello ESP2 task 2 1[0m
+
+[0;32mI (1839) ESP1: Task1 sent: hello ESP2 task 1 2[0m
+
+[0;33mW (2289) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (2509) ESP1: Task2 sent: hello ESP2 task 2 2[0m
+
+[0;32mI (3149) ESP1: Task1 sent: hello ESP2 task 1 3[0m
+
+[0;32mI (3819) ESP1: Task2 sent: hello ESP2 task 2 3[0m
+
+[0;33mW (4389) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (4509) ESP1: Task1 sent: hello ESP2 task 1 4[0m
+
+[0;32mI (5169) ESP1: Task2 sent: hello ESP2 task 2 4[0m
+
+[0;32mI (5979) ESP1: Task1 sent: hello ESP2 task 1 5[0m
+
+[0;33mW (6489) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (6589) ESP1: Task2 sent: hello ESP2 task 2 5[0m
+
+[0;32mI (7249) ESP1: Task1 sent: hello ESP2 task 1 6[0m
+
+[0;32mI (7879) ESP1: Task2 sent: hello ESP2 task 2 6[0m
+
+[0;33mW (8589) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (8599) ESP1: Task1 sent: hello ESP2 task 1 7[0m
+
+[0;32mI (9139) ESP1: Task2 sent: hello ESP2 task 2 7[0m
+
+[0;32mI (9939) ESP1: Task1 sent: hello ESP2 task 1 8[0m
+
+[0;33mW (10689) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (10709) ESP1: Task2 sent: hello ESP2 task 2 8[0m
+
+[0;32mI (11529) ESP1: Task1 sent: hello ESP2 task 1 9[0m
+
+[0;32mI (12169) ESP1: Task2 sent: hello ESP2 task 2 9[0m
+
+[0;33mW (12789) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (12969) ESP1: Task1 sent: hello ESP2 task 1 10[0m
+
+[0;32mI (13859) ESP1: Task2 sent: hello ESP2 task 2 10[0m
+
+[0;32mI (14619) ESP1: Task1 sent: hello ESP2 task 1 11[0m
+
+[0;33mW (14889) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (15299) ESP1: Task2 sent: hello ESP2 task 2 11[0m
+
+[0;32mI (15949) ESP1: Task1 sent: hello ESP2 task 1 12[0m
+
+[0;32mI (16809) ESP1: Task2 sent: hello ESP2 task 2 12[0m
+
+[0;33mW (16989) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (17679) ESP1: Task1 sent: hello ESP2 task 1 13[0m
+
+[0;32mI (18219) ESP1: Task2 sent: hello ESP2 task 2 13[0m
+
+[0;32mI (18759) ESP1: Task1 sent: hello ESP2 task 1 14[0m
+
+[0;33mW (19089) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (19469) ESP1: Task2 sent: hello ESP2 task 2 14[0m
+
+[0;32mI (20309) ESP1: Task1 sent: hello ESP2 task 1 15[0m
+
+[0;32mI (21079) ESP1: Task2 sent: hello ESP2 task 2 15[0m
+
+[0;33mW (21189) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (21829) ESP1: Task1 sent: hello ESP2 task 1 16[0m
+
+[0;32mI (22599) ESP1: Task2 sent: hello ESP2 task 2 16[0m
+
+[0;33mW (23289) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (23309) ESP1: Task1 sent: hello ESP2 task 1 17[0m
+
+[0;32mI (24079) ESP1: Task2 sent: hello ESP2 task 2 17[0m
+
+[0;32mI (24619) ESP1: Task1 sent: hello ESP2 task 1 18[0m
+
+[0;32mI (25129) ESP1: Task2 sent: hello ESP2 task 2 18[0m
+
+[0;33mW (25389) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (25789) ESP1: Task1 sent: hello ESP2 task 1 19[0m
+
+[0;32mI (26289) ESP1: Task2 sent: hello ESP2 task 2 19[0m
+
+[0;32mI (26819) ESP1: Task1 sent: hello ESP2 task 1 20[0m
+
+[0;32mI (27349) ESP1: Task2 sent: hello ESP2 task 2 20[0m
+
+[0;33mW (27489) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (28089) ESP1: Task1 sent: hello ESP2 task 1 21[0m
+
+[0;32mI (28969) ESP1: Task2 sent: hello ESP2 task 2 21[0m
+
+[0;33mW (29589) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (29629) ESP1: Task1 sent: hello ESP2 task 1 22[0m
+
+[0;32mI (30509) ESP1: Task2 sent: hello ESP2 task 2 22[0m
+
+[0;32mI (31289) ESP1: Task1 sent: hello ESP2 task 1 23[0m
+
+[0;33mW (31689) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (31829) ESP1: Task2 sent: hello ESP2 task 2 23[0m
+
+[0;32mI (32679) ESP1: Task1 sent: hello ESP2 task 1 24[0m
+
+[0;32mI (33419) ESP1: Task2 sent: hello ESP2 task 2 24[0m
+
+[0;33mW (33789) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (34119) ESP1: Task1 sent: hello ESP2 task 1 25[0m
+
+[0;32mI (34869) ESP1: Task2 sent: hello ESP2 task 2 25[0m
+
+[0;32mI (35569) ESP1: Task1 sent: hello ESP2 task 1 26[0m
+
+[0;33mW (35889) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (36169) ESP1: Task2 sent: hello ESP2 task 2 26[0m
+
+[0;32mI (36869) ESP1: Task1 sent: hello ESP2 task 1 27[0m
+
+[0;32mI (37439) ESP1: Task2 sent: hello ESP2 task 2 27[0m
+
+[0;33mW (37989) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (38059) ESP1: Task1 sent: hello ESP2 task 1 28[0m
+
+[0;32mI (38769) ESP1: Task2 sent: hello ESP2 task 2 28[0m
+
+[0;32mI (39419) ESP1: Task1 sent: hello ESP2 task 1 29[0m
+
+[0;33mW (40089) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (40139) ESP1: Task2 sent: hello ESP2 task 2 29[0m
+
+[0;32mI (40909) ESP1: Task1 sent: hello ESP2 task 1 30[0m
+
+[0;32mI (41439) ESP1: Task2 sent: hello ESP2 task 2 30[0m
+
+[0;32mI (41939) ESP1: Task1 sent: hello ESP2 task 1 31[0m
+
+[0;33mW (42189) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (42589) ESP1: Task2 sent: hello ESP2 task 2 31[0m
+
+[0;32mI (43429) ESP1: Task1 sent: hello ESP2 task 1 32[0m
+
+[0;32mI (44179) ESP1: Task2 sent: hello ESP2 task 2 32[0m
+
+[0;33mW (44289) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (44719) ESP1: Task1 sent: hello ESP2 task 1 33[0m
+
+[0;32mI (45379) ESP1: Task2 sent: hello ESP2 task 2 33[0m
+
+[0;32mI (46149) ESP1: Task1 sent: hello ESP2 task 1 34[0m
+
+[0;33mW (46389) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (47029) ESP1: Task2 sent: hello ESP2 task 2 34[0m
+
+[0;32mI (47889) ESP1: Task1 sent: hello ESP2 task 1 35[0m
+
+[0;32mI (48419) ESP1: Task2 sent: hello ESP2 task 2 35[0m
+
+[0;33mW (48489) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (49299) ESP1: Task1 sent: hello ESP2 task 1 36[0m
+
+[0;32mI (49869) ESP1: Task2 sent: hello ESP2 task 2 36[0m
+
+[0;32mI (50379) ESP1: Task1 sent: hello ESP2 task 1 37[0m
+
+[0;33mW (50589) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (51209) ESP1: Task2 sent: hello ESP2 task 2 37[0m
+
+[0;32mI (52009) ESP1: Task1 sent: hello ESP2 task 1 38[0m
+
+[0;33mW (52689) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (52789) ESP1: Task2 sent: hello ESP2 task 2 38[0m
+
+[0;32mI (53619) ESP1: Task1 sent: hello ESP2 task 1 39[0m
+
+[0;32mI (54469) ESP1: Task2 sent: hello ESP2 task 2 39[0m
+
+[0;33mW (54789) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (55129) ESP1: Task1 sent: hello ESP2 task 1 40[0m
+
+[0;32mI (55699) ESP1: Task2 sent: hello ESP2 task 2 40[0m
+
+[0;32mI (56239) ESP1: Task1 sent: hello ESP2 task 1 41[0m
+
+[0;32mI (56799) ESP1: Task2 sent: hello ESP2 task 2 41[0m
+
+[0;33mW (56889) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (57479) ESP1: Task1 sent: hello ESP2 task 1 42[0m
+
+[0;32mI (58129) ESP1: Task2 sent: hello ESP2 task 2 42[0m
+
+[0;32mI (58939) ESP1: Task1 sent: hello ESP2 task 1 43[0m
+
+[0;33mW (58989) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (59689) ESP1: Task2 sent: hello ESP2 task 2 43[0m
+
+[0;32mI (60429) ESP1: Task1 sent: hello ESP2 task 1 44[0m
+
+[0;33mW (61089) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (61299) ESP1: Task2 sent: hello ESP2 task 2 44[0m
+
+[0;32mI (61919) ESP1: Task1 sent: hello ESP2 task 1 45[0m
+
+[0;32mI (62689) ESP1: Task2 sent: hello ESP2 task 2 45[0m
+
+[0;33mW (63189) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (63419) ESP1: Task1 sent: hello ESP2 task 1 46[0m
+
+[0;32mI (63939) ESP1: Task2 sent: hello ESP2 task 2 46[0m
+
+[0;32mI (64809) ESP1: Task1 sent: hello ESP2 task 1 47[0m
+
+[0;33mW (65289) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (65599) ESP1: Task2 sent: hello ESP2 task 2 47[0m
+
+[0;32mI (66259) ESP1: Task1 sent: hello ESP2 task 1 48[0m
+
+[0;32mI (67129) ESP1: Task2 sent: hello ESP2 task 2 48[0m
+
+[0;33mW (67389) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (67969) ESP1: Task1 sent: hello ESP2 task 1 49[0m
+
+[0;32mI (68719) ESP1: Task2 sent: hello ESP2 task 2 49[0m
+
+[0;32mI (69479) ESP1: Task1 sent: hello ESP2 task 1 50[0m
+
+[0;33mW (69489) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (70109) ESP1: Task2 sent: hello ESP2 task 2 50[0m
+
+[0;32mI (70669) ESP1: Task1 sent: hello ESP2 task 1 51[0m
+
+[0;32mI (71179) ESP1: Task2 sent: hello ESP2 task 2 51[0m
+
+[0;33mW (71589) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (71739) ESP1: Task1 sent: hello ESP2 task 1 52[0m
+
+[0;32mI (72319) ESP1: Task2 sent: hello ESP2 task 2 52[0m
+
+[0;32mI (72929) ESP1: Task1 sent: hello ESP2 task 1 53[0m
+
+[0;32mI (73499) ESP1: Task2 sent: hello ESP2 task 2 53[0m
+
+[0;33mW (73689) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (74289) ESP1: Task1 sent: hello ESP2 task 1 54[0m
+
+[0;32mI (74939) ESP1: Task2 sent: hello ESP2 task 2 54[0m
+
+[0;32mI (75769) ESP1: Task1 sent: hello ESP2 task 1 55[0m
+
+[0;33mW (75789) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (76579) ESP1: Task2 sent: hello ESP2 task 2 55[0m
+
+[0;32mI (77359) ESP1: Task1 sent: hello ESP2 task 1 56[0m
+
+[0;33mW (77889) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (78179) ESP1: Task2 sent: hello ESP2 task 2 56[0m
+
+[0;32mI (78899) ESP1: Task1 sent: hello ESP2 task 1 57[0m
+
+[0;32mI (79659) ESP1: Task2 sent: hello ESP2 task 2 57[0m
+
+[0;33mW (79989) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (80339) ESP1: Task1 sent: hello ESP2 task 1 58[0m
+
+[0;32mI (80869) ESP1: Task2 sent: hello ESP2 task 2 58[0m
+
+[0;32mI (81739) ESP1: Task1 sent: hello ESP2 task 1 59[0m
+
+[0;33mW (82089) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (82589) ESP1: Task2 sent: hello ESP2 task 2 59[0m
+
+[0;32mI (83249) ESP1: Task1 sent: hello ESP2 task 1 60[0m
+
+[0;32mI (84079) ESP1: Task2 sent: hello ESP2 task 2 60[0m
+
+[0;33mW (84189) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (84699) ESP1: Task1 sent: hello ESP2 task 1 61[0m
+
+[0;32mI (85499) ESP1: Task2 sent: hello ESP2 task 2 61[0m
+
+[0;32mI (86189) ESP1: Task1 sent: hello ESP2 task 1 62[0m
+
+[0;33mW (86289) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (86879) ESP1: Task2 sent: hello ESP2 task 2 62[0m
+
+[0;32mI (87659) ESP1: Task1 sent: hello ESP2 task 1 63[0m
+
+[0;32mI (88219) ESP1: Task2 sent: hello ESP2 task 2 63[0m
+
+[0;33mW (88389) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (88799) ESP1: Task1 sent: hello ESP2 task 1 64[0m
+
+[0;32mI (89319) ESP1: Task2 sent: hello ESP2 task 2 64[0m
+
+[0;32mI (90039) ESP1: Task1 sent: hello ESP2 task 1 65[0m
+
+[0;33mW (90489) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (90749) ESP1: Task2 sent: hello ESP2 task 2 65[0m
+
+[0;32mI (91599) ESP1: Task1 sent: hello ESP2 task 1 66[0m
+
+[0;32mI (92109) ESP1: Task2 sent: hello ESP2 task 2 66[0m
+
+[0;33mW (92589) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (92779) ESP1: Task1 sent: hello ESP2 task 1 67[0m
+
+[0;32mI (93499) ESP1: Task2 sent: hello ESP2 task 2 67[0m
+
+[0;32mI (94269) ESP1: Task1 sent: hello ESP2 task 1 68[0m
+
+[0;33mW (94689) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (94909) ESP1: Task2 sent: hello ESP2 task 2 68[0m
+
+[0;32mI (95679) ESP1: Task1 sent: hello ESP2 task 1 69[0m
+
+[0;32mI (96179) ESP1: Task2 sent: hello ESP2 task 2 69[0m
+
+[0;32mI (96709) ESP1: Task1 sent: hello ESP2 task 1 70[0m
+
+[0;33mW (96789) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (97319) ESP1: Task2 sent: hello ESP2 task 2 70[0m
+
+[0;32mI (98189) ESP1: Task1 sent: hello ESP2 task 1 71[0m
+
+[0;32mI (98789) ESP1: Task2 sent: hello ESP2 task 2 71[0m
+
+[0;33mW (98889) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (99359) ESP1: Task1 sent: hello ESP2 task 1 72[0m
+
+[0;32mI (100229) ESP1: Task2 sent: hello ESP2 task 2 72[0m
+
+[0;32mI (100919) ESP1: Task1 sent: hello ESP2 task 1 73[0m
+
+[0;33mW (100989) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (101589) ESP1: Task2 sent: hello ESP2 task 2 73[0m
+
+[0;32mI (102379) ESP1: Task1 sent: hello ESP2 task 1 74[0m
+
+[0;33mW (103089) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (103159) ESP1: Task2 sent: hello ESP2 task 2 74[0m
+
+[0;32mI (103969) ESP1: Task1 sent: hello ESP2 task 1 75[0m
+
+[0;32mI (104469) ESP1: Task2 sent: hello ESP2 task 2 75[0m
+
+[0;32mI (105029) ESP1: Task1 sent: hello ESP2 task 1 76[0m
+
+[0;33mW (105189) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (105849) ESP1: Task2 sent: hello ESP2 task 2 76[0m
+
+[0;32mI (106619) ESP1: Task1 sent: hello ESP2 task 1 77[0m
+
+[0;32mI (107219) ESP1: Task2 sent: hello ESP2 task 2 77[0m
+
+[0;33mW (107289) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (107989) ESP1: Task1 sent: hello ESP2 task 1 78[0m
+
+[0;32mI (108579) ESP1: Task2 sent: hello ESP2 task 2 78[0m
+
+[0;33mW (109389) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (109409) ESP1: Task1 sent: hello ESP2 task 1 79[0m
+
+[0;32mI (110019) ESP1: Task2 sent: hello ESP2 task 2 79[0m
+
+[0;32mI (110569) ESP1: Task1 sent: hello ESP2 task 1 80[0m
+
+[0;32mI (111289) ESP1: Task2 sent: hello ESP2 task 2 80[0m
+
+[0;33mW (111489) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (111849) ESP1: Task1 sent: hello ESP2 task 1 81[0m
+
+[0;32mI (112509) ESP1: Task2 sent: hello ESP2 task 2 81[0m
+
+[0;32mI (113209) ESP1: Task1 sent: hello ESP2 task 1 82[0m
+
+[0;33mW (113589) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (114029) ESP1: Task2 sent: hello ESP2 task 2 82[0m
+
+[0;32mI (114709) ESP1: Task1 sent: hello ESP2 task 1 83[0m
+
+[0;32mI (115519) ESP1: Task2 sent: hello ESP2 task 2 83[0m
+
+[0;33mW (115689) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (116179) ESP1: Task1 sent: hello ESP2 task 1 84[0m
+
+[0;32mI (116689) ESP1: Task2 sent: hello ESP2 task 2 84[0m
+
+[0;32mI (117389) ESP1: Task1 sent: hello ESP2 task 1 85[0m
+
+[0;33mW (117789) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (117959) ESP1: Task2 sent: hello ESP2 task 2 85[0m
+
+[0;32mI (118779) ESP1: Task1 sent: hello ESP2 task 1 86[0m
+
+[0;32mI (119469) ESP1: Task2 sent: hello ESP2 task 2 86[0m
+
+[0;33mW (119889) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (120269) ESP1: Task1 sent: hello ESP2 task 1 87[0m
+
+[0;32mI (120809) ESP1: Task2 sent: hello ESP2 task 2 87[0m
+
+[0;32mI (121529) ESP1: Task1 sent: hello ESP2 task 1 88[0m
+
+[0;33mW (121989) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (122299) ESP1: Task2 sent: hello ESP2 task 2 88[0m
+
+[0;32mI (123119) ESP1: Task1 sent: hello ESP2 task 1 89[0m
+
+[0;32mI (123809) ESP1: Task2 sent: hello ESP2 task 2 89[0m
+
+[0;33mW (124089) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (124409) ESP1: Task1 sent: hello ESP2 task 1 90[0m
+
+[0;32mI (125129) ESP1: Task2 sent: hello ESP2 task 2 90[0m
+
+[0;32mI (125659) ESP1: Task1 sent: hello ESP2 task 1 91[0m
+
+[0;33mW (126189) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (126319) ESP1: Task2 sent: hello ESP2 task 2 91[0m
+
+[1;31mE (126549) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (126669) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (126789) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (126889) ESP1: Task1 sent: hello ESP2 task 1 92[0m
+
+[1;31mE (126889) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (127009) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (127149) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (127269) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (127389) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (127529) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (127649) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (127699) ESP1: Task2 sent: hello ESP2 task 2 92[0m
+
+[1;31mE (127749) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (127889) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (128009) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (128129) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (128249) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (128359) ESP1: Task1 sent: hello ESP2 task 1 93[0m
+
+[1;31mE (128369) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (128489) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (128609) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (128729) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (128869) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (128989) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (129109) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (129129) ESP1: Task2 sent: hello ESP2 task 2 93[0m
+
+[1;31mE (129209) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (129329) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (129449) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (129569) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (129689) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (129739) ESP1: Task1 sent: hello ESP2 task 1 94[0m
+
+[1;31mE (129809) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (129909) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (130029) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (130169) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (130289) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (130429) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (130549) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (130569) ESP1: Task2 sent: hello ESP2 task 2 94[0m
+
+[1;31mE (130649) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (130789) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (130929) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (131069) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (131189) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (131329) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (131419) ESP1: Task1 sent: hello ESP2 task 1 95[0m
+
+[1;31mE (131469) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (131589) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (131729) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (131849) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (131929) ESP1: Task2 sent: hello ESP2 task 2 95[0m
+
+[1;31mE (131969) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (132089) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (132229) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (132369) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (132529) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (132669) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (132789) ESP1: Task1 sent: hello ESP2 task 1 96[0m
+
+[1;31mE (132789) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (132989) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (133169) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (133369) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (133529) ESP1: Task2 sent: hello ESP2 task 2 96[0m
+
+[0;32mI (134119) ESP1: Task1 sent: hello ESP2 task 1 97[0m
+
+[0;32mI (134679) ESP1: Task2 sent: hello ESP2 task 2 97[0m
+
+[0;32mI (135209) ESP1: Task1 sent: hello ESP2 task 1 98[0m
+
+[0;33mW (135469) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (136039) ESP1: Task2 sent: hello ESP2 task 2 98[0m
+
+[0;32mI (136629) ESP1: Task1 sent: hello ESP2 task 1 99[0m
+
+[0;32mI (137359) ESP1: Task2 sent: hello ESP2 task 2 99[0m
+
+[0;33mW (137569) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (138009) ESP1: Task1 sent: hello ESP2 task 1 100[0m
+
+[0;32mI (138719) ESP1: Task2 sent: hello ESP2 task 2 100[0m
+
+[0;32mI (139279) ESP1: Task1 sent: hello ESP2 task 1 101[0m
+
+[0;33mW (139669) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (140169) ESP1: Task2 sent: hello ESP2 task 2 101[0m
+
+[0;32mI (140699) ESP1: Task1 sent: hello ESP2 task 1 102[0m
+
+[0;32mI (141499) ESP1: Task2 sent: hello ESP2 task 2 102[0m
+
+[0;33mW (141769) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (142249) ESP1: Task1 sent: hello ESP2 task 1 103[0m
+
+[0;32mI (143069) ESP1: Task2 sent: hello ESP2 task 2 103[0m
+
+[0;32mI (143639) ESP1: Task1 sent: hello ESP2 task 1 104[0m
+
+[0;33mW (143869) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (144239) ESP1: Task2 sent: hello ESP2 task 2 104[0m
+
+[1;31mE (144249) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (144349) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (144909) ESP1: Task1 sent: hello ESP2 task 1 105[0m
+
+[0;32mI (145659) ESP1: Task2 sent: hello ESP2 task 2 105[0m
+
+[0;32mI (146379) ESP1: Task1 sent: hello ESP2 task 1 106[0m
+
+[0;33mW (146449) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (147079) ESP1: Task2 sent: hello ESP2 task 2 106[0m
+
+[0;32mI (147859) ESP1: Task1 sent: hello ESP2 task 1 107[0m
+
+[0;32mI (148419) ESP1: Task2 sent: hello ESP2 task 2 107[0m
+
+[0;33mW (148549) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (149169) ESP1: Task1 sent: hello ESP2 task 1 108[0m
+
+[0;32mI (149899) ESP1: Task2 sent: hello ESP2 task 2 108[0m
+
+[0;32mI (150549) ESP1: Task1 sent: hello ESP2 task 1 109[0m
+
+[0;33mW (150649) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (151189) ESP1: Task2 sent: hello ESP2 task 2 109[0m
+
+[0;32mI (151919) ESP1: Task1 sent: hello ESP2 task 1 110[0m
+
+[0;32mI (152639) ESP1: Task2 sent: hello ESP2 task 2 110[0m
+
+[0;33mW (152749) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (153519) ESP1: Task1 sent: hello ESP2 task 1 111[0m
+
+[0;32mI (154109) ESP1: Task2 sent: hello ESP2 task 2 111[0m
+
+[0;32mI (154619) ESP1: Task1 sent: hello ESP2 task 1 112[0m
+
+[0;33mW (154849) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (155229) ESP1: Task2 sent: hello ESP2 task 2 112[0m
+
+[0;32mI (155849) ESP1: Task1 sent: hello ESP2 task 1 113[0m
+
+[0;32mI (156449) ESP1: Task2 sent: hello ESP2 task 2 113[0m
+
+[0;33mW (156949) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (157249) ESP1: Task1 sent: hello ESP2 task 1 114[0m
+
+[0;32mI (157749) ESP1: Task2 sent: hello ESP2 task 2 114[0m
+
+[0;32mI (158609) ESP1: Task1 sent: hello ESP2 task 1 115[0m
+
+[0;33mW (159049) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (159289) ESP1: Task2 sent: hello ESP2 task 2 115[0m
+
+[0;32mI (160169) ESP1: Task1 sent: hello ESP2 task 1 116[0m
+
+[0;32mI (160719) ESP1: Task2 sent: hello ESP2 task 2 116[0m
+
+[0;33mW (161149) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (161609) ESP1: Task1 sent: hello ESP2 task 1 117[0m
+
+[0;32mI (162109) ESP1: Task2 sent: hello ESP2 task 2 117[0m
+
+[0;32mI (162669) ESP1: Task1 sent: hello ESP2 task 1 118[0m
+
+[0;33mW (163249) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (163379) ESP1: Task2 sent: hello ESP2 task 2 118[0m
+
+[0;32mI (163929) ESP1: Task1 sent: hello ESP2 task 1 119[0m
+
+[0;32mI (164569) ESP1: Task2 sent: hello ESP2 task 2 119[0m
+
+[0;32mI (165319) ESP1: Task1 sent: hello ESP2 task 1 120[0m
+
+[0;33mW (165349) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (166029) ESP1: Task2 sent: hello ESP2 task 2 120[0m
+
+[0;32mI (166529) ESP1: Task1 sent: hello ESP2 task 1 121[0m
+
+[0;32mI (167179) ESP1: Task2 sent: hello ESP2 task 2 121[0m
+
+[0;33mW (167449) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (167829) ESP1: Task1 sent: hello ESP2 task 1 122[0m
+
+[0;32mI (168469) ESP1: Task2 sent: hello ESP2 task 2 122[0m
+
+[0;32mI (169009) ESP1: Task1 sent: hello ESP2 task 1 123[0m
+
+[0;33mW (169549) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (169799) ESP1: Task2 sent: hello ESP2 task 2 123[0m
+
+��Speed      : 40MHz
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09230h ( 37424) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00019258 vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (101) esp_image: segment 2: paddr=00019280 vaddr=3ffb0000 size=022a8h (  8872) load[0m
+[0;32mI (109) esp_image: segment 3: paddr=0001b530 vaddr=40080000 size=04ae8h ( 19176) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=1618ch ( 90508) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=000361b4 vaddr=40084ae8 size=0966ch ( 38508) load[0m
+[0;32mI (174) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (174) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (193) cpu_start: Pro cpu start user code[0m
+[0;32mI (193) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (193) app_init: Application information:[0m
+[0;32mI (193) app_init: Project name:     RTOS_part2[0m
+[0;32mI (197) app_init: App version:      v5.5-dirty[0m
+[0;32mI (201) app_init: Compile time:     Aug 18 2025 09:29:49[0m
+[0;32mI (206) app_init: ELF file SHA256:  c48f9408f...[0m
+[0;32mI (211) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (215) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (219) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (223) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (227) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (233) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (238) heap_init: At 3FFB2BC0 len 0002D440 (181 KiB): DRAM[0m
+[0;32mI (243) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (254) heap_init: At 4008E154 len 00011EAC (71 KiB): IRAM[0m
+[0;32mI (260) spi_flash: detected chip: generic[0m
+[0;32mI (263) spi_flash: flash io: dio[0m
+[0;33mW (266) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (279) main_task: Started on CPU0[0m
+[0;32mI (289) main_task: Calling app_main()[0m
+[0;32mI (289) ESP1: Task1 sent: hello ESP2 task 1 1[0m
+
+[0;32mI (289) main_task: Returned from app_main()[0m
+[0;32mI (1019) ESP1: Task2 sent: hello ESP2 task 2 1[0m
+
+[0;32mI (1569) ESP1: Task1 sent: hello ESP2 task 1 2[0m
+
+[0;32mI (2259) ESP1: Task2 sent: hello ESP2 task 2 2[0m
+
+[0;33mW (2289) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (2799) ESP1: Task1 sent: hello ESP2 task 1 3[0m
+
+[0;32mI (3319) ESP1: Task2 sent: hello ESP2 task 2 3[0m
+
+[0;32mI (4189) ESP1: Task1 sent: hello ESP2 task 1 4[0m
+
+[1;31mE (4979) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (5079) ESP1: Task2 sent: hello ESP2 task 2 4[0m
+
+[1;31mE (5619) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (5969) ESP1: Task1 sent: hello ESP2 task 1 5[0m
+
+[1;31mE (6299) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (6859) ESP1: Task2 sent: hello ESP2 task 2 5[0m
+
+[1;31mE (6929) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (7529) ESP1: Task1 sent: hello ESP2 task 1 6[0m
+
+[1;31mE (7569) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (8029) ESP1: Task2 sent: hello ESP2 task 2 6[0m
+
+[1;31mE (8209) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (8729) ESP1: Task1 sent: hello ESP2 task 1 7[0m
+
+[1;31mE (8809) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (8989) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (9309) ESP1: Task2 sent: hello ESP2 task 2 7[0m
+
+[1;31mE (9309) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (9639) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (9859) ESP1: Task1 sent: hello ESP2 task 1 8[0m
+
+[1;31mE (9959) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (10199) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (10569) ESP1: Task2 sent: hello ESP2 task 2 8[0m
+
+[1;31mE (10569) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (10919) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (11269) ESP1: Task1 sent: hello ESP2 task 1 9[0m
+
+[1;31mE (11279) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (11639) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (11929) ESP1: Task2 sent: hello ESP2 task 2 9[0m
+
+[1;31mE (11939) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (12199) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (12369) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (12579) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (12609) ESP1: Task1 sent: hello ESP2 task 1 10[0m
+
+[1;31mE (12799) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (13049) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (13289) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (13309) ESP1: Task2 sent: hello ESP2 task 2 10[0m
+
+[1;31mE (13469) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (13849) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (14119) ESP1: Task1 sent: hello ESP2 task 1 11[0m
+
+[1;31mE (14169) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (14569) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (14659) ESP1: Task2 sent: hello ESP2 task 2 11[0m
+
+[1;31mE (14949) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (15249) ESP1: Task1 sent: hello ESP2 task 1 12[0m
+
+[0;32mI (15769) ESP1: Task2 sent: hello ESP2 task 2 12[0m
+
+[0;32mI (16329) ESP1: Task1 sent: hello ESP2 task 1 13[0m
+
+[0;32mI (16859) ESP1: Task2 sent: hello ESP2 task 2 13[0m
+
+[0;33mW (17049) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (17589) ESP1: Task1 sent: hello ESP2 task 1 14[0m
+
+[0;32mI (18409) ESP1: Task2 sent: hello ESP2 task 2 14[0m
+
+[0;33mW (19149) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (19269) ESP1: Task1 sent: hello ESP2 task 1 15[0m
+
+[0;32mI (20059) ESP1: Task2 sent: hello ESP2 task 2 15[0m
+
+[0;32mI (20659) ESP1: Task1 sent: hello ESP2 task 1 16[0m
+
+[0;33mW (21249) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (21539) ESP1: Task2 sent: hello ESP2 task 2 16[0m
+
+[0;32mI (22129) ESP1: Task1 sent: hello ESP2 task 1 17[0m
+
+[0;32mI (22639) ESP1: Task2 sent: hello ESP2 task 2 17[0m
+
+[0;32mI (23249) ESP1: Task1 sent: hello ESP2 task 1 18[0m
+
+[0;33mW (23349) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (23979) ESP1: Task2 sent: hello ESP2 task 2 18[0m
+
+[0;32mI (24769) ESP1: Task1 sent: hello ESP2 task 1 19[0m
+
+[0;33mW (25449) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (25599) ESP1: Task2 sent: hello ESP2 task 2 19[0m
+
+[0;32mI (26339) ESP1: Task1 sent: hello ESP2 task 1 20[0m
+
+[0;32mI (27029) ESP1: Task2 sent: hello ESP2 task 2 20[0m
+
+[0;33mW (27549) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (27819) ESP1: Task1 sent: hello ESP2 task 1 21[0m
+
+[0;32mI (28639) ESP1: Task2 sent: hello ESP2 task 2 21[0m
+
+[0;32mI (29349) ESP1: Task1 sent: hello ESP2 task 1 22[0m
+
+[0;33mW (29649) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (30049) ESP1: Task2 sent: hello ESP2 task 2 22[0m
+
+[0;32mI (30689) ESP1: Task1 sent: hello ESP2 task 1 23[0m
+
+[0;32mI (31509) ESP1: Task2 sent: hello ESP2 task 2 23[0m
+
+[0;33mW (31749) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (32219) ESP1: Task1 sent: hello ESP2 task 1 24[0m
+
+[0;32mI (32949) ESP1: Task2 sent: hello ESP2 task 2 24[0m
+
+[0;32mI (33579) ESP1: Task1 sent: hello ESP2 task 1 25[0m
+
+[0;33mW (33849) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (34219) ESP1: Task2 sent: hello ESP2 task 2 25[0m
+
+[0;32mI (34989) ESP1: Task1 sent: hello ESP2 task 1 26[0m
+
+[1;31mE (35089) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (35389) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (35609) ESP1: Task2 sent: hello ESP2 task 2 26[0m
+
+[1;31mE (35869) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (36149) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (36239) ESP1: Task1 sent: hello ESP2 task 1 27[0m
+
+[1;31mE (36449) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (36729) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (36979) ESP1: Task2 sent: hello ESP2 task 2 27[0m
+
+[1;31mE (37029) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (37309) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (37609) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (37809) ESP1: Task1 sent: hello ESP2 task 1 28[0m
+
+[1;31mE (37849) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (38149) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (38409) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (38439) ESP1: Task2 sent: hello ESP2 task 2 28[0m
+
+[1;31mE (38669) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (38919) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (39199) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (39329) ESP1: Task1 sent: hello ESP2 task 1 29[0m
+
+[1;31mE (39479) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (39779) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (39999) ESP1: Task2 sent: hello ESP2 task 2 29[0m
+
+[1;31mE (40059) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (40339) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (40589) ESP1: Task1 sent: hello ESP2 task 1 30[0m
+
+[1;31mE (40599) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (40899) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (41179) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (41229) ESP1: Task2 sent: hello ESP2 task 2 30[0m
+
+[1;31mE (41539) ESP1: Error! Received data does not match sent data.[0m
+[1;31mE (41759) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (42029) ESP1: Task1 sent: hello ESP2 task 1 31[0m
+
+[1;31mE (42089) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (42709) ESP1: Task2 sent: hello ESP2 task 2 31[0m
+
+[0;32mI (43349) ESP1: Task1 sent: hello ESP2 task 1 32[0m
+
+[0;32mI (44039) ESP1: Task2 sent: hello ESP2 task 2 32[0m
+
+[0;33mW (44189) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (44779) ESP1: Task1 sent: hello ESP2 task 1 33[0m
+
+[0;32mI (45369) ESP1: Task2 sent: hello ESP2 task 2 33[0m
+
+[0;32mI (45899) ESP1: Task1 sent: hello ESP2 task 1 34[0m
+
+[0;33mW (46289) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (46449) ESP1: Task2 sent: hello ESP2 task 2 34[0m
+
+[0;32mI (47189) ESP1: Task1 sent: hello ESP2 task 1 35[0m
+
+[0;32mI (47699) ESP1: Task2 sent: hello ESP2 task 2 35[0m
+
+[0;32mI (48269) ESP1: Task1 sent: hello ESP2 task 1 36[0m
+
+[0;33mW (48389) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (49059) ESP1: Task2 sent: hello ESP2 task 2 36[0m
+
+[0;32mI (49749) ESP1: Task1 sent: hello ESP2 task 1 37[0m
+
+[0;32mI (50429) ESP1: Task2 sent: hello ESP2 task 2 37[0m
+
+[0;33mW (50489) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (51099) ESP1: Task1 sent: hello ESP2 task 1 38[0m
+
+[0;32mI (51709) ESP1: Task2 sent: hello ESP2 task 2 38[0m
+
+[0;32mI (52549) ESP1: Task1 sent: hello ESP2 task 1 39[0m
+
+[0;33mW (52589) ESP1: Timeout: No data received from ESP2![0m
+[0;32mI (53139) ESP1: Task2 sent: hello ESP2 task 2 39[0m
+

@@ -1,0 +1,1078 @@
+Command: C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\tools/idf_monitor.py -p COM7 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\examples\get-started\RTOS_part2\build\RTOS_part2.elf C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\examples\get-started\RTOS_part2\build\bootloader\bootloader.elf --force-color -m 'C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\tools\idf.py' '-p' 'COM7'
+K��.0
+[0;32mI (34) boot.eets Jul 29 2019 12:21:46[0m
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Aug 18 2025 09:30:05[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.0[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09200h ( 37376) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00019228 vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (101) esp_image: segment 2: paddr=00019250 vaddr=3ffb0000 size=022a8h (  8872) load[0m
+[0;32mI (109) esp_image: segment 3: paddr=0001b500 vaddr=40080000 size=04b18h ( 19224) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=16168h ( 90472) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=00036190 vaddr=40084b18 size=09548h ( 38216) load[0m
+[0;32mI (174) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (174) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (193) cpu_start: Pro cpu start user code[0m
+[0;32mI (193) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (193) app_init: Application information:[0m
+[0;32mI (193) app_init: Project name:     RTOS_part2[0m
+[0;32mI (197) app_init: App version:      v5.5-dirty[0m
+[0;32mI (201) app_init: Compile time:     Aug 18 2025 09:29:49[0m
+[0;32mI (206) app_init: ELF file SHA256:  f60636ad6...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (215) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (218) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (222) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (226) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (233) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (238) heap_init: At 3FFB2B40 len 0002D4C0 (181 KiB): DRAM[0m
+[0;32mI (243) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (254) heap_init: At 4008E060 len 00011FA0 (71 KiB): IRAM[0m
+[0;32mI (260) spi_flash: detected chip: generic[0m
+[0;32mI (263) spi_flash: flash io: dio[0m
+[0;33mW (266) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (279) main_task: Started on CPU0[0m
+[0;32mI (289) main_task: Calling app_main()[0m
+[0;32mI (289) UART: Task 1 sent: Task 1 of Bach (cnt = 1)[0m
+
+[0;32mI (289) main_task: Returned from app_main()[0m
+[0;32mI (1169) UART: Task 2 sent: Task 2 of Bach (cnt = 1)[0m
+
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40087690  PS      : 0x00060133  A0      : 0x80088c01  A1      : 0x3ffb72b0  
+A2      : 0x3ffb74d4  A3      : 0xffffffff  A4      : 0x00060120  A5      : 0x00060123  
+A6      : 0x00000001  A7      : 0x0000abab  A8      : 0x0000c000  A9      : 0x00000000  
+A10     : 0x40000000  A11     : 0x00000000  A12     : 0xb33fffff  A13     : 0x00060023  
+A14     : 0x3ffb68e0  A15     : 0x0000abab  SAR     : 0x00000000  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000004  LBEG    : 0x4000c2e0  LEND    : 0x4000c2f6  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x4008768d:0x3ffb72b0 0x40088bfe:0x3ffb72d0 0x400864bb:0x3ffb72f0 0x400868f8:0x3ffb7310 0x400d5b0d:0x3ffb7350 0x400d3e49:0x3ffb73a0 0x40086e21:0x3ffb7440
+
+
+
+
+ELF file SHA256: f60636ad6
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Aug 18 2025 09:30:05[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.0[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09200h ( 37376) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00019228 vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (101) esp_image: segment 2: paddr=00019250 vaddr=3ffb0000 size=022a8h (  8872) load[0m
+[0;32mI (109) esp_image: segment 3: paddr=0001b500 vaddr=40080000 size=04b18h ( 19224) load[0m
+[0;32mI (120) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=16168h ( 90472) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=00036190 vaddr=40084b18 size=09548h ( 38216) load[0m
+[0;32mI (174) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (174) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (192) cpu_start: Pro cpu start user code[0m
+[0;32mI (192) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (192) app_init: Application information:[0m
+[0;32mI (193) app_init: Project name:     RTOS_part2[0m
+[0;32mI (197) app_init: App version:      v5.5-dirty[0m
+[0;32mI (201) app_init: Compile time:     Aug 18 2025 09:29:49[0m
+[0;32mI (206) app_init: ELF file SHA256:  f60636ad6...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (214) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (218) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (222) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (226) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (232) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 3FFB2B40 len 0002D4C0 (181 KiB): DRAM[0m
+[0;32mI (243) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (254) heap_init: At 4008E060 len 00011FA0 (71 KiB): IRAM[0m
+[0;32mI (260) spi_flash: detected chip: generic[0m
+[0;32mI (262) spi_flash: flash io: dio[0m
+[0;33mW (265) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (278) main_task: Started on CPU0[0m
+[0;32mI (288) main_task: Calling app_main()[0m
+[0;32mI (288) UART: Task 1 sent: Task 1 of Bach (cnt = 1)[0m
+
+[0;32mI (288) main_task: Returned from app_main()[0m
+[0;32mI (948) UART: Task 2 sent: Task 2 of Bach (cnt = 1)[0m
+
+[0;32mI (1508) UART: Received 2 lines:[0m
+Ta
+[0;32mI (1508) UART: Echoed 2 lines back[0m
+[0;32mI (2008) UART: Task 1 sent: Task 1 of Bach (cnt = 2)[0m
+
+[0;32mI (2628) UART: Task 2 sent: Task 2 of Bach (cnt = 2)[0m
+
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40087690  PS      : 0x00060533  A0      : 0x80088c01  A1      : 0x3ffb72b0  
+A2      : 0x3ffb74d4  A3      : 0xffffffff  A4      : 0x00060520  A5      : 0x00060523  
+A6      : 0x00000003  A7      : 0x0000abab  A8      : 0x00000000  A9      : 0x00000000  
+A10     : 0x23ff0000  A11     : 0x00000000  A12     : 0xb33fffff  A13     : 0x00060023  
+A14     : 0x00000001  A15     : 0x3ffb2584  SAR     : 0x00000008  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000004  LBEG    : 0x4000c349  LEND    : 0x4000c36b  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x4008768d:0x3ffb72b0 0x40088bfe:0x3ffb72d0 0x400864bb:0x3ffb72f0 0x400868f8:0x3ffb7310 0x400d5b0d:0x3ffb7350 0x400d3e49:0x3ffb73a0 0x40086e21:0x3ffb7440
+
+
+
+
+ELF file SHA256: f60636ad6
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Aug 18 2025 09:30:05[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.0[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09200h ( 37376) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00019228 vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (101) esp_image: segment 2: paddr=00019250 vaddr=3ffb0000 size=022a8h (  8872) load[0m
+[0;32mI (109) esp_image: segment 3: paddr=0001b500 vaddr=40080000 size=04b18h ( 19224) load[0m
+[0;32mI (120) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=16168h ( 90472) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=00036190 vaddr=40084b18 size=09548h ( 38216) load[0m
+[0;32mI (174) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (174) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (192) cpu_start: Pro cpu start user code[0m
+[0;32mI (192) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (192) app_init: Application information:[0m
+[0;32mI (193) app_init: Project name:     RTOS_part2[0m
+[0;32mI (197) app_init: App version:      v5.5-dirty[0m
+[0;32mI (201) app_init: Compile time:     Aug 18 2025 09:29:49[0m
+[0;32mI (206) app_init: ELF file SHA256:  f60636ad6...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (214) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (218) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (222) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (226) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (232) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 3FFB2B40 len 0002D4C0 (181 KiB): DRAM[0m
+[0;32mI (243) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (254) heap_init: At 4008E060 len 00011FA0 (71 KiB): IRAM[0m
+[0;32mI (260) spi_flash: detected chip: generic[0m
+[0;32mI (262) spi_flash: flash io: dio[0m
+[0;33mW (265) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (278) main_task: Started on CPU0[0m
+[0;32mI (288) main_task: Calling app_main()[0m
+[0;32mI (288) UART: Task 1 sent: Task 1 of Bach (cnt = 1)[0m
+
+[0;32mI (288) main_task: Returned from app_main()[0m
+[0;32mI (908) UART: Task 2 sent: Task 2 of Bach (cnt = 1)[0m
+
+[0;32mI (1718) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 1)
+
+[0;32mI (1718) UART: Echoed 2 lines back[0m
+[0;32mI (2218) UART: Task 1 sent: Task 1 of Bach (cnt = 2)[0m
+
+[0;32mI (2998) UART: Task 2 sent: Task 2 of Bach (cnt = 2)[0m
+
+[0;32mI (3548) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 2)
+
+[0;32mI (3548) UART: Echoed 2 lines back[0m
+[0;32mI (4048) UART: Task 1 sent: Task 1 of Bach (cnt = 3)[0m
+
+[0;32mI (4578) UART: Task 2 sent: Task 2 of Bach (cnt = 3)[0m
+
+[0;32mI (5328) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 2)
+
+[0;32mI (5328) UART: Echoed 2 lines back[0m
+[0;32mI (5828) UART: Task 1 sent: Task 1 of Bach (cnt = 4)[0m
+
+[0;32mI (6358) UART: Task 2 sent: Task 2 of Bach (cnt = 4)[0m
+
+[0;32mI (6868) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 1)
+
+[0;32mI (6868) UART: Echoed 2 lines back[0m
+[0;32mI (7368) UART: Task 1 sent: Task 1 of Bach (cnt = 5)[0m
+
+[0;32mI (7978) UART: Task 2 sent: Task 2 of Bach (cnt = 5)[0m
+
+[0;32mI (8558) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 3)
+
+[0;32mI (8558) UART: Echoed 2 lines back[0m
+[0;32mI (9058) UART: Task 1 sent: Task 1 of Bach (cnt = 6)[0m
+
+[0;32mI (9608) UART: Task 2 sent: Task 2 of Bach (cnt = 6)[0m
+
+[0;32mI (10368) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 3)
+
+[0;32mI (10368) UART: Echoed 2 lines back[0m
+[0;32mI (10868) UART: Task 1 sent: Task 1 of Bach (cnt = 7)[0m
+
+[0;32mI (11408) UART: Task 2 sent: Task 2 of Bach (cnt = 7)[0m
+
+[0;32mI (12118) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 1)
+
+[0;32mI (12118) UART: Echoed 2 lines back[0m
+[0;32mI (12618) UART: Task 1 sent: Task 1 of Bach (cnt = 8)[0m
+
+[0;32mI (13368) UART: Task 2 sent: Task 2 of Bach (cnt = 8)[0m
+
+[0;32mI (13898) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 4)
+
+[0;32mI (13898) UART: Echoed 2 lines back[0m
+[0;32mI (14398) UART: Task 1 sent: Task 1 of Bach (cnt = 9)[0m
+
+[0;32mI (15248) UART: Task 2 sent: Task 2 of Bach (cnt = 9)[0m
+
+[0;32mI (15888) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 4)
+
+[0;32mI (15888) UART: Echoed 2 lines back[0m
+[0;32mI (16388) UART: Task 1 sent: Task 1 of Bach (cnt = 10)[0m
+
+[0;32mI (16948) UART: Task 2 sent: Task 2 of Bach (cnt = 10)[0m
+
+[0;32mI (17778) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 2)
+
+[0;32mI (17778) UART: Echoed 2 lines back[0m
+[0;32mI (18278) UART: Task 1 sent: Task 1 of Bach (cnt = 11)[0m
+
+[0;32mI (18998) UART: Task 2 sent: Task 2 of Bach (cnt = 11)[0m
+
+[0;32mI (19878) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 5)
+
+[0;32mI (19878) UART: Echoed 2 lines back[0m
+[0;32mI (20378) UART: Task 1 sent: Task 1 of Bach (cnt = 12)[0m
+
+[0;32mI (21058) UART: Task 2 sent: Task 2 of Bach (cnt = 12)[0m
+
+[0;32mI (21738) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 5)
+
+[0;32mI (21738) UART: Echoed 2 lines back[0m
+[0;32mI (22238) UART: Task 1 sent: Task 1 of Bach (cnt = 13)[0m
+
+[0;32mI (23108) UART: Task 2 sent: Task 2 of Bach (cnt = 13)[0m
+
+[0;32mI (23918) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 2)
+
+[0;32mI (23918) UART: Echoed 2 lines back[0m
+[0;32mI (24418) UART: Task 1 sent: Task 1 of Bach (cnt = 14)[0m
+
+[0;32mI (25168) UART: Task 2 sent: Task 2 of Bach (cnt = 14)[0m
+
+[0;32mI (25808) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 6)
+
+[0;32mI (25808) UART: Echoed 2 lines back[0m
+[0;32mI (26308) UART: Task 1 sent: Task 1 of Bach (cnt = 15)[0m
+
+[0;32mI (27118) UART: Task 2 sent: Task 2 of Bach (cnt = 15)[0m
+
+[0;32mI (27958) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 6)
+
+[0;32mI (27958) UART: Echoed 2 lines back[0m
+[0;32mI (28458) UART: Task 1 sent: Task 1 of Bach (cnt = 16)[0m
+
+[0;32mI (29198) UART: Task 2 sent: Task 2 of Bach (cnt = 16)[0m
+
+[0;32mI (29858) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 2)
+
+[0;32mI (29858) UART: Echoed 2 lines back[0m
+[0;32mI (30358) UART: Task 1 sent: Task 1 of Bach (cnt = 17)[0m
+
+[0;32mI (31218) UART: Task 2 sent: Task 2 of Bach (cnt = 17)[0m
+
+[0;32mI (31988) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 7)
+
+[0;32mI (31988) UART: Echoed 2 lines back[0m
+[0;32mI (32488) UART: Task 1 sent: Task 1 of Bach (cnt = 18)[0m
+
+[0;32mI (33048) UART: Task 2 sent: Task 2 of Bach (cnt = 18)[0m
+
+[0;32mI (33728) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 7)
+
+[0;32mI (33728) UART: Echoed 2 lines back[0m
+[0;32mI (34228) UART: Task 1 sent: Task 1 of Bach (cnt = 19)[0m
+
+[0;32mI (35118) UART: Task 2 sent: Task 2 of Bach (cnt = 19)[0m
+
+[0;32mI (35788) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 3)
+
+[0;32mI (35788) UART: Echoed 2 lines back[0m
+[0;32mI (36288) UART: Task 1 sent: Task 1 of Bach (cnt = 20)[0m
+
+[0;32mI (36948) UART: Task 2 sent: Task 2 of Bach (cnt = 20)[0m
+
+[0;32mI (37678) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 8)
+
+[0;32mI (37678) UART: Echoed 2 lines back[0m
+[0;32mI (38178) UART: Task 1 sent: Task 1 of Bach (cnt = 21)[0m
+
+[0;32mI (39068) UART: Task 2 sent: Task 2 of Bach (cnt = 21)[0m
+
+[0;32mI (39718) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 8)
+
+[0;32mI (39718) UART: Echoed 2 lines back[0m
+[0;32mI (40218) UART: Task 1 sent: Task 1 of Bach (cnt = 22)[0m
+
+[0;32mI (41078) UART: Task 2 sent: Task 2 of Bach (cnt = 22)[0m
+
+[0;32mI (41648) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 3)
+
+[0;32mI (41648) UART: Echoed 2 lines back[0m
+[0;32mI (42148) UART: Task 1 sent: Task 1 of Bach (cnt = 23)[0m
+
+[0;32mI (42898) UART: Task 2 sent: Task 2 of Bach (cnt = 23)[0m
+
+[0;32mI (43598) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 9)
+
+[0;32mI (43598) UART: Echoed 2 lines back[0m
+[0;32mI (44098) UART: Task 1 sent: Task 1 of Bach (cnt = 24)[0m
+
+[0;32mI (44718) UART: Task 2 sent: Task 2 of Bach (cnt = 24)[0m
+
+[0;32mI (45218) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 9)
+
+[0;32mI (45218) UART: Echoed 2 lines back[0m
+[0;32mI (45718) UART: Task 1 sent: Task 1 of Bach (cnt = 25)[0m
+
+[0;32mI (46308) UART: Task 2 sent: Task 2 of Bach (cnt = 25)[0m
+
+[0;32mI (46808) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 2)
+
+[0;32mI (46808) UART: Echoed 2 lines back[0m
+[0;32mI (47308) UART: Task 1 sent: Task 1 of Bach (cnt = 26)[0m
+
+[0;32mI (48038) UART: Task 2 sent: Task 2 of Bach (cnt = 26)[0m
+
+[0;32mI (48738) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 10)
+
+[0;32mI (48738) UART: Echoed 2 lines back[0m
+[0;32mI (49238) UART: Task 1 sent: Task 1 of Bach (cnt = 27)[0m
+
+[0;32mI (50048) UART: Task 2 sent: Task 2 of Bach (cnt = 27)[0m
+
+[0;32mI (50788) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 10)
+
+[0;32mI (50788) UART: Echoed 2 lines back[0m
+[0;32mI (51288) UART: Task 1 sent: Task 1 of Bach (cnt = 28)[0m
+
+[0;32mI (51928) UART: Task 2 sent: Task 2 of Bach (cnt = 28)[0m
+
+[0;32mI (52568) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 4)
+
+[0;32mI (52568) UART: Echoed 2 lines back[0m
+[0;32mI (53068) UART: Task 1 sent: Task 1 of Bach (cnt = 29)[0m
+
+[0;32mI (53728) UART: Task 2 sent: Task 2 of Bach (cnt = 29)[0m
+
+[0;32mI (54388) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 11)
+
+[0;32mI (54388) UART: Echoed 2 lines back[0m
+[0;32mI (54888) UART: Task 1 sent: Task 1 of Bach (cnt = 30)[0m
+
+[0;32mI (55608) UART: Task 2 sent: Task 2 of Bach (cnt = 30)[0m
+
+[0;32mI (56248) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 11)
+
+[0;32mI (56248) UART: Echoed 2 lines back[0m
+[0;32mI (56748) UART: Task 1 sent: Task 1 of Bach (cnt = 31)[0m
+
+[0;32mI (57548) UART: Task 2 sent: Task 2 of Bach (cnt = 31)[0m
+
+[0;32mI (58388) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 4)
+
+[0;32mI (58388) UART: Echoed 2 lines back[0m
+[0;32mI (58888) UART: Task 1 sent: Task 1 of Bach (cnt = 32)[0m
+
+[0;32mI (59548) UART: Task 2 sent: Task 2 of Bach (cnt = 32)[0m
+
+[0;32mI (60288) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 12)
+
+[0;32mI (60288) UART: Echoed 2 lines back[0m
+[0;32mI (60788) UART: Task 1 sent: Task 1 of Bach (cnt = 33)[0m
+
+[0;32mI (61578) UART: Task 2 sent: Task 2 of Bach (cnt = 33)[0m
+
+[0;32mI (62388) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 12)
+
+[0;32mI (62388) UART: Echoed 2 lines back[0m
+[0;32mI (62888) UART: Task 1 sent: Task 1 of Bach (cnt = 34)[0m
+
+[0;32mI (63718) UART: Task 2 sent: Task 2 of Bach (cnt = 34)[0m
+
+[0;32mI (64578) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 1)
+
+[0;32mI (64578) UART: Echoed 2 lines back[0m
+[0;32mI (65078) UART: Task 1 sent: Task 1 of Bach (cnt = 35)[0m
+
+[0;32mI (65808) UART: Task 2 sent: Task 2 of Bach (cnt = 35)[0m
+
+[0;32mI (66628) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 13)
+
+[0;32mI (66628) UART: Echoed 2 lines back[0m
+[0;32mI (67128) UART: Task 1 sent: Task 1 of Bach (cnt = 36)[0m
+
+[0;32mI (67728) UART: Task 2 sent: Task 2 of Bach (cnt = 36)[0m
+
+[0;32mI (68518) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 13)
+
+[0;32mI (68518) UART: Echoed 2 lines back[0m
+[0;32mI (69018) UART: Task 1 sent: Task 1 of Bach (cnt = 37)[0m
+
+[0;32mI (69698) UART: Task 2 sent: Task 2 of Bach (cnt = 37)[0m
+
+[0;32mI (70418) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 5)
+
+[0;32mI (70418) UART: Echoed 2 lines back[0m
+[0;32mI (70918) UART: Task 1 sent: Task 1 of Bach (cnt = 38)[0m
+
+[0;32mI (71528) UART: Task 2 sent: Task 2 of Bach (cnt = 38)[0m
+
+[0;32mI (72118) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 14)
+
+[0;32mI (72118) UART: Echoed 2 lines back[0m
+[0;32mI (72618) UART: Task 1 sent: Task 1 of Bach (cnt = 39)[0m
+
+[0;32mI (73468) UART: Task 2 sent: Task 2 of Bach (cnt = 39)[0m
+
+[0;32mI (74318) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 14)
+
+[0;32mI (74318) UART: Echoed 2 lines back[0m
+[0;32mI (74818) UART: Task 1 sent: Task 1 of Bach (cnt = 40)[0m
+
+[0;32mI (75568) UART: Task 2 sent: Task 2 of Bach (cnt = 40)[0m
+
+[0;32mI (76338) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 5)
+
+[0;32mI (76338) UART: Echoed 2 lines back[0m
+[0;32mI (76838) UART: Task 1 sent: Task 1 of Bach (cnt = 41)[0m
+
+[0;32mI (77698) UART: Task 2 sent: Task 2 of Bach (cnt = 41)[0m
+
+[0;32mI (78338) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 15)
+
+[0;32mI (78338) UART: Echoed 2 lines back[0m
+[0;32mI (78838) UART: Task 1 sent: Task 1 of Bach (cnt = 42)[0m
+
+[0;32mI (79578) UART: Task 2 sent: Task 2 of Bach (cnt = 42)[0m
+
+[0;32mI (80468) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 15)
+
+[0;32mI (80468) UART: Echoed 2 lines back[0m
+[0;32mI (80968) UART: Task 1 sent: Task 1 of Bach (cnt = 43)[0m
+
+[0;32mI (81768) UART: Task 2 sent: Task 2 of Bach (cnt = 43)[0m
+
+[0;32mI (82478) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 3)
+
+[0;32mI (82478) UART: Echoed 2 lines back[0m
+[0;32mI (82978) UART: Task 1 sent: Task 1 of Bach (cnt = 44)[0m
+
+[0;32mI (83588) UART: Task 2 sent: Task 2 of Bach (cnt = 44)[0m
+
+[0;32mI (84148) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 16)
+
+[0;32mI (84148) UART: Echoed 2 lines back[0m
+[0;32mI (84648) UART: Task 1 sent: Task 1 of Bach (cnt = 45)[0m
+
+[0;32mI (85498) UART: Task 2 sent: Task 2 of Bach (cnt = 45)[0m
+
+[0;32mI (86198) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 16)
+
+[0;32mI (86198) UART: Echoed 2 lines back[0m
+[0;32mI (86698) UART: Task 1 sent: Task 1 of Bach (cnt = 46)[0m
+
+[0;32mI (87418) UART: Task 2 sent: Task 2 of Bach (cnt = 46)[0m
+
+[0;32mI (88198) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 6)
+
+[0;32mI (88198) UART: Echoed 2 lines back[0m
+[0;32mI (88698) UART: Task 1 sent: Task 1 of Bach (cnt = 47)[0m
+
+[0;32mI (89488) UART: Task 2 sent: Task 2 of Bach (cnt = 47)[0m
+
+[0;32mI (90378) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 17)
+
+[0;32mI (90378) UART: Echoed 2 lines back[0m
+[0;32mI (90878) UART: Task 1 sent: Task 1 of Bach (cnt = 48)[0m
+
+[0;32mI (91698) UART: Task 2 sent: Task 2 of Bach (cnt = 48)[0m
+
+[0;32mI (92578) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 17)
+
+[0;32mI (92578) UART: Echoed 2 lines back[0m
+[0;32mI (93078) UART: Task 1 sent: Task 1 of Bach (cnt = 49)[0m
+
+[0;32mI (93648) UART: Task 2 sent: Task 2 of Bach (cnt = 49)[0m
+
+[0;32mI (94168) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 6)
+
+[0;32mI (94168) UART: Echoed 2 lines back[0m
+[0;32mI (94668) UART: Task 1 sent: Task 1 of Bach (cnt = 50)[0m
+
+[0;32mI (95428) UART: Task 2 sent: Task 2 of Bach (cnt = 50)[0m
+
+[0;32mI (96078) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 18)
+
+[0;32mI (96078) UART: Echoed 2 lines back[0m
+[0;32mI (96578) UART: Task 1 sent: Task 1 of Bach (cnt = 51)[0m
+
+[0;32mI (97458) UART: Task 2 sent: Task 2 of Bach (cnt = 51)[0m
+
+[0;32mI (98148) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 18)
+
+[0;32mI (98148) UART: Echoed 2 lines back[0m
+[0;32mI (98648) UART: Task 1 sent: Task 1 of Bach (cnt = 52)[0m
+
+[0;32mI (99408) UART: Task 2 sent: Task 2 of Bach (cnt = 52)[0m
+
+[0;32mI (99918) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 3)
+
+[0;32mI (99918) UART: Echoed 2 lines back[0m
+[0;32mI (100418) UART: Task 1 sent: Task 1 of Bach (cnt = 53)[0m
+
+[0;32mI (101008) UART: Task 2 sent: Task 2 of Bach (cnt = 53)[0m
+
+[0;32mI (101838) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 19)
+
+[0;32mI (101838) UART: Echoed 2 lines back[0m
+[0;32mI (102338) UART: Task 1 sent: Task 1 of Bach (cnt = 54)[0m
+
+[0;32mI (103108) UART: Task 2 sent: Task 2 of Bach (cnt = 54)[0m
+
+[0;32mI (103638) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 19)
+
+[0;32mI (103638) UART: Echoed 2 lines back[0m
+[0;32mI (104138) UART: Task 1 sent: Task 1 of Bach (cnt = 55)[0m
+
+[0;32mI (104928) UART: Task 2 sent: Task 2 of Bach (cnt = 55)[0m
+
+[0;32mI (105678) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 7)
+
+[0;32mI (105678) UART: Echoed 2 lines back[0m
+[0;32mI (106178) UART: Task 1 sent: Task 1 of Bach (cnt = 56)[0m
+
+[0;32mI (106758) UART: Task 2 sent: Task 2 of Bach (cnt = 56)[0m
+
+[0;32mI (107398) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 20)
+
+[0;32mI (107398) UART: Echoed 2 lines back[0m
+[0;32mI (107898) UART: Task 1 sent: Task 1 of Bach (cnt = 57)[0m
+
+[0;32mI (108778) UART: Task 2 sent: Task 2 of Bach (cnt = 57)[0m
+
+[0;32mI (109438) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 20)
+
+[0;32mI (109438) UART: Echoed 2 lines back[0m
+[0;32mI (109938) UART: Task 1 sent: Task 1 of Bach (cnt = 58)[0m
+
+[0;32mI (110818) UART: Task 2 sent: Task 2 of Bach (cnt = 58)[0m
+
+[0;32mI (111638) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 7)
+
+[0;32mI (111638) UART: Echoed 2 lines back[0m
+[0;32mI (112138) UART: Task 1 sent: Task 1 of Bach (cnt = 59)[0m
+
+[0;32mI (112898) UART: Task 2 sent: Task 2 of Bach (cnt = 59)[0m
+
+[0;32mI (113508) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 21)
+
+[0;32mI (113508) UART: Echoed 2 lines back[0m
+[0;32mI (114008) UART: Task 1 sent: Task 1 of Bach (cnt = 60)[0m
+
+[0;32mI (114698) UART: Task 2 sent: Task 2 of Bach (cnt = 60)[0m
+
+[0;32mI (115538) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 21)
+
+[0;32mI (115538) UART: Echoed 2 lines back[0m
+[0;32mI (116038) UART: Task 1 sent: Task 1 of Bach (cnt = 61)[0m
+
+[0;32mI (116578) UART: Task 2 sent: Task 2 of Bach (cnt = 61)[0m
+
+[0;32mI (117078) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 1)
+
+[0;32mI (117078) UART: Echoed 2 lines back[0m
+[0;32mI (117578) UART: Task 1 sent: Task 1 of Bach (cnt = 62)[0m
+
+[0;32mI (118468) UART: Task 2 sent: Task 2 of Bach (cnt = 62)[0m
+
+[0;32mI (119038) UART: Received 2 lines:[0m
+23)
+
+[0;32mI (119038) UART: Echoed 2 lines back[0m
+[0;32mI (119538) UART: Task 1 sent: Task 1 of Bach (cnt = 63)[0m
+
+[0;32mI (120338) UART: Task 2 sent: Task 2 of Bach (cnt = 63)[0m
+
+[0;32mI (120848) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 8)
+
+[0;32mI (120848) UART: Echoed 2 lines back[0m
+[0;32mI (121348) UART: Task 1 sent: Task 1 of Bach (cnt = 64)[0m
+
+[0;32mI (122068) UART: Task 2 sent: Task 2 of Bach (cnt = 64)[0m
+
+[0;32mI (122728) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 24)
+
+[0;32mI (122728) UART: Echoed 2 lines back[0m
+[0;32mI (123228) UART: Task 1 sent: Task 1 of Bach (cnt = 65)[0m
+
+[0;32mI (123768) UART: Task 2 sent: Task 2 of Bach (cnt = 65)[0m
+
+[0;32mI (124578) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 24)
+
+[0;32mI (124578) UART: Echoed 2 lines back[0m
+[0;32mI (125078) UART: Task 1 sent: Task 1 of Bach (cnt = 66)[0m
+
+[0;32mI (125718) UART: Task 2 sent: Task 2 of Bach (cnt = 66)[0m
+
+[0;32mI (126568) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 4)
+
+[0;32mI (126568) UART: Echoed 2 lines back[0m
+[0;32mI (127068) UART: Task 1 sent: Task 1 of Bach (cnt = 67)[0m
+
+[0;32mI (127958) UART: Task 2 sent: Task 2 of Bach (cnt = 67)[0m
+
+[0;32mI (128728) UART: Received 2 lines:[0m
+26)
+
+[0;32mI (128728) UART: Echoed 2 lines back[0m
+[0;32mI (129228) UART: Task 1 sent: Task 1 of Bach (cnt = 68)[0m
+
+[0;32mI (129928) UART: Task 2 sent: Task 2 of Bach (cnt = 68)[0m
+
+[0;32mI (130748) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 9)
+
+[0;32mI (130748) UART: Echoed 2 lines back[0m
+[0;32mI (131248) UART: Task 1 sent: Task 1 of Bach (cnt = 69)[0m
+
+[0;32mI (131798) UART: Task 2 sent: Task 2 of Bach (cnt = 69)[0m
+
+[0;32mI (132618) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 27)
+
+[0;32mI (132618) UART: Echoed 2 lines back[0m
+[0;32mI (133118) UART: Task 1 sent: Task 1 of Bach (cnt = 70)[0m
+
+[0;32mI (133948) UART: Task 2 sent: Task 2 of Bach (cnt = 70)[0m
+
+[0;32mI (134558) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 27)
+
+[0;32mI (134558) UART: Echoed 2 lines back[0m
+[0;32mI (135058) UART: Task 1 sent: Task 1 of Bach (cnt = 71)[0m
+
+[0;32mI (135728) UART: Task 2 sent: Task 2 of Bach (cnt = 71)[0m
+
+[0;32mI (136528) UART: Received 2 lines:[0m
+29)
+
+[0;32mI (136528) UART: Echoed 2 lines back[0m
+[0;32mI (137028) UART: Task 1 sent: Task 1 of Bach (cnt = 72)[0m
+
+[0;32mI (137668) UART: Task 2 sent: Task 2 of Bach (cnt = 72)[0m
+
+[0;32mI (138528) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 29)
+
+[0;32mI (138528) UART: Echoed 2 lines back[0m
+[0;32mI (139028) UART: Task 1 sent: Task 1 of Bach (cnt = 73)[0m
+
+[0;32mI (139788) UART: Task 2 sent: Task 2 of Bach (cnt = 73)[0m
+
+[0;32mI (140498) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 10)
+
+[0;32mI (140498) UART: Echoed 2 lines back[0m
+[0;32mI (140998) UART: Task 1 sent: Task 1 of Bach (cnt = 74)[0m
+
+[0;32mI (141638) UART: Task 2 sent: Task 2 of Bach (cnt = 74)[0m
+
+[0;32mI (142178) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 30)
+
+[0;32mI (142178) UART: Echoed 2 lines back[0m
+[0;32mI (142678) UART: Task 1 sent: Task 1 of Bach (cnt = 75)[0m
+
+[0;32mI (143278) UART: Task 2 sent: Task 2 of Bach (cnt = 75)[0m
+
+[0;32mI (144038) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 30)
+
+[0;32mI (144038) UART: Echoed 2 lines back[0m
+[0;32mI (144538) UART: Task 1 sent: Task 1 of Bach (cnt = 76)[0m
+
+[0;32mI (145138) UART: Task 2 sent: Task 2 of Bach (cnt = 76)[0m
+
+[0;32mI (145818) UART: Received 2 lines:[0m
+ach (cnt = 35)
+
+[0;32mI (145818) UART: Echoed 2 lines back[0m
+[0;32mI (146318) UART: Task 1 sent: Task 1 of Bach (cnt = 77)[0m
+
+[0;32mI (146968) UART: Task 2 sent: Task 2 of Bach (cnt = 77)[0m
+
+[0;32mI (147558) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 12)
+
+[0;32mI (147558) UART: Echoed 2 lines back[0m
+[0;32mI (148058) UART: Task 1 sent: Task 1 of Bach (cnt = 78)[0m
+
+[0;32mI (148688) UART: Task 2 sent: Task 2 of Bach (cnt = 78)[0m
+
+[0;32mI (149438) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 36)
+
+[0;32mI (149438) UART: Echoed 2 lines back[0m
+[0;32mI (149938) UART: Task 1 sent: Task 1 of Bach (cnt = 79)[0m
+
+[0;32mI (150818) UART: Task 2 sent: Task 2 of Bach (cnt = 79)[0m
+
+[0;32mI (151378) UART: Received 2 lines:[0m
+13)
+
+[0;32mI (151378) UART: Echoed 2 lines back[0m
+[0;32mI (151878) UART: Task 1 sent: Task 1 of Bach (cnt = 80)[0m
+
+[0;32mI (152418) UART: Task 2 sent: Task 2 of Bach (cnt = 80)[0m
+
+[0;32mI (153068) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 38)
+
+[0;32mI (153068) UART: Echoed 2 lines back[0m
+[0;32mI (153568) UART: Task 1 sent: Task 1 of Bach (cnt = 81)[0m
+
+[0;32mI (154398) UART: Task 2 sent: Task 2 of Bach (cnt = 81)[0m
+
+[0;32mI (155068) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 38)
+
+[0;32mI (155068) UART: Echoed 2 lines back[0m
+[0;32mI (155568) UART: Task 1 sent: Task 1 of Bach (cnt = 82)[0m
+
+[0;32mI (156458) UART: Task 2 sent: Task 2 of Bach (cnt = 82)[0m
+
+[0;32mI (157248) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 13)
+
+[0;32mI (157248) UART: Echoed 2 lines back[0m
+[0;32mI (157748) UART: Task 1 sent: Task 1 of Bach (cnt = 83)[0m
+
+[0;32mI (158318) UART: Task 2 sent: Task 2 of Bach (cnt = 83)[0m
+
+[0;32mI (159128) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 39)
+
+[0;32mI (159128) UART: Echoed 2 lines back[0m
+[0;32mI (159628) UART: Task 1 sent: Task 1 of Bach (cnt = 84)[0m
+
+[0;32mI (160128) UART: Task 2 sent: Task 2 of Bach (cnt = 84)[0m
+
+[0;32mI (160818) UART: Received 2 lines:[0m
+cnt = 42)
+
+[0;32mI (160818) UART: Echoed 2 lines back[0m
+[0;32mI (161318) UART: Task 1 sent: Task 1 of Bach (cnt = 85)[0m
+
+[0;32mI (161978) UART: Task 2 sent: Task 2 of Bach (cnt = 85)[0m
+
+[0;32mI (162658) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 6)
+
+[0;32mI (162658) UART: Echoed 2 lines back[0m
+[0;32mI (163158) UART: Task 1 sent: Task 1 of Bach (cnt = 86)[0m
+
+[0;32mI (163788) UART: Task 2 sent: Task 2 of Bach (cnt = 86)[0m
+
+[0;32mI (164458) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 43)
+
+[0;32mI (164458) UART: Echoed 2 lines back[0m
+[0;32mI (164958) UART: Task 1 sent: Task 1 of Bach (cnt = 87)[0m
+
+[0;32mI (165598) UART: Task 2 sent: Task 2 of Bach (cnt = 87)[0m
+
+[0;32mI (166138) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 43)
+
+[0;32mI (166138) UART: Echoed 2 lines back[0m
+[0;32mI (166638) UART: Task 1 sent: Task 1 of Bach (cnt = 88)[0m
+
+[0;32mI (167418) UART: Task 2 sent: Task 2 of Bach (cnt = 88)[0m
+
+[0;32mI (168078) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 15)
+
+[0;32mI (168078) UART: Echoed 2 lines back[0m
+[0;32mI (168578) UART: Task 1 sent: Task 1 of Bach (cnt = 89)[0m
+
+[0;32mI (169228) UART: Task 2 sent: Task 2 of Bach (cnt = 89)[0m
+
+[0;32mI (169988) UART: Received 2 lines:[0m
+cnt = 47)
+
+[0;32mI (169988) UART: Echoed 2 lines back[0m
+[0;32mI (170488) UART: Task 1 sent: Task 1 of Bach (cnt = 90)[0m
+
+[0;32mI (171238) UART: Task 2 sent: Task 2 of Bach (cnt = 90)[0m
+
+[0;32mI (172008) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 47)
+
+[0;32mI (172008) UART: Echoed 2 lines back[0m
+[0;32mI (172508) UART: Task 1 sent: Task 1 of Bach (cnt = 91)[0m
+
+[0;32mI (173358) UART: Task 2 sent: Task 2 of Bach (cnt = 91)[0m
+
+[0;32mI (174028) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 16)
+
+[0;32mI (174028) UART: Echoed 2 lines back[0m
+[0;32mI (174528) UART: Task 1 sent: Task 1 of Bach (cnt = 92)[0m
+
+[0;32mI (175138) UART: Task 2 sent: Task 2 of Bach (cnt = 92)[0m
+
+[0;32mI (175958) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 48)
+
+[0;32mI (175958) UART: Echoed 2 lines back[0m
+[0;32mI (176458) UART: Task 1 sent: Task 1 of Bach (cnt = 93)[0m
+
+[0;32mI (177078) UART: Task 2 sent: Task 2 of Bach (cnt = 93)[0m
+
+[0;32mI (177948) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 48)
+
+[0;32mI (177948) UART: Echoed 2 lines back[0m
+[0;32mI (178448) UART: Task 1 sent: Task 1 of Bach (cnt = 94)[0m
+
+[0;32mI (179198) UART: Task 2 sent: Task 2 of Bach (cnt = 94)[0m
+
+[0;32mI (179858) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 2)
+
+[0;32mI (179858) UART: Echoed 2 lines back[0m
+[0;32mI (180358) UART: Task 1 sent: Task 1 of Bach (cnt = 95)[0m
+
+[0;32mI (181228) UART: Task 2 sent: Task 2 of Bach (cnt = 95)[0m
+
+[0;32mI (182118) UART: Received 2 lines:[0m
+cnt = 52)
+
+[0;32mI (182118) UART: Echoed 2 lines back[0m
+[0;32mI (182618) UART: Task 1 sent: Task 1 of Bach (cnt = 96)[0m
+
+[0;32mI (183278) UART: Task 2 sent: Task 2 of Bach (cnt = 96)[0m
+
+[0;32mI (183858) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 52)
+
+[0;32mI (183858) UART: Echoed 2 lines back[0m
+[0;32mI (184358) UART: Task 1 sent: Task 1 of Bach (cnt = 97)[0m
+
+[0;32mI (185238) UART: Task 2 sent: Task 2 of Bach (cnt = 97)[0m
+
+[0;32mI (185878) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 18)
+
+[0;32mI (185878) UART: Echoed 2 lines back[0m
+[0;32mI (186378) UART: Task 1 sent: Task 1 of Bach (cnt = 98)[0m
+
+[0;32mI (187218) UART: Task 2 sent: Task 2 of Bach (cnt = 98)[0m
+
+[0;32mI (187928) UART: Received 2 lines:[0m
+ 54)
+
+[0;32mI (187928) UART: Echoed 2 lines back[0m
+[0;32mI (188428) UART: Task 1 sent: Task 1 of Bach (cnt = 99)[0m
+
+[0;32mI (189128) UART: Task 2 sent: Task 2 of Bach (cnt = 99)[0m
+
+[0;32mI (189918) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 7)
+
+[0;32mI (189918) UART: Echoed 2 lines back[0m
+[0;32mI (190418) UART: Task 1 sent: Task 1 of Bach (cnt = 100)[0m
+
+[0;32mI (191068) UART: Task 2 sent: Task 2 of Bach (cnt = 100)[0m
+
+[0;32mI (191918) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 55)
+
+[0;32mI (191918) UART: Echoed 2 lines back[0m
+[0;32mI (192418) UART: Task 1 sent: Task 1 of Bach (cnt = 101)[0m
+
+[0;32mI (193148) UART: Task 2 sent: Task 2 of Bach (cnt = 101)[0m
+
+[0;32mI (193648) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 55)
+
+[0;32mI (193648) UART: Echoed 2 lines back[0m
+[0;32mI (194148) UART: Task 1 sent: Task 1 of Bach (cnt = 102)[0m
+
+[0;32mI (194858) UART: Task 2 sent: Task 2 of Bach (cnt = 102)[0m
+
+[0;32mI (195418) UART: Received 2 lines:[0m
+cnt = 20)
+
+[0;32mI (195418) UART: Echoed 2 lines back[0m
+[0;32mI (195918) UART: Task 1 sent: Task 1 of Bach (cnt = 103)[0m
+
+[0;32mI (196788) UART: Task 2 sent: Task 2 of Bach (cnt = 103)[0m
+
+[0;32mI (197638) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 59)
+
+[0;32mI (197638) UART: Echoed 2 lines back[0m
+[0;32mI (198138) UART: Task 1 sent: Task 1 of Bach (cnt = 104)[0m
+
+[0;32mI (198948) UART: Task 2 sent: Task 2 of Bach (cnt = 104)[0m
+
+[0;32mI (199578) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 59)
+
+[0;32mI (199578) UART: Echoed 2 lines back[0m
+[0;32mI (200078) UART: Task 1 sent: Task 1 of Bach (cnt = 105)[0m
+
+[0;32mI (200588) UART: Task 2 sent: Task 2 of Bach (cnt = 105)[0m
+
+[0;32mI (201318) UART: Received 2 lines:[0m
+Task 2 of Bach (cnt = 20)
+
+[0;32mI (201318) UART: Echoed 2 lines back[0m
+[0;32mI (201818) UART: Task 1 sent: Task 1 of Bach (cnt = 106)[0m
+
+[0;32mI (202608) UART: Task 2 sent: Task 2 of Bach (cnt = 106)[0m
+
+[0;32mI (203318) UART: Received 2 lines:[0m
+Task 1 of Bach (cnt = 60)
+
+[0;32mI (203318) UART: Echoed 2 lines back[0m
+[0;32mI (203818) UART: Task 1 sent: Task 1 of Bach (cnt = 107)[0m
+
+[0;32mI (204368) UART: Task 2 sent: Task 2 of Bach (cnt = 107)[0m
+

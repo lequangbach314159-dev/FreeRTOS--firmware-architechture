@@ -1,0 +1,7 @@
+{
+    "idf.pythonInstallPath": "C:\\PROJECT_ESP32\\Espressif\\tools\\idf-python\\3.11.2\\python.exe",
+    "idf.currentSetup": "C:/PROJECT_ESP32/Espressif/frameworks/esp-idf-v5.5/",
+    "files.associations": {
+        "cstdint": "c"
+    }
+}

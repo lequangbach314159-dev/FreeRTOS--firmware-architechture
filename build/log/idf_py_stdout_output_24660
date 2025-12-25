@@ -1,0 +1,605 @@
+Command: C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\tools/idf_monitor.py -p COM6 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\examples\get-started\RTOS_part2\build\RTOS_part2.elf C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\examples\get-started\RTOS_part2\build\bootloader\bootloader.elf --force-color -m 'C:\PROJECT_ESP32\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\PROJECT_ESP32\Espressif\frameworks\esp-idf-v5.5\tools\idf.py' '-p' 'COM6'
+ SPI Speed      : 40�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Aug 18 2025 09:30:05[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.0[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09230h ( 37424) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00019258 vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (101) esp_image: segment 2: paddr=00019280 vaddr=3ffb0000 size=022a8h (  8872) load[0m
+[0;32mI (109) esp_image: segment 3: paddr=0001b530 vaddr=40080000 size=04ae8h ( 19176) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=1618ch ( 90508) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=000361b4 vaddr=40084ae8 size=0966ch ( 38508) load[0m
+[0;32mI (174) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (174) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (193) cpu_start: Pro cpu start user code[0m
+[0;32mI (193) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (193) app_init: Application information:[0m
+[0;32mI (193) app_init: Project name:     RTOS_part2[0m
+[0;32mI (197) app_init: App version:      v5.5-dirty[0m
+[0;32mI (201) app_init: Compile time:     Aug 18 2025 09:29:49[0m
+[0;32mI (206) app_init: ELF file SHA256:  ff134487f...[0m
+[0;32mI (211) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (215) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (219) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (223) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (227) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (233) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (238) heap_init: At 3FFB2BC0 len 0002D440 (181 KiB): DRAM[0m
+[0;32mI (243) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (254) heap_init: At 4008E154 len 00011EAC (71 KiB): IRAM[0m
+[0;32mI (260) spi_flash: detected chip: generic[0m
+[0;32mI (263) spi_flash: flash io: dio[0m
+[0;33mW (266) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (279) main_task: Started on CPU0[0m
+[0;32mI (289) main_task: Calling app_main()[0m
+[0;32mI (289) ESP1: Task1 sent: hello ESP2 task 1 1[0m
+
+[0;32mI (289) main_task: Returned from app_main()[0m
+[0;32mI (389) ESP1: Received from ESP2: hello ESP2 task 1 1[0m
+
+[0;32mI (969) ESP1: Task2 sent: hello ESP2 task 2 1[0m
+
+[1;31mE (1069) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (1539) ESP1: Task1 sent: hello ESP2 task 1 2[0m
+
+[1;31mE (1639) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (2429) ESP1: Task2 sent: hello ESP2 task 2 2[0m
+
+[1;31mE (2529) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (3169) ESP1: Task1 sent: hello ESP2 task 1 3[0m
+
+[1;31mE (3269) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (3999) ESP1: Task2 sent: hello ESP2 task 2 3[0m
+
+[1;31mE (4099) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (4859) ESP1: Task1 sent: hello ESP2 task 1 4[0m
+
+[1;31mE (4959) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (5479) ESP1: Task2 sent: hello ESP2 task 2 4[0m
+
+[1;31mE (5579) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (6209) ESP1: Task1 sent: hello ESP2 task 1 5[0m
+
+[1;31mE (6309) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (6789) ESP1: Task2 sent: hello ESP2 task 2 5[0m
+
+[1;31mE (6889) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (7289) ESP1: Task1 sent: hello ESP2 task 1 6[0m
+
+[1;31mE (7389) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (7959) ESP1: Task2 sent: hello ESP2 task 2 6[0m
+
+[1;31mE (8059) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (8469) ESP1: Task1 sent: hello ESP2 task 1 7[0m
+
+[1;31mE (8569) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (8969) ESP1: Task2 sent: hello ESP2 task 2 7[0m
+
+[1;31mE (9069) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (9679) ESP1: Task1 sent: hello ESP2 task 1 8[0m
+
+[1;31mE (9779) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (10529) ESP1: Task2 sent: hello ESP2 task 2 8[0m
+
+[1;31mE (10629) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (11379) ESP1: Task1 sent: hello ESP2 task 1 9[0m
+
+[1;31mE (11479) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (12169) ESP1: Task2 sent: hello ESP2 task 2 9[0m
+
+[1;31mE (12269) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (13049) ESP1: Task1 sent: hello ESP2 task 1 10[0m
+
+[1;31mE (13149) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (13619) ESP1: Task2 sent: hello ESP2 task 2 10[0m
+
+[1;31mE (13719) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (14319) ESP1: Task1 sent: hello ESP2 task 1 11[0m
+
+[1;31mE (14419) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (14989) ESP1: Task2 sent: hello ESP2 task 2 11[0m
+
+[1;31mE (15089) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (15719) ESP1: Task1 sent: hello ESP2 task 1 12[0m
+
+[1;31mE (15819) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (16609) ESP1: Task2 sent: hello ESP2 task 2 12[0m
+
+[1;31mE (16709) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (17139) ESP1: Task1 sent: hello ESP2 task 1 13[0m
+
+[1;31mE (17239) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (17699) ESP1: Task2 sent: hello ESP2 task 2 13[0m
+
+[1;31mE (17799) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (18569) ESP1: Task1 sent: hello ESP2 task 1 14[0m
+
+[1;31mE (18669) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (19079) ESP1: Task2 sent: hello ESP2 task 2 14[0m
+
+[1;31mE (19179) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (19739) ESP1: Task1 sent: hello ESP2 task 1 15[0m
+
+[1;31mE (19839) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (20419) ESP1: Task2 sent: hello ESP2 task 2 15[0m
+
+[1;31mE (20519) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (20949) ESP1: Task1 sent: hello ESP2 task 1 16[0m
+
+[1;31mE (21049) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (21629) ESP1: Task2 sent: hello ESP2 task 2 16[0m
+
+[1;31mE (21729) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (22299) ESP1: Task1 sent: hello ESP2 task 1 17[0m
+
+[1;31mE (22399) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (22979) ESP1: Task2 sent: hello ESP2 task 2 17[0m
+
+[1;31mE (23079) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (23529) ESP1: Task1 sent: hello ESP2 task 1 18[0m
+
+[1;31mE (23629) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (24229) ESP1: Task2 sent: hello ESP2 task 2 18[0m
+
+[1;31mE (24329) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (25109) ESP1: Task1 sent: hello ESP2 task 1 19[0m
+
+[1;31mE (25209) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (25949) ESP1: Task2 sent: hello ESP2 task 2 19[0m
+
+[1;31mE (26049) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (26609) ESP1: Task1 sent: hello ESP2 task 1 20[0m
+
+[1;31mE (26709) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (27379) ESP1: Task2 sent: hello ESP2 task 2 20[0m
+
+[1;31mE (27479) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (27929) ESP1: Task1 sent: hello ESP2 task 1 21[0m
+
+[1;31mE (28029) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (28549) ESP1: Task2 sent: hello ESP2 task 2 21[0m
+
+[1;31mE (28649) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (29389) ESP1: Task1 sent: hello ESP2 task 1 22[0m
+
+[1;31mE (29489) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (30209) ESP1: Task2 sent: hello ESP2 task 2 22[0m
+
+[1;31mE (30309) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (31039) ESP1: Task1 sent: hello ESP2 task 1 23[0m
+
+[1;31mE (31139) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (31709) ESP1: Task2 sent: hello ESP2 task 2 23[0m
+
+[1;31mE (31809) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (32579) ESP1: Task1 sent: hello ESP2 task 1 24[0m
+
+[1;31mE (32679) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (33219) ESP1: Task2 sent: hello ESP2 task 2 24[0m
+
+[1;31mE (33319) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (33799) ESP1: Task1 sent: hello ESP2 task 1 25[0m
+
+[1;31mE (33899) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (34369) ESP1: Task2 sent: hello ESP2 task 2 25[0m
+
+[1;31mE (34469) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (35059) ESP1: Task1 sent: hello ESP2 task 1 26[0m
+
+[1;31mE (35159) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (35879) ESP1: Task2 sent: hello ESP2 task 2 26[0m
+
+[1;31mE (35979) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (36719) ESP1: Task1 sent: hello ESP2 task 1 27[0m
+
+[1;31mE (36819) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (37269) ESP1: Task2 sent: hello ESP2 task 2 27[0m
+
+[1;31mE (37369) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (38109) ESP1: Task1 sent: hello ESP2 task 1 28[0m
+
+[1;31mE (38209) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (38829) ESP1: Task2 sent: hello ESP2 task 2 28[0m
+
+[1;31mE (38929) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (39449) ESP1: Task1 sent: hello ESP2 task 1 29[0m
+
+[1;31mE (39549) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (40269) ESP1: Task2 sent: hello ESP2 task 2 29[0m
+
+[1;31mE (40369) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (41049) ESP1: Task1 sent: hello ESP2 task 1 30[0m
+
+[1;31mE (41149) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (41929) ESP1: Task2 sent: hello ESP2 task 2 30[0m
+
+[1;31mE (42029) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (42629) ESP1: Task1 sent: hello ESP2 task 1 31[0m
+
+[1;31mE (42729) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (43299) ESP1: Task2 sent: hello ESP2 task 2 31[0m
+
+[1;31mE (43399) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (43859) ESP1: Task1 sent: hello ESP2 task 1 32[0m
+
+[1;31mE (43959) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (44679) ESP1: Task2 sent: hello ESP2 task 2 32[0m
+
+[1;31mE (44779) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (45469) ESP1: Task1 sent: hello ESP2 task 1 33[0m
+
+[1;31mE (45569) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (46289) ESP1: Task2 sent: hello ESP2 task 2 33[0m
+
+[1;31mE (46389) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (46859) ESP1: Task1 sent: hello ESP2 task 1 34[0m
+
+[1;31mE (46959) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (47499) ESP1: Task2 sent: hello ESP2 task 2 34[0m
+
+[1;31mE (47599) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (48289) ESP1: Task1 sent: hello ESP2 task 1 35[0m
+
+[1;31mE (48389) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (48989) ESP1: Task2 sent: hello ESP2 task 2 35[0m
+
+[1;31mE (49089) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (49609) ESP1: Task1 sent: hello ESP2 task 1 36[0m
+
+[1;31mE (49709) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (50439) ESP1: Task2 sent: hello ESP2 task 2 36[0m
+
+[1;31mE (50539) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (50949) ESP1: Task1 sent: hello ESP2 task 1 37[0m
+
+[1;31mE (51049) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (51719) ESP1: Task2 sent: hello ESP2 task 2 37[0m
+
+[1;31mE (51819) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (52399) ESP1: Task1 sent: hello ESP2 task 1 38[0m
+
+[1;31mE (52499) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (53009) ESP1: Task2 sent: hello ESP2 task 2 38[0m
+
+[1;31mE (53109) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (53579) ESP1: Task1 sent: hello ESP2 task 1 39[0m
+
+[1;31mE (53679) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (54129) ESP1: Task2 sent: hello ESP2 task 2 39[0m
+
+[1;31mE (54229) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (54799) ESP1: Task1 sent: hello ESP2 task 1 40[0m
+
+[1;31mE (54899) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (55459) ESP1: Task2 sent: hello ESP2 task 2 40[0m
+
+[1;31mE (55559) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (56229) ESP1: Task1 sent: hello ESP2 task 1 41[0m
+
+[1;31mE (56329) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (56989) ESP1: Task2 sent: hello ESP2 task 2 41[0m
+
+[1;31mE (57089) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (57789) ESP1: Task1 sent: hello ESP2 task 1 42[0m
+
+[1;31mE (57889) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (58379) ESP1: Task2 sent: hello ESP2 task 2 42[0m
+
+[1;31mE (58479) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (58979) ESP1: Task1 sent: hello ESP2 task 1 43[0m
+
+[1;31mE (59079) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (59619) ESP1: Task2 sent: hello ESP2 task 2 43[0m
+
+[1;31mE (59719) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (60459) ESP1: Task1 sent: hello ESP2 task 1 44[0m
+
+[1;31mE (60559) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (60989) ESP1: Task2 sent: hello ESP2 task 2 44[0m
+
+[1;31mE (61089) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (61809) ESP1: Task1 sent: hello ESP2 task 1 45[0m
+
+[1;31mE (61909) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (62599) ESP1: Task2 sent: hello ESP2 task 2 45[0m
+
+[1;31mE (62699) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (63119) ESP1: Task1 sent: hello ESP2 task 1 46[0m
+
+[1;31mE (63219) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (63749) ESP1: Task2 sent: hello ESP2 task 2 46[0m
+
+[1;31mE (63849) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (64469) ESP1: Task1 sent: hello ESP2 task 1 47[0m
+
+[1;31mE (64569) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (65049) ESP1: Task2 sent: hello ESP2 task 2 47[0m
+
+[1;31mE (65149) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (65609) ESP1: Task1 sent: hello ESP2 task 1 48[0m
+
+[1;31mE (65709) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (66469) ESP1: Task2 sent: hello ESP2 task 2 48[0m
+
+[1;31mE (66569) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (67209) ESP1: Task1 sent: hello ESP2 task 1 49[0m
+
+[1;31mE (67309) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (67929) ESP1: Task2 sent: hello ESP2 task 2 49[0m
+
+[1;31mE (68029) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (68789) ESP1: Task1 sent: hello ESP2 task 1 50[0m
+
+[1;31mE (68889) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (69409) ESP1: Task2 sent: hello ESP2 task 2 50[0m
+
+[1;31mE (69509) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (69959) ESP1: Task1 sent: hello ESP2 task 1 51[0m
+
+[1;31mE (70059) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (70759) ESP1: Task2 sent: hello ESP2 task 2 51[0m
+
+[1;31mE (70859) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (71639) ESP1: Task1 sent: hello ESP2 task 1 52[0m
+
+[1;31mE (71739) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (72499) ESP1: Task2 sent: hello ESP2 task 2 52[0m
+
+[1;31mE (72599) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (73279) ESP1: Task1 sent: hello ESP2 task 1 53[0m
+
+[1;31mE (73379) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (73919) ESP1: Task2 sent: hello ESP2 task 2 53[0m
+
+[1;31mE (74019) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (74639) ESP1: Task1 sent: hello ESP2 task 1 54[0m
+
+[1;31mE (74739) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (75279) ESP1: Task2 sent: hello ESP2 task 2 54[0m
+
+[1;31mE (75379) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (76159) ESP1: Task1 sent: hello ESP2 task 1 55[0m
+
+[1;31mE (76259) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (76959) ESP1: Task2 sent: hello ESP2 task 2 55[0m
+
+[1;31mE (77059) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (77839) ESP1: Task1 sent: hello ESP2 task 1 56[0m
+
+[1;31mE (77939) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (78659) ESP1: Task2 sent: hello ESP2 task 2 56[0m
+
+[1;31mE (78759) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (79289) ESP1: Task1 sent: hello ESP2 task 1 57[0m
+
+[1;31mE (79389) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (79879) ESP1: Task2 sent: hello ESP2 task 2 57[0m
+
+[1;31mE (79979) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (80559) ESP1: Task1 sent: hello ESP2 task 1 58[0m
+
+[1;31mE (80659) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (81359) ESP1: Task2 sent: hello ESP2 task 2 58[0m
+
+[1;31mE (81459) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (81899) ESP1: Task1 sent: hello ESP2 task 1 59[0m
+
+[1;31mE (81999) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (82699) ESP1: Task2 sent: hello ESP2 task 2 59[0m
+
+[1;31mE (82799) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (83319) ESP1: Task1 sent: hello ESP2 task 1 60[0m
+
+[1;31mE (83419) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (83829) ESP1: Task2 sent: hello ESP2 task 2 60[0m
+
+[1;31mE (83929) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (84409) ESP1: Task1 sent: hello ESP2 task 1 61[0m
+
+[1;31mE (84509) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (85099) ESP1: Task2 sent: hello ESP2 task 2 61[0m
+
+[1;31mE (85199) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (85799) ESP1: Task1 sent: hello ESP2 task 1 62[0m
+
+[1;31mE (85899) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (86409) ESP1: Task2 sent: hello ESP2 task 2 62[0m
+
+[1;31mE (86509) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (87209) ESP1: Task1 sent: hello ESP2 task 1 63[0m
+
+[1;31mE (87309) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (88049) ESP1: Task2 sent: hello ESP2 task 2 63[0m
+
+[1;31mE (88149) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (88849) ESP1: Task1 sent: hello ESP2 task 1 64[0m
+
+[1;31mE (88949) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (89399) ESP1: Task2 sent: hello ESP2 task 2 64[0m
+
+[1;31mE (89499) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (90019) ESP1: Task1 sent: hello ESP2 task 1 65[0m
+
+[1;31mE (90119) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (90709) ESP1: Task2 sent: hello ESP2 task 2 65[0m
+
+[1;31mE (90809) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (91489) ESP1: Task1 sent: hello ESP2 task 1 66[0m
+
+[1;31mE (91589) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (92289) ESP1: Task2 sent: hello ESP2 task 2 66[0m
+
+[1;31mE (92389) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (93039) ESP1: Task1 sent: hello ESP2 task 1 67[0m
+
+[1;31mE (93139) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (93759) ESP1: Task2 sent: hello ESP2 task 2 67[0m
+
+[1;31mE (93859) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (94299) ESP1: Task1 sent: hello ESP2 task 1 68[0m
+
+[1;31mE (94399) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (95019) ESP1: Task2 sent: hello ESP2 task 2 68[0m
+
+[1;31mE (95119) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (95849) ESP1: Task1 sent: hello ESP2 task 1 69[0m
+
+[1;31mE (95949) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (96449) ESP1: Task2 sent: hello ESP2 task 2 69[0m
+
+[1;31mE (96549) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (96959) ESP1: Task1 sent: hello ESP2 task 1 70[0m
+
+[1;31mE (97059) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (97769) ESP1: Task2 sent: hello ESP2 task 2 70[0m
+
+[1;31mE (97869) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (98479) ESP1: Task1 sent: hello ESP2 task 1 71[0m
+
+[1;31mE (98579) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (98979) ESP1: Task2 sent: hello ESP2 task 2 71[0m
+
+[1;31mE (99079) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (99609) ESP1: Task1 sent: hello ESP2 task 1 72[0m
+
+[1;31mE (99709) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (100419) ESP1: Task2 sent: hello ESP2 task 2 72[0m
+
+[1;31mE (100519) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (100959) ESP1: Task1 sent: hello ESP2 task 1 73[0m
+
+[1;31mE (101059) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (101809) ESP1: Task2 sent: hello ESP2 task 2 73[0m
+
+[1;31mE (101909) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (102369) ESP1: Task1 sent: hello ESP2 task 1 74[0m
+
+[1;31mE (102469) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (102879) ESP1: Task2 sent: hello ESP2 task 2 74[0m
+
+[1;31mE (102979) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (103479) ESP1: Task1 sent: hello ESP2 task 1 75[0m
+
+[1;31mE (103579) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (104109) ESP1: Task2 sent: hello ESP2 task 2 75[0m
+
+[1;31mE (104209) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (104649) ESP1: Task1 sent: hello ESP2 task 1 76[0m
+
+[1;31mE (104749) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (105199) ESP1: Task2 sent: hello ESP2 task 2 76[0m
+
+[1;31mE (105299) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (105909) ESP1: Task1 sent: hello ESP2 task 1 77[0m
+
+[1;31mE (106009) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (106799) ESP1: Task2 sent: hello ESP2 task 2 77[0m
+
+[1;31mE (106899) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (107369) ESP1: Task1 sent: hello ESP2 task 1 78[0m
+
+[1;31mE (107469) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (108049) ESP1: Task2 sent: hello ESP2 task 2 78[0m
+
+[1;31mE (108149) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (108749) ESP1: Task1 sent: hello ESP2 task 1 79[0m
+
+[1;31mE (108849) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (109469) ESP1: Task2 sent: hello ESP2 task 2 79[0m
+
+[1;31mE (109569) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (110279) ESP1: Task1 sent: hello ESP2 task 1 80[0m
+
+[1;31mE (110379) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (111039) ESP1: Task2 sent: hello ESP2 task 2 80[0m
+
+[1;31mE (111139) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (111889) ESP1: Task1 sent: hello ESP2 task 1 81[0m
+
+[1;31mE (111989) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (112639) ESP1: Task2 sent: hello ESP2 task 2 81[0m
+
+[1;31mE (112739) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (113159) ESP1: Task1 sent: hello ESP2 task 1 82[0m
+
+[1;31mE (113259) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (113979) ESP1: Task2 sent: hello ESP2 task 2 82[0m
+
+[1;31mE (114079) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (114619) ESP1: Task1 sent: hello ESP2 task 1 83[0m
+
+[1;31mE (114719) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (115199) ESP1: Task2 sent: hello ESP2 task 2 83[0m
+
+[1;31mE (115299) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (115809) ESP1: Task1 sent: hello ESP2 task 1 84[0m
+
+[1;31mE (115909) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (116389) ESP1: Task2 sent: hello ESP2 task 2 84[0m
+
+[1;31mE (116489) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (116939) ESP1: Task1 sent: hello ESP2 task 1 85[0m
+
+[1;31mE (117039) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (117569) ESP1: Task2 sent: hello ESP2 task 2 85[0m
+
+[1;31mE (117669) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (118309) ESP1: Task1 sent: hello ESP2 task 1 86[0m
+
+[1;31mE (118409) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (118839) ESP1: Task2 sent: hello ESP2 task 2 86[0m
+
+[1;31mE (118939) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (119379) ESP1: Task1 sent: hello ESP2 task 1 87[0m
+
+[1;31mE (119479) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (120069) ESP1: Task2 sent: hello ESP2 task 2 87[0m
+
+[1;31mE (120169) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (120849) ESP1: Task1 sent: hello ESP2 task 1 88[0m
+
+[1;31mE (120949) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (121539) ESP1: Task2 sent: hello ESP2 task 2 88[0m
+
+[1;31mE (121639) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (122089) ESP1: Task1 sent: hello ESP2 task 1 89[0m
+
+[1;31mE (122189) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (122679) ESP1: Task2 sent: hello ESP2 task 2 89[0m
+
+[1;31mE (122779) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (123559) ESP1: Task1 sent: hello ESP2 task 1 90[0m
+
+[1;31mE (123659) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (124259) ESP1: Task2 sent: hello ESP2 task 2 90[0m
+
+[1;31mE (124359) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (124789) ESP1: Task1 sent: hello ESP2 task 1 91[0m
+
+[1;31mE (124889) ESP1: Error! Received data does not match sent data.[0m
+[0;32mI (125369) ESP1: Task2 sent: hello ESP2 task 2 91[0m
+
+[1;31mE (125469) ESP1: Error! Received data does not match sent data.[0m
